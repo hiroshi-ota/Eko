@@ -10,25 +10,33 @@
 .slider .sl-slider blockquote {
 	padding: 100px 30px 10px 30px;
 	width: 80%;
-	max-width: 960px;
+	max-width: 1400px; /*szerokość opisu*/
 	color: #fff;
 	margin: 0 auto;
 	position: relative;
 	z-index: 100;
 }
 
+/*pozycja nagłówka*/
 .slider .sl-slider h2 {
 	font-size: 100px;
 	text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
-        position: absolute;
+        position: relative;
+        text-align: center;
+        /*left: 30%;*/
+        padding-top: 2%;
+        
 }
 
+/*pozycja opisu*/
 .slider .sl-slider blockquote {
 	font-size: 28px;
-	padding-top: 240px;  /* wysokość opisu*/
+	padding-top: 2%;  /* wysokość opisu*/
 	font-weight: 300;
 	text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
-        position: absolute; /* fixed działało na pustej stronie*/
+        position: relative; /* fixed działało na pustej stronie*/
+        /*left: 25%;*/
+        text-align: center;
 }
 
 .slider .sl-slider blockquote cite {
@@ -37,7 +45,7 @@
 	font-style: normal;
 	text-transform: uppercase;
 	letter-spacing: 5px;
-	padding-top: 30px;
+	padding-top: 40px;
 	display: inline-block;
 }
 

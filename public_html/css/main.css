@@ -1,5 +1,5 @@
 .head{
-    background-color: transparent;
+    background-color: black;
     height: 200px;
     width: 100%;
 }
@@ -14,6 +14,72 @@
     height: 150px;
     position: relative;
     top: 3%;
-    left: 10%;
+    left: 15%;
+    
+}
+
+.hr {
+    color: grey;
+    background: grey;
+    width: 80%;
+    height: 0.1px;
+    
+}
+
+.partners{
+    background-color: #666666;
+    height: 100px;
+    width: 100%;
+}
+
+.partners li{
+    display: inline;
+    padding-right: 30px;
+}
+
+.topMenu{
+    float: right;
+    padding-right: 15%;
+    padding-top: 2%;
+}
+
+.topMenu li{
+    display: inline;
+    padding-right: 30px;
+}
+
+img.m{
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+img.m:hover{
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+    
+}
+
+#header-main{
+    /*text-decoration: underline;*/
+    margin-left: 15%;
+    padding-top: 10px;
+    font-size: 54px;
+    font-weight: bold;
+    color: #666666;
+    }   
+
+    
+
+
+#text-main{
+    /*padding-top: 10px;*/
+    padding-bottom: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+    color: #666666;
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-align: justify;
+    text-transform: capitalize;
     
 }
