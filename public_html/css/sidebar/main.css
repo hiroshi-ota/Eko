@@ -7,7 +7,8 @@ body {
 }
 
 #sb-site, .sb-site-container {
-	padding: 14px;
+	padding: 0; /* odległość strony od brzegów */
+        box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.5);
 }
 
 .sb-slidebar {
@@ -24,12 +25,13 @@ html.sb-active #sb-site, .sb-toggle-left, .sb-toggle-right, .sb-open-left, .sb-o
 	padding-top: 50px;
 }
 
-#fixed-top {
+#fixed-top { 
 	position: fixed;
 	top: 0;
-	width: 100%;
+        left: 20px; /* odległość od pbrzegu przycisku */
+	width: 5px; /* szerokość przycisku*/
 	height: 50px;
-	background-color: red;
+	background-color: transparent;
 	z-index: 4;
 }
 
