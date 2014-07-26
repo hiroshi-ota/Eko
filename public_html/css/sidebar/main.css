@@ -8,7 +8,7 @@ body {
 
 #sb-site, .sb-site-container {
 	padding: 0; /* odległość strony od brzegów */
-        box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.3);
 }
 
 .sb-slidebar {
