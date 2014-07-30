@@ -68,7 +68,7 @@ img.m:hover{
     color: #666666;
     }   
     
-    #header-main-kontakt{
+    #header-main-default{
     /*text-decoration: underline;*/
     margin-left: 15%;
     padding-top: 3%;
@@ -177,6 +177,14 @@ img.m:hover{
     }
     
     .kontakt_form p{
+        
+    }
+    
+    .search{
+        float: bottom;
+        opacity: 0.5;
+        margin-bottom: 50px;
+        margin-left: 20%;
         
     }
 
