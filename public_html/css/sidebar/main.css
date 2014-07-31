@@ -2,13 +2,9 @@ html {
 	font-family: sans-serif;
 }
 
-body {
-	background-color: #222222;
-}
-
 #sb-site, .sb-site-container {
 	padding: 0; /* odległość strony od brzegów */
-        box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.3);
+        //box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.3);
 }
 
 .sb-slidebar {
