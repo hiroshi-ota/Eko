@@ -198,6 +198,49 @@ img.m:hover{
         height: 100%;
         background-color: red;
     }
+    
+    
+    
+            #sb-site, .sb-site-container {
+                padding: 0; /* odległość strony od brzegów */
+                //box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.3);
+            }
+
+            .sb-slidebar {
+                    padding: 14px;
+                    color: #fff;
+            }
+
+            html.sb-active #sb-site, .sb-toggle-left, .sb-toggle-right, .sb-open-left, .sb-open-right, .sb-close {
+                    cursor: pointer;
+            }
+
+            /* Fixed position examples */
+            #sb-site.top-padding {
+                    padding-top: 50px;
+            }
+
+            #fixed-top { 
+                    position: fixed;
+                    top: 0;
+                    left: 20px; /* odległość od pbrzegu przycisku */
+                    width: 5px; /* szerokość przycisku*/
+                    height: 50px;
+                    background-color: transparent;
+                    z-index: 4;
+            }
+
+            #fixed-top span.sb-toggle-left {
+                    float: left;
+                    color: white;
+                    padding: 10px;
+            }
+
+            #fixed-top span.sb-toggle-right {
+                    float: right;
+                    color: white;
+                    padding: 10px;
+            }
 
     
     /*.kontakt p{
