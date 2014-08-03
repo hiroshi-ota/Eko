@@ -14,6 +14,7 @@
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
         <link rel="stylesheet" type="text/css" href="css/menu_slice/style.css" />
         <link rel="stylesheet" type="text/css" href="css/menu_slice/custom.css" />
+        <link rel="stylesheet" type="text/css" href="css/testMenu.css" />
         <script type="text/javascript" src="js/menu_slice/modernizr.custom.79639.js"></script>
         <link rel="stylesheet" href="css/sidebar/slidebars.css">
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
@@ -22,11 +23,19 @@
 	</noscript>
     </head>
     <body>
+       
+    <!-- płynne przewijanie  //-->
+        <script>
+            function scroll_to(selector) {
+                $('html,body').animate({scrollTop: $(selector).offset().top}, 700);
+            return false;
+               } 
+               
+        </script>
         
         
             <div class="sb-slidebar sb-left">
-                <ul class="sb-menu">
-                    
+               
                     <p style="text-align: center">Szukaj:</p>
                     <div class="search">
                         
@@ -37,7 +46,8 @@
 
                         </form>
                     </div>
-
+                
+                    <ul class="sb-menu">
                     <li class="sb-close"><a href="strony/oze.html">Odnawialne źródła energii</a></li>
                     <li class="sb-close"><a href="strony/piany.html">Piana poliuretanowa</a></li>
                     <li class="sb-close"><a href="strony/prace_inz.html">Prace inżynieryjne</a></li>
@@ -81,7 +91,7 @@
             <ul>
                 <li><a href="index.html"><img class="m" src="images/home.png" alt="Strona dmowa"></a></li>
                 <li><a href="http://onet.pl"><img class="m" src="images/onas.jpg" alt="O nas"></a></li>
-                <li><a href="strony/kontakt.html"><img class="m" src="images/kontakt.jpg" alt="Kontakt"></a></li>
+                <li><a href="javascript:void();" onclick="scroll_to('#kontakt');"><img class="m" src="images/kontakt.jpg" alt="Kontakt"></a></li>
                 <li><a href="http://wp.pl"> <img class="m" src="images/sklep.jpg" alt="Sklep"></a></li>
                 <li><a href="szukaj.html"><img class="m" src="images/szukaj.jpg" alt="Szukaj"></a></li>
                 
@@ -102,159 +112,88 @@
         <h1 id="header-main">Witamy na naszej stronie!</h1>
 
         
-        
-        <p id="text-main">Ekoinstal to trzy odrębne dziedziny funkcjonowania wspierane pracą dedykowanych specjalistów. Dział pompy ciepła specjalizuje się w systemach grzewczych z zastosowaniem technologii odnawialnych źródeł energii. Proponujemy najniższe koszty eksploatacyjne, maksymalny komfort, dbałość o ochronę środowiska i współodpowiedzialność za przyszłość Służymy pomocą również w zakresie sprzedaży i doboru pogrzewaczy wody użytkowej, suszarek do rąk. Współpracujemy z klientem indywidualnym i biznesowym.</p>
-        
+        <div class="text-main" id="text-main-column">
+            <p>Ekoinstal to trzy odrębne dziedziny funkcjonowania wspierane pracą dedykowanych specjalistów. Dział pompy ciepła specjalizuje się w systemach grzewczych z zastosowaniem technologii odnawialnych źródeł energii. Proponujemy najniższe koszty eksploatacyjne, maksymalny komfort, dbałość o ochronę środowiska i współodpowiedzialność za przyszłość Służymy pomocą również w zakresie sprzedaży i doboru pogrzewaczy wody użytkowej, suszarek do rąk. Współpracujemy z klientem indywidualnym i biznesowym.</p>
+            
+        </div>        
         
         
     </div>
       <!-- center //-->  <!-- center //--> <!-- center //--> <!-- center //--> <!-- center //--> <!-- center //--> <!-- center //--> <!-- center //--> <!-- center //-->
       
       <div id="sb-site">
-      <div class="container slider">
-
-           
-
-            <div id="slider" class="sl-slider-wrapper">
-
-				<div class="sl-slider">
-				
-					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-1"></div>
-							<h2>Ekoinstal</h2>
-							<blockquote><p>Ekoinstal to trzy odrębne dziedziny funkcjonowania wspierane pracą dedykowanych specjalistów. Dział pompy ciepła specjalizuje się w systemach grzewczych z zastosowaniem technologii odnawialnych źródeł energii. Proponujemy najniższe koszty eksploatacyjne, maksymalny komfort, dbałość o ochronę środowiska i współodpowiedzialność za przyszłość Służymy pomocą również w zakresie sprzedaży i doboru pogrzewaczy wody użytkowej, suszarek do rąk. Współpracujemy z klientem indywidualnym i biznesowym.</p><cite>Grupa Ekoinstal</cite></blockquote>
-						</div>
-					</div>
-					
-					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-2"></div>
-							<h2>Regula aurea.</h2>
-							<blockquote><p>Until he extends the circle of his compassion to all living things, man will not himself find peace.</p><cite>Albert Schweitzer</cite></blockquote>
-						</div>
-					</div>
-					
-					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-3"></div>
-							<h2>Dum spiro, spero.</h2>
-							<blockquote><p>Thousands of people who say they 'love' animals sit down once or twice a day to enjoy the flesh of creatures who have been utterly deprived of everything that could make their lives worth living and who endured the awful suffering and the terror of the abattoirs.</p><cite>Dame Jane Morris Goodall</cite></blockquote>
-						</div>
-					</div>
-					
-					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-4"></div>
-							<h2>Donna nobis pacem.</h2>
-							<blockquote><p>The human body has no more need for cows' milk than it does for dogs' milk, horses' milk, or giraffes' milk.</p><cite>Michael Klaper M.D.</cite></blockquote>
-						</div>
-					</div>
-					
-					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
-						<div class="sl-slide-inner">
-							<div class="bg-img bg-img-5"></div>
-							<h2>For Artur!</h2>
-							<blockquote><p>JS i jQ coraz bardziej przypadają sobie do gustu :).</p><cite>Kamil Kaźmierowski</cite></blockquote>
-						</div>
-					</div>
-				</div><!-- /sl-slider -->
-
-				<nav id="nav-dots" class="nav-dots">
-					<span class="nav-dot-current"></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				</nav>
-
-			</div><!-- /slider-wrapper -->
-
-        </div>
+          
+          
+      
+      </div> <!-- // end sb-site center -->
+      
+      <!-- bottom //--><!-- bottom //--><!-- bottom //--><!-- bottom //--><!-- bottom //--><!-- bottom //--><!-- bottom //--><!-- bottom //--><!-- bottom //-->
+      
+      <div id="sb-site"> <a id="kontakt"></a>
+          
+          <h1 id="header-main-default">Skontaktuj się z nami:</h1>
+       
         
-        <div class="partners">
-            <p id="partners"> coś </p>
+            <div class="kontakt" id="text-main-kontakty-first">
+            
+                <p>
+                <a href="strony/oze.html"><h1>Odnawialne źródła:</h1></a>
+                <br>Michał Kowalski 
+                <br> 695 95 93 92 
+                <br> <a href="mailto:kamil.kazmierowski@gmail.com">kamil.kazmierowski@gmail.com</a>
+                </p>
+                
+                <p>
+                <a href="strony/piany.html"><h1>Piany poliuretanowe:</h1></a>
+                <br>Daniel Kowalski
+                <br> 888 222 333
+                <br> <a href="mailto:kamil.kazmierowski@gmail.com">daniel.kowalski@gmail.com</a>
+                </p>
+                
+                <p>
+                <a href="strony/prace_inz.html"><h1>Prace inżynieryjne:</h1></a>
+                <br> Robert Kowalski
+                <br> 666 558 456
+                <br> <a href="mailto:kamil.kazmierowski@gmail.com">robert.kowalski@gmail.com</a>
+                </p>
+                
+                <p>
+                <a href="strony/termowizja.html"><h1>Termowizja:</h1></a>
+                <br>Anna Kowalska
+                <br> 800 458 693
+                <br> <a href="mailto:kamil.kazmierowski@gmail.com">anna.kowalska@gmail.com</a>
+                </p>
+                
             
         </div>
         
-        
-        
-        
-            <!-- /container slider -->
+        <div class="kontakt" id="text-main-kontakty-middle">
+            
+            <h1>Grupa Ekoinstal sp. z o.o.</h1>
+            <p>ul. Warszawska 1a
+            <br> 87-162 Lubicz
+            <br> NIP: 444-555-66-77
+            </p>
+            
                 
-		<script src="js/menu_nexus/classie.js"></script>
-		<script src="js/menu_nexus/gnmenu.js"></script>
-                <script type="text/javascript" src="js/menu_slice/jquery.ba-cond.min.js"></script>
-		<script type="text/javascript" src="js/menu_slice/jquery.slitslider.js"></script>
-		<script>
-                        
-                        $(function() {
-			
-				var Page = (function() {
-
-					var $nav = $( '#nav-dots > span' ),
-						slitslider = $( '#slider' ).slitslider( {
-							onBeforeChange : function( slide, pos ) {
-
-								$nav.removeClass( 'nav-dot-current' );
-								$nav.eq( pos ).addClass( 'nav-dot-current' );
-
-							}
-						} ),
-
-						init = function() {
-
-							initEvents();
-							
-						},
-						initEvents = function() {
-
-							$nav.each( function( i ) {
-							
-								$( this ).on( 'click', function( event ) {
-									
-									var $dot = $( this );
-									
-									if( !slitslider.isActive() ) {
-
-										$nav.removeClass( 'nav-dot-current' );
-										$dot.addClass( 'nav-dot-current' );
-									
-									}
-									
-									slitslider.jump( i + 1 );
-									return false;
-								
-								} );
-								
-							} );
-
-						};
-
-						return { init : init };
-
-				})();
-
-				Page.init();
-
-				/**
-				 * Notes: 
-				 * 
-				 * example how to add items:
-				 */
-
-				/*
-				
-				var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
-				
-				// call the plugin's add method
-				ss.add($items);
-
-				*/
-                           });
-			
-		</script>
-    </div> <!-- // sb site center -->
+            
+        </div>
+        
+        <div class="kontakt_form">
+            <p> Coś tam coś tam </p>
+            
+        </div>
+          
+    <!-- MAPA -->
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2399.590721645145!2d18.766460000000002!3d53.02771999999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ccbf52515104f%3A0x3d4ec3773d1b1db5!2sEkoinstal.+PW.+Gachewicz+M.!5e0!3m2!1spl!2spl!4v1406492750777" frameborder="0" scrolling=no seamless="seamless" style="border:0; width: 100%; height: 30%; margin-top: 2%; "></iframe>
+        </div>
+          
+      </div> <!-- sb-site bottom end //-->
+    
+    <div class="version">
+        v 0.3.5
+    </div>
 
     </body>
 </html>

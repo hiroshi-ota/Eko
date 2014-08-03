@@ -1,14 +1,3 @@
-// -----------------------------------
-// Slidebars
-// Version 0.10.2
-// http://plugins.adchsm.me/slidebars/
-//
-// Written by Adam Smith
-// http://www.adchsm.me/
-//
-// Released under MIT License
-// http://plugins.adchsm.me/slidebars/license.txt
-//
 // ---------------------
 // Index of Slidebars.js
 //
