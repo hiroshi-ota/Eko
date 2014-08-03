@@ -222,13 +222,7 @@ img.m:hover{
         text-align: center;
         
     }
-    
-    .proba{
-        height: 100%;
-        background-color: red;
-    }
-    
-    
+   
     
             #sb-site, .sb-site-container {
                 padding: 0; /* odległość strony od brzegów */
@@ -286,6 +280,13 @@ img.m:hover{
     background-color: #ffffff; /* Default background colour, overwrite this with your own css. I suggest moving your html or body background styling here. Making this transparent will allow the Slidebars beneath to be visible. */
 }
 
+        #sb-site-middle, .sb-site-container-middle {
+            width: 100%;
+            position: relative;
+            z-index: 1; /* Site sits above Slidebars */
+            background-color: #ffffff; /* Default background colour, overwrite this with your own css. I suggest moving your html or body background styling here. Making this transparent will allow the Slidebars beneath to be visible. */
+        }
+        
         #sb-site-bottom, .sb-site-container-bottom {
             width: 100%;
             position: relative;
@@ -293,12 +294,6 @@ img.m:hover{
             background-color: #ffffff; /* Default background colour, overwrite this with your own css. I suggest moving your html or body background styling here. Making this transparent will allow the Slidebars beneath to be visible. */
         }
 
-        #sb-site-middle, .sb-site-container-middle {
-            width: 100%;
-            position: relative;
-            z-index: 1; /* Site sits above Slidebars */
-            background-color: #ffffff; /* Default background colour, overwrite this with your own css. I suggest moving your html or body background styling here. Making this transparent will allow the Slidebars beneath to be visible. */
-        }
 
 #map{
     position: relative;
@@ -306,6 +301,19 @@ img.m:hover{
     margin-right: 15%;
     height: 100%;
 
+}
+.to-top{
+    text-align:center;
+}
+#scroll-to-top{
+    display:none;
+    position:fixed;
+    bottom:15px;
+    right:20px;
+    opacity:0.8;
+}
+#scroll-to-top:hover{
+    opacity:1;
 }
     
 

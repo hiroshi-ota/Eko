@@ -56,7 +56,7 @@
 		// 004 - Setup
 
 		// Site container
-		var $site = $('#sb-site, .sb-site-container'); // Cache the selector.
+		var $site = $('#sb-site, #sb-site-middle, #sb-site-bottom, .sb-site-container'); // Cache the selector.
 
 		// Left Slidebar	
 		if ($('.sb-left').length) { // Check if the left Slidebar exists.
