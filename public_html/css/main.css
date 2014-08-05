@@ -83,10 +83,55 @@ img.m:hover{
     color: #666666;
     }   
 
-    
+    .text-main{
+        font-size: 15px;
+        letter-spacing: 1px;
+        color: #666666;
+        text-align: justify;
+    }
 
 
-.text-main{
+        .text-main-description{
+            /*padding-top: 10px;*/
+            padding-bottom: 10px;
+            margin-left: 15%;
+            margin-right: 15%;
+            color: #666666;
+            font-size: 15px;
+            letter-spacing: 1px;
+            text-align: justify;
+
+            /*text-transform: capitalize;*/
+        }
+
+        .text-main-description-column{
+
+            -webkit-column-count: 2;
+            -webkit-column-gap: 5em;
+            -webkit-column-rule: 1px solid #666666;
+
+            -moz-column-count: 2;
+            -moz-column-gap: 5em;
+            -moz-column-rule: 1px solid #666666;
+
+            -o-column-count: 2;
+            -o-column-gap: 5em;
+            -o-column-rule: 1px solid #666666;
+
+            -ms-column-count: 2;
+            -ms-column-gap: 5em;
+            -ms-column-rule: 1px solid #666666;
+
+            column-count: 2;
+            column-gap: 5em;
+            column-rule: 1px solid #666666;
+        }
+        
+        .text-main-description-column p{
+            margin:0;
+        }
+
+.text-description{
     /*padding-top: 10px;*/
     padding-bottom: 10px;
     margin-left: 15%;
@@ -95,37 +140,164 @@ img.m:hover{
     font-size: 15px;
     letter-spacing: 1px;
     text-align: justify;
-    height: 10%;
     
     /*text-transform: capitalize;*/
 }
 
-#text-main-column{
-    
-    -webkit-column-count: 2;
-    -webkit-column-gap: 5em;
-    -webkit-column-rule: 1px solid #666666;
-    
-    -moz-column-count: 2;
-    -moz-column-gap: 5em;
-    -moz-column-rule: 1px solid #666666;
-    
-    -o-column-count: 2;
-    -o-column-gap: 5em;
-    -o-column-rule: 1px solid #666666;
-    
-    -ms-column-count: 2;
-    -ms-column-gap: 5em;
-    -ms-column-rule: 1px solid #666666;
-    
-    column-count: 2;
-    column-gap: 5em;
-    column-rule: 1px solid #666666;
+        .text-description h1{
+            text-decoration: underline;
+            font-size: 30px;
+        }
+
+        .text-description-column p{
+            margin:0;
+        }
+        .text-description-column p1{
+            margin:0;
+        }
+
+        .text-description-column-grey{
+
+            -webkit-column-count: 2;
+            -webkit-column-gap: 2em;
+            -webkit-column-rule: 1px solid #666666;
+
+            -moz-column-count: 2;
+            -moz-column-gap: 2em;
+            -moz-column-rule: 1px solid #666666;
+
+            -o-column-count: 2;
+            -o-column-gap: 2em;
+            -o-column-rule: 1px solid #666666;
+
+            -ms-column-count: 2;
+            -ms-column-gap: 2em;
+            -ms-column-rule: 1px solid #666666;
+
+            column-count: 2;
+            column-gap: 2em;
+            column-rule: 1px solid #666666;
+        }
+
+               .text-description-column-white{
+
+                    -webkit-column-count: 2;
+                    -webkit-column-gap: 2em;
+                    -webkit-column-rule: 1px solid whitesmoke;
+
+                    -moz-column-count: 2;
+                    -moz-column-gap: 2em;
+                    -moz-column-rule: 1px solid whitesmoke;
+
+                    -o-column-count: 2;
+                    -o-column-gap: 2em;
+                    -o-column-rule: 1px solid whitesmoke;
+
+                    -ms-column-count: 2;
+                    -ms-column-gap: 2em;
+                    -ms-column-rule: 1px solid whitesmoke;
+
+                    column-count: 2;
+                    column-gap: 2em;
+                    column-rule: 1px solid whitesmoke;
+                }
+                
+    .graphic-description-right{
+        float:right;
+    }
+
+/*TEST*/
+
+.description{
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 4%;
 }
 
-#text-main-column p{
-    margin:0;
+ 
+.description h1{
+    margin-bottom: 2%;
+    margin-top: 2%;
+    font-size: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-decoration: underline;
+    
 }
+
+    .description-text-left{
+        margin-left: 15%;
+        float: left;
+        font-size: 15px;
+        letter-spacing: 1px;
+        text-align: justify;
+        max-width: 30%;
+        
+        -webkit-column-count: 2;
+        -webkit-column-gap: 2em;
+        -webkit-column-rule: 1px solid whitesmoke;
+
+        -moz-column-count: 2;
+        -moz-column-gap: 2em;
+        -moz-column-rule: 1px solid whitesmoke;
+
+        -o-column-count: 2;
+        -o-column-gap: 2em;
+        -o-column-rule: 1px solid whitesmoke;
+
+        -ms-column-count: 2;
+        -ms-column-gap: 2em;
+        -ms-column-rule: 1px solid whitesmoke;
+
+        column-count: 2;
+        column-gap: 2em;
+        column-rule: 1px solid whitesmoke;
+        
+    }
+    
+    .description-graphic-right{
+        float: right;
+        margin-right: 15%;
+        
+    }
+    
+    .description-text-right{
+        margin-right: 15%;
+        float: right;
+        font-size: 15px;
+        letter-spacing: 1px;
+        text-align: justify;
+        max-width: 30%;
+        
+        -webkit-column-count: 2;
+        -webkit-column-gap: 2em;
+        -webkit-column-rule: 1px solid whitesmoke;
+
+        -moz-column-count: 2;
+        -moz-column-gap: 2em;
+        -moz-column-rule: 1px solid whitesmoke;
+
+        -o-column-count: 2;
+        -o-column-gap: 2em;
+        -o-column-rule: 1px solid whitesmoke;
+
+        -ms-column-count: 2;
+        -ms-column-gap: 2em;
+        -ms-column-rule: 1px solid whitesmoke;
+
+        column-count: 2;
+        column-gap: 2em;
+        column-rule: 1px solid whitesmoke;
+        
+    }
+    
+    .description-graphic-left{
+        float: left;
+        margin-left: 15%;
+        
+    }
+
+/*//TEST*/
 
     #text-main-kontakty-first{
         /*padding-top: 10px;*/
@@ -226,7 +398,6 @@ img.m:hover{
     
             #sb-site, .sb-site-container {
                 padding: 0; /* odległość strony od brzegów */
-                //box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.3);
             }
 
             .sb-slidebar {
@@ -273,6 +444,7 @@ img.m:hover{
         margin-bottom: 0.5%;
     }
     
+/* kontenery strony */
 #sb-site, .sb-site-container {
     width: 100%;
     position: relative;
@@ -280,11 +452,11 @@ img.m:hover{
     background-color: #ffffff; /* Default background colour, overwrite this with your own css. I suggest moving your html or body background styling here. Making this transparent will allow the Slidebars beneath to be visible. */
 }
 
-        #sb-site-middle, .sb-site-container-middle {
+        #sb-site-middle, .sb-site-container-middle { 
             width: 100%;
             position: relative;
             z-index: 1; /* Site sits above Slidebars */
-            background-color: #ffffff; /* Default background colour, overwrite this with your own css. I suggest moving your html or body background styling here. Making this transparent will allow the Slidebars beneath to be visible. */
+            background-color: #666666; /* Default background colour, overwrite this with your own css. I suggest moving your html or body background styling here. Making this transparent will allow the Slidebars beneath to be visible. */
         }
         
         #sb-site-bottom, .sb-site-container-bottom {
@@ -314,6 +486,12 @@ img.m:hover{
 }
 #scroll-to-top:hover{
     opacity:1;
+}
+
+.description-left{
+    margin-left: 15%;
+    float: left;
+    
 }
     
 
