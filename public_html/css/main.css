@@ -526,11 +526,64 @@ body, html {
     
 }
     
+/* test   responsywności */
+@media all and (max-width: 1300px) {
+    #text-main-kontakty-left
+    {
+        font-size: 12px;
+    }
+    
+    p{
+        font-size: 12px;
+    }
+    
+    #header-main{
+        font-size: 40px;
+    }
+    
+    #header-main-default{
+        font-size: 40px;
+    }
+    
+}
+
+@media all and (max-width: 500px) {
+    #text-main-kontakty-left
+    {
+        font-size: 5px;
+    }
+    p{
+        font-size: 5px;
+    }
+    
+    .kontakt h1{
+        font-size: 8px;
+    }
+    
+    #header-main{
+        font-size: 30px;
+    }
+    
+    #header-main-default{
+        font-size: 30px;
+    }
+    
+}
 
 
-/* Kontakt*/    /* Kontakt*/    /* Kontakt*/    /* Kontakt*/    /* Kontakt*/    /* Kontakt*/    /* Kontakt*/    /* Kontakt*/
-
-
-
-
-
+/*mine_menu images*/
+.sti-icon-care{
+	background-image:url(../images/care.png);
+}
+.sti-icon-alternative{
+	background-image:url(../images/alternative.png);
+}
+.sti-icon-family{
+	background-image:url(../images/family.png);
+}
+.sti-icon-info{
+	background-image:url(../images/info.png);
+}
+.sti-icon-technology{
+	background-image:url(../images/technology.png);
+}
