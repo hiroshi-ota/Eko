@@ -39,6 +39,13 @@ body, html {
     
 }
 
+.underline{
+    color: whitesmoke;
+    width: 80%;
+    position: relative;
+    opacity: 0.5;
+}
+
 /* stopka */
 
 .footer{
@@ -191,69 +198,6 @@ body, html {
     /*text-transform: capitalize;*/
 }
 
-        .text-description h1{
-            text-decoration: underline;
-            font-size: 30px;
-        }
-
-        .text-description-column p{
-            margin:0;
-        }
-        .text-description-column p1{
-            margin:0;
-        }
-
-        .text-description-column-grey{
-
-            -webkit-column-count: 2;
-            -webkit-column-gap: 2em;
-            -webkit-column-rule: 1px solid #666666;
-
-            -moz-column-count: 2;
-            -moz-column-gap: 2em;
-            -moz-column-rule: 1px solid #666666;
-
-            -o-column-count: 2;
-            -o-column-gap: 2em;
-            -o-column-rule: 1px solid #666666;
-
-            -ms-column-count: 2;
-            -ms-column-gap: 2em;
-            -ms-column-rule: 1px solid #666666;
-
-            column-count: 2;
-            column-gap: 2em;
-            column-rule: 1px solid #666666;
-        }
-
-               .text-description-column-white{
-
-                    -webkit-column-count: 2;
-                    -webkit-column-gap: 2em;
-                    -webkit-column-rule: 1px solid whitesmoke;
-
-                    -moz-column-count: 2;
-                    -moz-column-gap: 2em;
-                    -moz-column-rule: 1px solid whitesmoke;
-
-                    -o-column-count: 2;
-                    -o-column-gap: 2em;
-                    -o-column-rule: 1px solid whitesmoke;
-
-                    -ms-column-count: 2;
-                    -ms-column-gap: 2em;
-                    -ms-column-rule: 1px solid whitesmoke;
-
-                    column-count: 2;
-                    column-gap: 2em;
-                    column-rule: 1px solid whitesmoke;
-                }
-                
-    .graphic-description-right{
-        float:right;
-    }
-
-/*TEST*/
 
 .description{
     width: 100%;
@@ -264,7 +208,7 @@ body, html {
  
 .description h1{
     margin-bottom: 2%;
-    margin-top: 2%;
+    margin-top: 4%;
     font-size: 25px;
     margin-left: 15%;
     margin-right: 15%;
@@ -344,9 +288,8 @@ body, html {
         
     }
 
-/*//TEST*/
 
-    #text-main-kontakty-first{
+    #text-main-kontakty-left{
         /*padding-top: 10px;*/
         padding-bottom: 0px;
         margin-left: 15%;
@@ -357,7 +300,14 @@ body, html {
         //text-align: justify;
         //text-transform: capitalize;
         border-right: 1px solid #666666;
+        
     }
+    
+@media screen and (max-width: 1025px) {
+    #text-main-kontakty-left{
+        font-size: 5px;
+    }
+}
 
     #text-main-kontakty-middle{
         /*padding-top: 10px;*/
@@ -372,7 +322,7 @@ body, html {
         border-right: 1px solid #666666;
     }
     
-    #text-main-kontakty-last{
+    #text-main-kontakty-right{
         /*padding-top: 10px;*/
         padding-bottom: 0px;
         margin-left: 3%;
@@ -440,6 +390,26 @@ body, html {
         margin-bottom: 50px;
         text-align: center;
         
+    }
+    
+    /*test*/
+    
+    .contact{
+        width: 70%;
+        //height: 300px;
+        margin-left: 15%;
+        margin-right:15%;
+        //position: relative;
+        border: solid #666666;
+        display: inline-block;
+    }
+    
+    contact-left{
+        border: solid chartreuse;
+        margin-top: 2%;
+        margin-left: 1%;
+        position: relative;
+        width: 25%;
     }
    
     
