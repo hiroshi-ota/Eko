@@ -11,12 +11,7 @@
         <link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
         <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
-        <link href='http://fonts.googleapis.com/css?family=Wire+One&v1' rel='stylesheet' type='text/css' />        
-        
-        <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
         <script type="text/javascript" src="js/jquery1.11.1.js"></script>
-        
         <link rel="stylesheet" type="text/css" href="css/menu_slice/style.css" />
         <link rel="stylesheet" type="text/css" href="css/menu_slice/custom.css" />
         <link rel="stylesheet" type="text/css" href="css/main_menu/stimenu.css" />
@@ -116,7 +111,8 @@
                 });
               }) (jQuery);
             </script> 
-            
+
+    <!-- main_menu //-->             
         <script type="text/javascript">
             $(function() {
                     $('#sti-menu').iconmenu();
@@ -131,21 +127,17 @@
     
     <div id="sb-site"> 
         
-        <a href="#" title="top" id="scroll-to-top"><img src="images/home.png" alt="strzałka do góry" /></a>
-        
-        <p class="sb-toggle-left" id="fixed-top"> Menu</p>
-        
         <a href="index.html"><img class="logo_head" src="images/logo.png" alt="Ekoinstal"></a>
         
         
         
         <div class="topMenu">
             <ul>
-                <li><a href="index.html"><img class="m" src="images/home.png" alt="Strona dmowa" style="width: 8%"></a></li>
-                <li><a href="javascript:void();" onclick="scroll_to('#onas');"><img class="m" src="images/onas.jpg" alt="O nas" style="width: 8%"></a></li>
-                <li><a href="javascript:void();" onclick="scroll_to('#kontakt');"><img class="m" src="images/kontakt.jpg" alt="Kontakt" style=" width: 8%"></a></li>
-                <li><a href="http://wp.pl"> <img class="m" src="images/sklep.jpg" alt="Sklep" style="position: relative; width: 8%"></a></li>
-                <li><a href="szukaj.html"><img class="m" src="images/szukaj.jpg" alt="Szukaj" style="width:8%"></a></li>
+                <li><a href="index.html"><img src="images/home.png" alt="Strona dmowa"></a></li>
+                <li><a href="javascript:void();" onclick="scroll_to('#onas');"><img src="images/onas.jpg" alt="O nas"></a></li>
+                <li><a href="javascript:void();" onclick="scroll_to('#kontakty');"><img src="images/kontakt.jpg" alt="Kontakt"></a></li>
+                <li><a href="http://wp.pl"> <img src="images/sklep.jpg" alt="Sklep"></a></li>
+                <li><a href="szukaj.html"><img src="images/szukaj.jpg" alt="Szukaj"></a></li>
                 
             </ul>
         </div>
@@ -196,7 +188,7 @@
         
         <br><br>
         
-        <h1 id="header-main">Witamy na naszej stronie!</h1>
+        <h1 class="header-main">Witamy na naszej stronie!</h1>
 
         
         <div class="text-main-description text-main-description-column">
@@ -209,7 +201,9 @@
       <!-- center //-->  <!-- center //--> <!-- center //--> <!-- center //--> <!-- center //--> <!-- center //--> <!-- center //--> <!-- center //--> <!-- center //-->
       
       <div id="sb-site-middle"> <a id="onas"></a>
-          
+      
+          <h1 class="header-main-default" style="color: whitesmoke">Kilka słów o naszej firmie:</h1>
+
           
       
       </div> <!-- // end sb-site center -->
@@ -218,48 +212,51 @@
       
       
       
-      <div id="sb-site-bottom"> <a id="kontakt"></a>
+      <div id="sb-site-bottom"> <a id="kontakty"></a>
           
-          <h1 id="header-main-default">Skontaktuj się z nami:</h1>
+          <p class="sb-toggle-left" id="fixed-top"> Menu</p>
+          
+          <a href="#" title="top" id="scroll-to-top"><img src="images/home.png" alt="strzałka do góry" /></a>
+          
+          <h1 class="header-main-default" style="padding-bottom: 2%">Skontaktuj się z nami:</h1>
        
-          <div class="contact"> </div>
         
             <div class="kontakt" id="text-main-kontakty-left">
             
-                <p>
+                
                 <a href="strony/oze.html"><h1>Odnawialne źródła:</h1></a>
                 <br>Michał Kowalski 
                 <br> 695 95 93 92 
                 <br> <a href="mailto:kamil.kazmierowski@gmail.com">kamil.kazmierowski@gmail.com</a>
-                </p>
                 
-                <p>
+                
+                
                 <a href="strony/piany.html"><h1>Piany poliuretanowe:</h1></a>
                 <br>Daniel Kowalski
                 <br> 888 222 333
                 <br> <a href="mailto:kamil.kazmierowski@gmail.com">daniel.kowalski@gmail.com</a>
-                </p>
                 
-                <p>
+                
+                
                 <a href="strony/prace_inz.html"><h1>Prace inżynieryjne:</h1></a>
                 <br> Robert Kowalski
                 <br> 666 558 456
                 <br> <a href="mailto:kamil.kazmierowski@gmail.com">robert.kowalski@gmail.com</a>
-                </p>
                 
-                <p>
+                
+                
                 <a href="strony/termowizja.html"><h1>Termowizja:</h1></a>
                 <br>Anna Kowalska
                 <br> 800 458 693
                 <br> <a href="mailto:kamil.kazmierowski@gmail.com">anna.kowalska@gmail.com</a>
-                </p>
+                
                 
             
         </div>
         
         <div class="kontakt" id="text-main-kontakty-middle">
             
-            <h1>Grupa Ekoinstal sp. z o.o.</h1>
+            <h1>Grupa Ekoinstal <br> sp. z o.o.</h1>
             <p>ul. Warszawska 1a
             <br> 87-162 Lubicz
             <br> NIP: 444-555-66-77

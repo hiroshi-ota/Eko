@@ -26,7 +26,7 @@
  * 001 - Box Model, Html & Body
  */
 
-html, body, #sb-site, .sb-site-container, .sb-slidebar {
+html, body, #sb-site, #sb-site-middle, #sb-site-bottom, .sb-site-container, .sb-slidebar {
 	/* Set box model to prevent any user added margins or paddings from altering the widths or heights. */
 	margin: 0;
 	padding: 0;
@@ -34,15 +34,15 @@ html, body, #sb-site, .sb-site-container, .sb-slidebar {
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
 }
-
+/*
 html, body {
 	width: 100%;
-	overflow-x: hidden; /* Stops horizontal scrolling. */
+	overflow-x: hidden; /* Stops horizontal scrolling. 
 }
 
 html {
-	height: 100%; /* Site is as tall as device. */
-}
+	height: 100%; /* Site is as tall as device. 
+}*/
 
 body {
 	min-height: 100%;
@@ -294,7 +294,7 @@ span.sb-caret {
  * 004 - Animation
  */
 
-.sb-slide, #sb-site, .sb-site-container, .sb-slidebar {
+.sb-slide, #sb-site, #sb-site-middle, #sb-site-middle, .sb-site-container, .sb-slidebar {
 	-webkit-transition: -webkit-transform 400ms ease;
 	   -moz-transition: -moz-transform 400ms ease;
 	     -o-transition: -o-transform 400ms ease;
