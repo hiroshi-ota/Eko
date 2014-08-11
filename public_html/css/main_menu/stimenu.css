@@ -1,8 +1,11 @@
 /*Sliding Text and Icon Menu Style*/
 .sti-menu{
-	width:1010px;
+	width:70%;
 	position:relative;
-	margin:60px auto 0 auto;
+	//margin: 5px auto 0 auto;
+        padding-top: 0%;
+        margin-left: 15%;
+        list-style-type: none;
 }
 .sti-menu li{
 	float:left;
@@ -55,4 +58,31 @@
 	background-color:transparent;
 	left:50px;
 	top:30px;
+}
+
+/* Responsywność */
+
+@media all and (max-width: 1300px){
+    .sti-menu li{
+        width: 170px;
+        height: 300px;
+    }
+    
+    .sti-menu li a h2{
+        font-size: 20px;
+        width: 160px;
+        top: 170px;
+        padding: 3px;
+    }
+    
+    .sti-menu li a h3{
+        font-size: 12px;
+        width: 160px;
+    }
+    
+    .sti-icon{
+        
+        top: 20px;
+        left: 40px;
+    }
 }

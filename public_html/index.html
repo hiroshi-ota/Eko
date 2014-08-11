@@ -19,8 +19,6 @@
         
         <link rel="stylesheet" type="text/css" href="css/menu_slice/style.css" />
         <link rel="stylesheet" type="text/css" href="css/menu_slice/custom.css" />
-        <link rel="stylesheet" type="text/css" href="css/testMenu.css" />
-        <link rel="stylesheet" type="text/css" href="css/main_menu/style.css" />
         <link rel="stylesheet" type="text/css" href="css/main_menu/stimenu.css" />
         <link rel="stylesheet" href="css/sidebar/slidebars.css">
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
@@ -42,45 +40,7 @@
     </head>
     <body>
         
-                <div class="container">
-			<ul id="sti-menu" class="sti-menu">
-				<li data-hovercolor="#37c5e9">
-					<a href="#">
-						<h2 data-type="mText" class="sti-item">Advanced Patient Care</h2>
-						<h3 data-type="sText" class="sti-item">Personalized to your needs</h3>
-						<span data-type="icon" class="sti-icon sti-icon-care sti-item"></span>
-					</a>
-				</li>
-				<li data-hovercolor="#ff395e">
-					<a href="#">
-						<h2 data-type="mText" class="sti-item">Alternative Medicine</h2>
-						<h3 data-type="sText" class="sti-item">Holistic approaches</h3>
-						<span data-type="icon" class="sti-icon sti-icon-alternative sti-item"></span>
-					</a>
-				</li>
-				<li data-hovercolor="#57e676">
-					<a href="#">
-						<h2 data-type="mText" class="sti-item">Modern Info Center</h2>
-						<h3 data-type="sText" class="sti-item">Educating you</h3>
-						<span data-type="icon" class="sti-icon sti-icon-info sti-item"></span>
-					</a>
-				</li>
-				<li data-hovercolor="#d869b2">
-					<a href="#">
-						<h2 data-type="mText" class="sti-item">Future Family Planning</h2>
-						<h3 data-type="sText" class="sti-item">For a healthier future</h3>
-						<span data-type="icon" class="sti-icon sti-icon-family sti-item"></span>
-					</a>
-				</li>
-				<li data-hovercolor="#ffdd3f">
-					<a href="#">
-						<h2 data-type="mText" class="sti-item">Advanced Technology</h2>
-						<h3 data-type="sText" class="sti-item">From the latest research</h3>
-						<span data-type="icon" class="sti-icon sti-icon-technology sti-item"></span>
-					</a>
-				</li>
-			</ul>
-        </div>
+                
         
         
         
@@ -110,7 +70,7 @@
     <!-- płynne przewijanie  //-->
         <script>
             function scroll_to(selector) {
-                st_js('html,body').animate({scrollTop: $(selector).offset().top}, 700);
+                $('html,body').animate({scrollTop: $(selector).offset().top}, 700);
             return false;
                };
                
@@ -175,7 +135,7 @@
         
         <p class="sb-toggle-left" id="fixed-top"> Menu</p>
         
-        <img class="logo_head" src="images/logo.png" alt="Ekoinstal">
+        <a href="index.html"><img class="logo_head" src="images/logo.png" alt="Ekoinstal"></a>
         
         
         
@@ -189,14 +149,48 @@
                 
             </ul>
         </div>
-            
-          
-        
-
-        
         
         <div class="main">
-            <span>coś tam coś tamcoś tam coś tamcoś tam coś tamcoś tam coś tamcoś tam coś tamcoś tam coś tamcoś tam coś tam</span>
+                <div class="container">
+			<ul id="sti-menu" class="sti-menu">
+				<li data-hovercolor="#37c5e9">
+					<a href="strony/oze.html">
+						<h2 data-type="mText" class="sti-item">Źródła odnawialne</h2>
+						<h3 data-type="sText" class="sti-item">OZE dla każdego</h3>
+						<span data-type="icon" class="sti-icon sti-icon-care sti-item"></span>
+					</a>
+				</li>
+				<li data-hovercolor="#ff395e">
+					<a href="strony/piany.html">
+						<h2 data-type="mText" class="sti-item">Piana poliuretanowa</h2>
+						<h3 data-type="sText" class="sti-item">Najskuteczniejsza izolacja</h3>
+						<span data-type="icon" class="sti-icon sti-icon-alternative sti-item"></span>
+					</a>
+				</li>
+				<li data-hovercolor="#57e676">
+					<a href="#">
+						<h2 data-type="mText" class="sti-item">Dotacje</h2>
+						<h3 data-type="sText" class="sti-item">UE i nie tylko</h3>
+						<span data-type="icon" class="sti-icon sti-icon-info sti-item"></span>
+					</a>
+				</li>
+				<li data-hovercolor="#d869b2">
+					<a href="#">
+						<h2 data-type="mText" class="sti-item">Prace inżynieryjne</h2>
+						<h3 data-type="sText" class="sti-item">For a healthier future</h3>
+						<span data-type="icon" class="sti-icon sti-icon-family sti-item"></span>
+					</a>
+				</li>
+				<li data-hovercolor="#ffdd3f">
+					<a href="#">
+						<h2 data-type="mText" class="sti-item">Termowizja</h2>
+						<h3 data-type="sText" class="sti-item">From the latest research</h3>
+						<span data-type="icon" class="sti-icon sti-icon-technology sti-item"></span>
+					</a>
+				</li>
+			</ul>
+                </div>
+                    
             
         </div>
         
