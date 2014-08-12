@@ -5,6 +5,7 @@
 	//margin: 5px auto 0 auto;
         padding-top: 0%;
         margin-left: 15%;
+        margin-right: 15%;
         list-style-type: none;
 }
 .sti-menu li{
@@ -12,6 +13,7 @@
 	width:200px;
 	height:300px;
 	margin:1px;
+        text-align: center;
 }
 .sti-menu li a{
 	display:block;
