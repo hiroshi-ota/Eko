@@ -1,15 +1,17 @@
 /*Sliding Text and Icon Menu Style*/
 .sti-menu{
-	width:70%;
+	/*width:70%;*/
 	position:relative;
 	//margin: 5px auto 0 auto;
         padding-top: 0%;
-        margin-left: 15%;
-        margin-right: 15%;
+        /*margin-left: 13%;
+        margin-right: 15%;*/
         list-style-type: none;
+        text-align: center;
 }
 .sti-menu li{
-	float:left;
+        display: inline-block;
+	/*float:left; */
 	width:200px;
 	height:300px;
 	margin:1px;
