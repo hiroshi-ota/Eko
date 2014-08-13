@@ -37,11 +37,14 @@ html, body, #sb-site, #sb-site-middle, #sb-site-bottom, .sb-site-container, .sb-
 
 html, body {
 	width: 100%;
-	overflow-x: hidden; /* Stops horizontal scrolling. */
+	/*overflow-x: hidden;  Stops horizontal scrolling. */
+        overflow-y: visible;
+
 }
 
 html {
-	height: 100%;
+	max-height: 100%;
+        min-height: 100%;
 }
 
 /*body {
