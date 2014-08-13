@@ -398,6 +398,11 @@ body, html {
         text-align: center;
         
     }
+    
+    .movie{
+        position: relative;
+        margin: 15%;   
+    }
    
     
             #sb-site, .sb-site-container {
@@ -443,9 +448,10 @@ body, html {
     .version{
         font-size: 10px;
         font-style: italic;
-        float: right;
+        float: left;
         margin-right: 1%;
         margin-bottom: 0.5%;
+        color: whitesmoke;
     }
     
 /* kontenery strony */
