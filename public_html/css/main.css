@@ -53,13 +53,14 @@ body, html {
 /* stopka */
 
 .footer{
-    position: absolute;
+    position: relative;
     background-color: #666666;
     width: 100%;
     height: 0;
     padding: 1%;
     opacity: 0.9;
     z-index: 100;
+    bottom: 0;
 }
 
         .footer a{
@@ -84,43 +85,6 @@ body, html {
             margin-bottom: 1%;
         }
 
-    /*#partners{
-        margin-left: 15%;
-        max-width: 35%;
-        max-height: 5%;
-    }
-
-    #info{
-        margin-right: 15%;
-        font-size: 10px;
-        color: black;
-        float: right;
-        max-width: 15%;
-        padding-top: 0;
-        
-        -webkit-column-count: 2;
-        -webkit-column-gap: 2em;
-        -webkit-column-rule: 1px solid #666666;
-
-        -moz-column-count: 2;
-        -moz-column-gap: 2em;
-        -moz-column-rule: 1px solid #666666;
-
-        -o-column-count: 2;
-        -o-column-gap: 2em;
-        -o-column-rule: 1px solid #666666;
-
-        -ms-column-count: 2;
-        -ms-column-gap: 2em;
-        -ms-column-rule: 1px solid #666666;
-
-        column-count: 2;
-        column-gap: 2em;
-        column-rule: 1px solid #666666;
-        
-        
-    }*/
-
     /*Top Menu*/
     
 .topMenu{
@@ -128,6 +92,7 @@ body, html {
     padding-right: 15%;
     padding-top: 2%;
     width: auto;
+    z-index: 1;
 }
 
     .topMenu li{
@@ -146,6 +111,28 @@ body, html {
         opacity: 1.0;
         filter: alpha(opacity=100);
 
+    }
+    
+.content-menu{
+    margin-top: 7%;
+    height: auto;
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+    background: #666666;
+    padding: 0.5%;
+    border-radius: 20px;
+    opacity: 0.8;
+}
+
+    .content-menu a{
+        /*border-left: 1px solid #666666;*/
+        display: inline;
+        margin-right: 5%;
+        font-weight: bolder;
+        text-decoration: none;
+        color: whitesmoke;
+        letter-spacing: 1px; 
     }
 
 .header-main{
@@ -192,11 +179,13 @@ body, html {
             letter-spacing: 1px;
             text-align: justify;
             float: bottom;
+            
 
             /*text-transform: capitalize;*/
         }
 
         .text-main-description-column{
+            
 
             -webkit-column-count: 2;
             -webkit-column-gap: 5em;
@@ -238,12 +227,13 @@ body, html {
     font-size: 25px;
     margin-left: 15%;
     margin-right: 15%;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
     
 }
 
     .description-text-left{
         margin-left: 15%;
+        margin-right: 5%;
         float: left;
         font-size: 15px;
         letter-spacing: 1px;
@@ -280,6 +270,7 @@ body, html {
     
     .description-text-right{
         margin-right: 15%;
+        margin-left: 5%;
         float: right;
         font-size: 15px;
         letter-spacing: 1px;
@@ -311,24 +302,38 @@ body, html {
     .description-graphic-left{
         float: left;
         margin-left: 15%;
-        
     }
-        
-.img_main{
+    
+.to-katalog{
     position: relative;
-    width: 100%;
-/*    margin-bottom: 1%;*/
+    color: crimson;
+    font-weight: bolder;
+    text-decoration: none;
+    float: right;
+    margin-right: 15%;
+}
+        
+.img_top{
+    position: absolute;
+    min-width: 100%;
+    top: 0%;
+    background: white;
+    z-index: -1;
 }
 
-    .img_main img{
+    .img_top img{
         position: relative;
-        width: 70%;
-        margin-left: 15%;
-        -webkit-box-shadow: 5px 8px 2px #666666;
+        width: 100%;
+/*        border-top: 40px solid #666666;
+        border-bottom: 50px solid #666666;*/
+        /*width: 100%;*/
+        opacity: 0.2;
+        /*-webkit-box-shadow: 5px 8px 2px #666666;*/
         /*margin-right: 15%;*/ 
     }
+    
 
-    .img_main p{
+    .img_top p{
         position: relative;
         width: 70%;
         bottom:0px;
@@ -511,7 +516,7 @@ body, html {
             margin-bottom: 0;
             padding-bottom: 0;
             min-height: 100%;
-            max-height: 100%;
+            /*max-height: 100%;*/
             position: relative;
             z-index: 1; /* Site sits above Slidebars */
             background-color: #666666; /* Default background colour, overwrite this with your own css. I suggest moving your html or body background styling here. Making this transparent will allow the Slidebars beneath to be visible. */
@@ -570,7 +575,17 @@ body, html {
     border: 1em solid #fff;
     background: #111;
     max-width: 70%;
-    margin-left: 15%;
+    /*margin-left: 15%;*/
+}
+
+.title-left{
+    margin-left:15%;
+    float: left;
+}
+
+.title-right{
+    margin-right: 15%;
+    float: right;
 }
  
 .title img {

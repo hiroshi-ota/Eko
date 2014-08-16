@@ -37,7 +37,7 @@ html, body, #sb-site, #sb-site-middle, #sb-site-bottom, .sb-site-container, .sb-
 
 html, body {
 	width: 100%;
-	/*overflow-x: hidden;  Stops horizontal scrolling. */
+	overflow-x: hidden;  /*Stops horizontal scrolling.*/
         overflow-y: visible;
 
 }
@@ -47,11 +47,12 @@ html {
         min-height: 100%;
 }
 
-/*body {
+body {
 	min-height: 100%;
 	height: auto;
-	position: relative;  Required for static Slidebars to function properly. 
-}*/
+	position: relative;  /*Required for static Slidebars to function properly. */
+        overflow-y: hidden;
+}
 
 /* Site scroll locking - prevent site from scrolling when a Slidebar is open, except when static Slidebars are only available. */
 html.sb-scroll-lock.sb-active:not(.sb-static) {
