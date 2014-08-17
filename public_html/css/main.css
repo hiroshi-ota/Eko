@@ -1,7 +1,9 @@
 body, html {
-	margin:0; 
+	margin:0;
 	width: 100%;
 	height:100%;
+        font-family: 'calibri';
+        background-color: #666666; /* Default background colour, overwrite this with your own css. I suggest moving your html or body background styling here. Making this transparent will allow the Slidebars beneath to be visible. */
 }
 
 .head{
@@ -11,12 +13,15 @@ body, html {
 }
 
 .main{
-    background-color:transparent;
+    background-color:white; /* transparent dla samego cienia */
     box-shadow: 0em 0.1em 1em 0.2em grey;
-    height: 0px;
-    padding-top: 20%;
-    position: relative;
-    //height: 50%;
+    //height: 0px;
+    //padding-top: 20%;
+    padding-bottom: 0%;
+    position: absolute;
+    height:auto;
+    width: 100%;
+    text-align: center;
 }
 
     .main span{
@@ -25,7 +30,6 @@ body, html {
     }
 
 .logo_head{
-
     width: 20%;
     margin-left: 15%;
     
@@ -39,52 +43,47 @@ body, html {
     
 }
 
+.underline{
+    color: whitesmoke;
+    width: 80%;
+    position: relative;
+    opacity: 0.5;
+}
+
 /* stopka */
 
 .footer{
+    position: relative;
     background-color: #666666;
     width: 100%;
-    max-height: 5%;
-    display: inline-block;
-
+    height: 0;
+    padding: 1%;
+    opacity: 0.9;
+    z-index: 100;
+    bottom: 0;
 }
 
-    #partners{
-        margin-left: 15%;
-        max-width: 35%;
-        max-height: 5%;
-    }
+        .footer a{
+            opacity: 1.0;
+            text-decoration: none;
+            color: whitesmoke;
+            letter-spacing: 1px;
+        }
 
-    #info{
-        margin-right: 15%;
-        font-size: 10px;
-        color: black;
-        float: right;
-        max-width: 15%;
-        padding-top: 0;
+        .footer a:hover{
+            opacity: 0.7;
+        }
         
-        -webkit-column-count: 2;
-        -webkit-column-gap: 2em;
-        -webkit-column-rule: 1px solid #666666;
-
-        -moz-column-count: 2;
-        -moz-column-gap: 2em;
-        -moz-column-rule: 1px solid #666666;
-
-        -o-column-count: 2;
-        -o-column-gap: 2em;
-        -o-column-rule: 1px solid #666666;
-
-        -ms-column-count: 2;
-        -ms-column-gap: 2em;
-        -ms-column-rule: 1px solid #666666;
-
-        column-count: 2;
-        column-gap: 2em;
-        column-rule: 1px solid #666666;
+        .footer p{
+            display: inline;
+        }
         
-        
-    }
+        .mf{
+            float: right;
+            font-size: 12px;
+            margin-right: 2%;
+            margin-bottom: 1%;
+        }
 
     /*Top Menu*/
     
@@ -99,37 +98,102 @@ body, html {
 
     .topMenu li{
         display: inline;
-        padding-right: 30px;
+        padding-right: 20px;
     }
 
-    img.m{
+    
+    .topMenu img{
         opacity: 0.7;
         filter: alpha(opacity=70);
-       
+
     }
 
-    img.m:hover{
+    .topMenu img:hover{
         opacity: 1.0;
         filter: alpha(opacity=100);
 
     }
+    
+.content-menu{
+    margin-top: 7%;
+    height: auto;
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+    background: #666666;
+    padding: 0.5%;
+    border-radius: 20px;
+    opacity: 0.8;
+}
 
-#header-main{
+    .content-menu a{
+        /*border-left: 1px solid #666666;*/
+        display: inline;
+        margin-right: 5%;
+        font-weight: bolder;
+        text-decoration: none;
+        color: whitesmoke;
+        letter-spacing: 1px; 
+    }
+ 
+/*Boczki social i media*/    
+    
+.social{
+    width: 6%;
+    height: 20%;
+    position: fixed;
+    top: 70%;
+    float: left;
+    background: #666666;
+    margin-left: -4%;
+    cursor: pointer;
+    border: 1px solid whitesmoke;
+}
+
+    .social:hover{
+        margin-left: -0.5%;
+        transition-delay: 0s;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .mail{
+        width: 4%;
+        height: 5%;
+        position: fixed;
+        top: 91%;
+        float: left;
+        background: crimson;
+        margin-left: -2%;
+        cursor: pointer;
+        border: 1px solid whitesmoke;
+    }
+
+    .mail:hover{
+        margin-left: -0.5%;
+        transition-delay: 0s;
+        transition: all 0.5s ease-in-out;   
+    }
+
+
+
+.header-main{
     /*text-decoration: underline;*/
     margin-left: 15%;
-    padding-top: 10px;
+    padding-top: 25%;
     font-size: 54px;
     font-weight: bold;
     color: #666666;
+    font-family: 'Calibri';
     }   
     
-    #header-main-default{
+    .header-main-default{
     /*text-decoration: underline;*/
     margin-left: 15%;
-    padding-top: 3%;
+    padding-top: 0%;
     font-size: 54px;
     font-weight: bold;
     color: #666666;
+    font-family: 'Calibri';
     }   
 
     .text-main{
@@ -138,22 +202,31 @@ body, html {
         color: #666666;
         text-align: justify;
     }
+    
+    .katalog{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
 
 
         .text-main-description{
             /*padding-top: 10px;*/
-            padding-bottom: 10px;
             margin-left: 15%;
             margin-right: 15%;
             color: #666666;
             font-size: 15px;
             letter-spacing: 1px;
             text-align: justify;
+            float: bottom;
+            
 
             /*text-transform: capitalize;*/
         }
 
         .text-main-description-column{
+            
 
             -webkit-column-count: 2;
             -webkit-column-gap: 5em;
@@ -180,82 +253,7 @@ body, html {
             margin:0;
         }
 
-.text-description{
-    /*padding-top: 10px;*/
-    padding-bottom: 10px;
-    margin-left: 15%;
-    margin-right: 15%;
-    color: #666666;
-    font-size: 15px;
-    letter-spacing: 1px;
-    text-align: justify;
-    
-    /*text-transform: capitalize;*/
-}
 
-        .text-description h1{
-            text-decoration: underline;
-            font-size: 30px;
-        }
-
-        .text-description-column p{
-            margin:0;
-        }
-        .text-description-column p1{
-            margin:0;
-        }
-
-        .text-description-column-grey{
-
-            -webkit-column-count: 2;
-            -webkit-column-gap: 2em;
-            -webkit-column-rule: 1px solid #666666;
-
-            -moz-column-count: 2;
-            -moz-column-gap: 2em;
-            -moz-column-rule: 1px solid #666666;
-
-            -o-column-count: 2;
-            -o-column-gap: 2em;
-            -o-column-rule: 1px solid #666666;
-
-            -ms-column-count: 2;
-            -ms-column-gap: 2em;
-            -ms-column-rule: 1px solid #666666;
-
-            column-count: 2;
-            column-gap: 2em;
-            column-rule: 1px solid #666666;
-        }
-
-               .text-description-column-white{
-
-                    -webkit-column-count: 2;
-                    -webkit-column-gap: 2em;
-                    -webkit-column-rule: 1px solid whitesmoke;
-
-                    -moz-column-count: 2;
-                    -moz-column-gap: 2em;
-                    -moz-column-rule: 1px solid whitesmoke;
-
-                    -o-column-count: 2;
-                    -o-column-gap: 2em;
-                    -o-column-rule: 1px solid whitesmoke;
-
-                    -ms-column-count: 2;
-                    -ms-column-gap: 2em;
-                    -ms-column-rule: 1px solid whitesmoke;
-
-                    column-count: 2;
-                    column-gap: 2em;
-                    column-rule: 1px solid whitesmoke;
-                }
-                
-    .graphic-description-right{
-        float:right;
-    }
-
-/*TEST*/
 
 .description{
     width: 100%;
@@ -266,16 +264,17 @@ body, html {
  
 .description h1{
     margin-bottom: 2%;
-    margin-top: 2%;
+    margin-top: 4%;
     font-size: 25px;
     margin-left: 15%;
     margin-right: 15%;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
     
 }
 
     .description-text-left{
         margin-left: 15%;
+        margin-right: 5%;
         float: left;
         font-size: 15px;
         letter-spacing: 1px;
@@ -307,11 +306,12 @@ body, html {
     .description-graphic-right{
         float: right;
         margin-right: 15%;
-        
+        position: relative;
     }
     
     .description-text-right{
         margin-right: 15%;
+        margin-left: 5%;
         float: right;
         font-size: 15px;
         letter-spacing: 1px;
@@ -343,56 +343,56 @@ body, html {
     .description-graphic-left{
         float: left;
         margin-left: 15%;
+    }
+    
+.to-katalog{
+    position: relative;
+    color: crimson;
+    font-weight: bolder;
+    text-decoration: none;
+    float: right;
+    margin-right: 15%;
+}
         
+.img_top{
+    position: absolute;
+    min-width: 100%;
+    top: 0%;
+    background: white;
+    z-index: -1;
+}
+
+    .img_top img{
+        position: relative;
+        width: 100%;
+/*        border-top: 40px solid #666666;
+        border-bottom: 50px solid #666666;*/
+        /*width: 100%;*/
+        opacity: 0.2;
+        /*-webkit-box-shadow: 5px 8px 2px #666666;*/
+        /*margin-right: 15%;*/ 
     }
+    
 
-/*//TEST*/
-
-    #text-main-kontakty-first{
-        /*padding-top: 10px;*/
-        padding-bottom: 0px;
+    .img_top p{
+        position: relative;
+        width: 70%;
+        bottom:0px;
         margin-left: 15%;
-        margin-right: 0%;
-        color: #666666;
-        font-size: 15px;
-        letter-spacing: 1px;
-        //text-align: justify;
-        //text-transform: capitalize;
-        border-right: 1px solid #666666;
-    }
-
-    #text-main-kontakty-middle{
-        /*padding-top: 10px;*/
-        padding-bottom: 0px;
-        margin-left: 3%;
-        margin-right: 0%;
-        color: #666666;
-        font-size: 15px;
-        letter-spacing: 1px;
-        //text-align: justify;
-        //text-transform: capitalize;
-        border-right: 1px solid #666666;
-    }
-    
-    #text-main-kontakty-last{
-        /*padding-top: 10px;*/
-        padding-bottom: 0px;
-        margin-left: 3%;
         margin-right: 15%;
-        color: #666666;
-        font-size: 15px;
-        letter-spacing: 1px;
-        //float: right;
-        //text-align: justify;
-        //text-transform: capitalize;
+        height: 10%;
+        font-size: 12px;
+        color: whitesmoke;
+        background-color: #666666;
+        font-style: italic;
     }
     
-    .kontakt{
-        display: inline-block;
-        width: 15%;
-        float: left;
-        //padding-left: 0%;        
-    }
+.kontakt{
+    display: inline-block;
+    width: 15%;
+    float: left;
+    //padding-left: 0%;
+}
     
     .kontakt a {
        color: #666666; 
@@ -413,19 +413,54 @@ body, html {
         margin-bottom: 0px;
     }
     
-    .kontakty{
-        width: 70%;
-        height: 40%;
-        margin-left: 15%;
-        margin-right: 15%;
-        background-color: #666666;
-        
-        
-    }
+        #text-main-kontakty-left{
+            /*padding-top: 10px;*/
+            padding-bottom: 0px;
+            margin-left: 15%;
+            margin-right: 0%;
+            padding-right: 3%;
+            color: #666666;
+            font-size: 15px;
+            //letter-spacing: 1px;
+            //text-align: justify;
+            //text-transform: capitalize;
+            border-right: 1px solid #666666;
+
+        }
+
+
+        #text-main-kontakty-middle{
+            /*padding-top: 10px;*/
+            text-align: center;
+            padding-bottom: 0px;
+            margin-left: 3%;
+            margin-right: 0%;
+            padding-right: 3%;
+            color: #666666;
+            font-size: 15px;
+            //letter-spacing: 1px;
+            //text-align: justify;
+            //text-transform: capitalize;
+            border-right: 1px solid #666666;
+        }
+
+        #text-main-kontakty-right{
+            /*padding-top: 10px;*/
+            padding-bottom: 0px;
+            margin-left: 3%;
+            margin-right: 15%;
+            color: #666666;
+            font-size: 15px;
+            //letter-spacing: 1px;
+            //float: right;
+            //text-align: justify;
+            //text-transform: capitalize;
+        }
+    
     .kontakt_form{
         float: right;
         margin-right: 15%;
-        width: 33%;
+        width: 25%;
         height: 45%;
         background-color: transparent;
         color: #666666;
@@ -442,6 +477,11 @@ body, html {
         margin-bottom: 50px;
         text-align: center;
         
+    }
+    
+    .movie{
+        position: relative;
+        margin: 15%;   
     }
    
     
@@ -488,10 +528,12 @@ body, html {
     .version{
         font-size: 10px;
         font-style: italic;
-        float: right;
+        float: left;
         margin-right: 1%;
         margin-bottom: 0.5%;
+        color: whitesmoke;
     }
+
     
 /* kontenery strony */
 #sb-site, .sb-site-container {
@@ -499,9 +541,15 @@ body, html {
     padding-bottom: 0px;
     margin-bottom: 0px;
     width: 100%;
+    height: 0px;
+    min-height: 100%;
+    max-height: 100%;
+    margin-bottom: 0px;
+    padding-bottom: 0;
     position: relative;
     z-index: 1; /* Site sits above Slidebars */
-    background-color: #ffffff; /* Default background colour, overwrite this with your own css. I suggest moving your html or body background styling here. Making this transparent will allow the Slidebars beneath to be visible. */
+    background: #666666 url(../images/pattern.png) repeat top left;
+    //background-color: #ffffff; /* Default background colour, overwrite this with your own css. I suggest moving your html or body background styling here. Making this transparent will allow the Slidebars beneath to be visible. */
 }
 
         #sb-site-middle, .sb-site-container-middle { 
@@ -509,6 +557,13 @@ body, html {
             margin-top: 0px;
             height: auto;
             width: 100%;
+            height:auto;
+            margin-top: 0;
+            padding-top: 0;
+            margin-bottom: 0;
+            padding-bottom: 0;
+            min-height: 100%;
+            /*max-height: 100%;*/
             position: relative;
             z-index: 1; /* Site sits above Slidebars */
             background-color: #666666; /* Default background colour, overwrite this with your own css. I suggest moving your html or body background styling here. Making this transparent will allow the Slidebars beneath to be visible. */
@@ -517,9 +572,15 @@ body, html {
         #sb-site-bottom, .sb-site-container-bottom {
             height: auto;
             width: 100%;
+            height: auto;
+            min-height: 100%;
+            /*max-height: 100%;*/
+            margin-bottom: 0;
+            padding-bottom: 0;
             position: relative;
             z-index: 1; /* Site sits above Slidebars */
-            background-color: #ffffff; /* Default background colour, overwrite this with your own css. I suggest moving your html or body background styling here. Making this transparent will allow the Slidebars beneath to be visible. */
+            background: white url(../images/pattern.png) repeat top left;
+            /*background-color: #ffffff; */
         }
 
 
@@ -527,34 +588,202 @@ body, html {
     position: relative;
     margin-left: 15%;
     margin-right: 15%;
-    height: 100%;
-
+    height: 30%;
+    margin-bottom: 1%;
 }
+
+/* płynne przewijanie do góry strony */
+
 .to-top{
     text-align:center;
 }
-#scroll-to-top{
-    display:none;
-    position:fixed;
-    bottom:15px;
-    right:20px;
-    opacity:0.8;
-}
-#scroll-to-top:hover{
-    opacity:1;
-}
+        #scroll-to-top{
+            display:none;
+            position:fixed;
+            bottom:15px;
+            right:20px;
+            opacity:0.8;
+        }
+        #scroll-to-top:hover{
+            opacity:1;
+        }
 
 .description-left{
     margin-left: 15%;
     float: left;
     
 }
+
+/*Podpisy zdjęć*/
+
+.title {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border: 1em solid #fff;
+    background: #111;
+    max-width: 70%;
+    /*margin-left: 15%;*/
+}
+
+.title-left{
+    margin-left:15%;
+    float: left;
+}
+
+.title-right{
+    margin-right: 15%;
+    float: right;
+}
+ 
+.title img {
     
+    display: block;
+    transition: all .6s ease-in-out;
+    width: 100%;
+}
+ 
+.title:before, .title:after {
+    content: '';
+    position: absolute;
+    text-align: center;
+    transition: all .6s ease-in-out;
+    width: 100%;
+}
+ 
+.title:before {
+    height: 100%;
+}
+ 
+.title:after {
+    background: rgba(24, 188, 156,.9);
+    color: #fff;
+    content: attr(data-title);
+    line-height: 1.5em;
+    overflow: hidden;
+    padding: 1em .5em;
+    text-overflow: ellipsis;
+    white-space: pre;
+}
+
+.title.ribbon {
+	overflow: visible;
+	z-index: 0;
+}
+
+.title.ribbon:before {
+	background: #666666;
+	left: .1em;
+	bottom: .9em;
+	width: 0em;
+	height: 3.5em;
+	-webkit-transform: skewY(45deg);
+	-moz-transform: skewY(45deg);
+	transform: skewY(45deg);
+	-webkit-transform-origin: 100% 100%;
+	-moz-transform-origin: 100% 100%;
+	transform-origin: 100% 100%;
+	transition: all .1s ease-in-out .5s;
+	z-index: -1;
+}
+
+.title.ribbon:hover:before {
+	left: -1em;
+	width: 1.1em;
+	transition-delay: 0s;
+}
+
+.title.ribbon:after {
+	background: crimson;
+	z-index: 2;
+	bottom: 2em;
+	left: -1em;
+	-webkit-transform: scaleX(0);
+	-moz-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transform-origin: 0 0;
+	-moz-transform-origin: 0 0;
+	transform-origin: 0 0;
+	transition: all .5s ease-in-out 0s;
+}
+
+.title.ribbon:hover:after {
+	-webkit-transform: scaleX(1);
+	-moz-transform: scaleX(1);
+	transform: scaleX(1);
+	transition-delay: .1s;
+}
+    
+/* test   responsywności */
+@media all and (max-width: 1300px) {
+    .kontakt h1{
+        font-size: 20px;
+    }
+    
+    #text-main-kontakty-left
+    {
+        font-size: 13px;
+    }
+    #text-main-kontakty-middle p{
+        font-size: 13px;
+    }
+    
+    p{
+        font-size: 14px;
+    }
+    
+    .header-main{
+        font-size: 37px;
+    }
+    
+    .header-main-default{
+        font-size: 37px;
+    }
+       
+    .topMenu img{
+        width: 9%;
+    }
+    
+}
+
+@media all and (max-width: 500px) {
+    #text-main-kontakty-left
+    {
+        font-size: 5px;
+    }
+    p{
+        font-size: 5px;
+    }
+    
+    .kontakt h1{
+        font-size: 8px;
+    }
+    
+    .header-main{
+        font-size: 30px;
+    }
+    
+    .header-main-default{
+        font-size: 30px;
+    }
+ 
+    
+}
 
 
-/* Kontakt*/    /* Kontakt*/    /* Kontakt*/    /* Kontakt*/    /* Kontakt*/    /* Kontakt*/    /* Kontakt*/    /* Kontakt*/
-
-
-
-
-
+/*mine_menu images*/
+.sti-icon-care{
+	background-image:url(../images/care.png);
+}
+.sti-icon-alternative{
+	background-image:url(../images/alternative.png);
+}
+.sti-icon-family{
+	background-image:url(../images/family.png);
+}
+.sti-icon-info{
+	background-image:url(../images/info.png);
+}
+.sti-icon-technology{
+	background-image:url(../images/technology.png);
+}

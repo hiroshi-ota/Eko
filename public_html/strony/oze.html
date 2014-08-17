@@ -5,25 +5,64 @@
         <title>OZE</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="../favicon.ico">
-        <link rel="stylesheet" type="text/css" href="../css/main.css">
+                <link rel="stylesheet" type="text/css" href="../css/main.css">
         <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="../css/demo.css" />
+        <script type="text/javascript" src="../js/jquery1.11.1.js"></script>
         <link rel="stylesheet" type="text/css" href="../css/menu_slice/style.css" />
         <link rel="stylesheet" type="text/css" href="../css/menu_slice/custom.css" />
-        <script type="text/javascript" src="../js/menu_slice/modernizr.custom.79639.js"></script>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false"></script>
-        <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" href="../css/main_menu/stimenu.css" />
         <link rel="stylesheet" href="../css/sidebar/slidebars.css">
-        <link rel="stylesheet" href="../css/sidebar/main.css">
-        <style>hight:auto</style>
+        <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
         <noscript>
 	<link rel="stylesheet" type="text/css" href="../css/styleNoJS.css" />
 	</noscript>
+        <script src="../js/jquery-1.6.1.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            var st_jq = jQuery.noConflict(true);
+        </script>
+        <script src="../js/jquery.easing.1.3.js" type="text/javascript"></script>
+        <script src="../js/jquery.iconmenu.js" type="text/javascript"></script>
+
+        <link rel="stylesheet" type="text/css" href="../css/main_menu/style.css" />
+        <link rel="stylesheet" type="text/css" href="../css/main_menu/stimenu.css" />
+        
+        
     </head>
     <body>
         
+        <!-- przesuwanie do góry strony //-->
+            <script>
+             st_jq(function(){
+                var stt_is_shown = false;
+                st_jq(window).scroll(function(){
+                   var win_height = 300;
+                   var scroll_top = $(document).scrollTop(); 
+                   if (scroll_top > win_height && !stt_is_shown) {
+                      stt_is_shown = true;
+                      st_jq("#scroll-to-top").fadeIn();
+                   } else if (scroll_top < win_height && stt_is_shown) {
+                      stt_is_shown = false;
+                      st_jq("#scroll-to-top").fadeOut();
+                   }
+               });
+                            st_jq("#scroll-to-top").click(function(e){
+                   e.preventDefault();
+                   st_jq('html, body').animate({scrollTop:0}, 1500);
+                 });
+              });
+              </script>
+
+    <!-- płynne przewijanie  //-->
+        <script>
+            function scroll_to(selector) {
+                $('html,body').animate({scrollTop: $(selector).offset().top}, 700);
+            return false;
+               };
+               
+        </script>
+        
+    <!-- Sidebar //-->    
         <div class="sb-slidebar sb-left">
               
                 <ul class="sb-menu">
@@ -43,6 +82,11 @@
                     <li class="sb-close"><a href="piany.html">Piana poliuretanowa</a></li>
                     <li class="sb-close"><a href="prace_inz.html">Prace inżynieryjne</a></li>
                     <li class="sb-close"><a href="termowizja.html">Termowizja</a></li>
+                    <li class="sb-close"><a href="dotacje.html">Dotacje</a></li>
+                    <li class="sb-close"><a href="pompy.html">Pompy ciepła</a></li>
+                    <li class="sb-close"><a href="ogniwa.html">Panele słoneczne</a></li>
+                    <li class="sb-close"><a href="#"></a></li>
+                    <li class="sb-close"><a href="katalog.html"  style="color: crimson">Katalog</a></li>
                     
                     
                 </ul>
@@ -53,10 +97,7 @@
             <div class="sb-slidebar sb-right">
               <!-- Your right Slidebar content. -->
             </div>
-
-            <!-- jQuery -->
-            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.js"></script>
-
+        
             <!-- Slidebars -->
             <script src="../js/slidebars.js"></script>
             <script>
@@ -67,40 +108,86 @@
                 });
               }) (jQuery);
             </script>
+    
+    <!-- main_menu //-->        
+        <script type="text/javascript">
+        $(function() {
+                $('#sti-menu').iconmenu();
+        });
+        </script>
             
 <!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY -->
 <div id="sb-site"> <!-- sb-site TOP -->
                 
-                <p class="sb-toggle-left" id="fixed-top"> Menu</p>
+
         
-                    <img class="logo_head" src="../images/logo.png" alt="Ekoinstal">
+                    <a href="../index.html"><img class="logo_head" src="../images/logo.png" alt="Ekoinstal"></a>
 
 
 
                     <div class="topMenu">
                         <ul>
-                            <li><a href="../index.html"><img class="m" src="../images/home.png" alt="Strona dmowa"></a></li>
-                            <li><a href="http://onet.pl"><img class="m" src="../images/onas.jpg" alt="O nas"></a></li>
-                            <li><a href="../strony/kontakt.html"><img class="m" src="../images/kontakt.jpg" alt="Kontakt"></a></li>
-                            <li><a href="http://wp.pl"> <img class="m" src="../images/sklep.jpg" alt="Sklep"></a></li>
-                            <li><a href="../strony/szukaj.html"><img class="m" src="../images/szukaj.jpg" alt="Szukaj"></a></li>
+                            <li><a href="../index.html"><img src="../images/home.png" alt="Strona dmowa"></a></li>
+                            <li><a href="../index.html#onas"><img src="../images/onas.jpg" alt="O nas"></a></li>
+                            <li><a href="../index.html#kontakty"><img src="../images/kontakt.jpg" alt="Kontakt"></a></li>
+                            <li><a href="../index.html#kontakt"> <img src="../images/sklep.jpg" alt="Sklep"></a></li>
+                            <li><a href="szukaj.html"><img src="../images/szukaj.jpg" alt="Szukaj"></a></li>
 
                         </ul>
                     </div>
                     
-            <div class="main">
-            
+<!-- main_menu //-->                    
+        <div class="main">
+            <div class="container">
+                    <ul id="sti-menu" class="sti-menu">
+                            <li data-hovercolor="#37c5e9">
+                                    <a href="../strony/pompy.html">
+                                            <h2 data-type="mText" class="sti-item">Pompy ciepła</h2>
+                                            <h3 data-type="sText" class="sti-item">dla każdego domu</h3>
+                                            <span data-type="icon" class="sti-icon sti-icon-care sti-item"></span>
+                                    </a>
+                            </li>
+                            <li data-hovercolor="#ff395e">
+                                    <a href="../strony/ogniwa.html">
+                                            <h2 data-type="mText" class="sti-item">Panele słoneczne</h2>
+                                            <h3 data-type="sText" class="sti-item">... woda i prąd</h3>
+                                            <span data-type="icon" class="sti-icon sti-icon-alternative sti-item"></span>
+                                    </a>
+                            </li>
+                            <li data-hovercolor="#57e676">
+                                    <a href="#">
+                                            <h2 data-type="mText" class="sti-item">Dotacje</h2>
+                                            <h3 data-type="sText" class="sti-item">UE i nie tylko</h3>
+                                            <span data-type="icon" class="sti-icon sti-icon-info sti-item"></span>
+                                    </a>
+                            <!--</li>
+                            <li data-hovercolor="#d869b2">
+                                    <a href="#">
+                                            <h2 data-type="mText" class="sti-item">Prace inżynieryjne</h2>
+                                            <h3 data-type="sText" class="sti-item">For a healthier future</h3>
+                                            <span data-type="icon" class="sti-icon sti-icon-family sti-item"></span>
+                                    </a>
+                            </li>
+                            <li data-hovercolor="#ffdd3f">
+                                    <a href="#">
+                                            <h2 data-type="mText" class="sti-item">Termowizja</h2>
+                                            <h3 data-type="sText" class="sti-item">From the latest research</h3>
+                                            <span data-type="icon" class="sti-icon sti-icon-technology sti-item"></span>
+                                    </a>
+                            </li> //-->
+                    </ul>
             </div>
+                    
+            
+        </div>
         
             <br><br>
                     
 
 
-    <h1 id="header-main-default">Odnawialne Źródła Energii</h1>   
+    <h1 class="header-main-default" style="padding-top: 25%">Odnawialne Źródła Energii</h1>   
     
     <p class="text-main-description text-main-description-column">
-        Tekst dotyczący odnawialnych źródeł energii...Tekst dotyczący odnawialnych źródeł energii...Tekst dotyczący odnawialnych źródeł energii...
-        Tekst dotyczący odnawialnych źródeł energii...Tekst dotyczący odnawialnych źródeł energii...Tekst dotyczący odnawialnych źródeł energii...
         Tekst dotyczący odnawialnych źródeł energii...Tekst dotyczący odnawialnych źródeł energii...Tekst dotyczący odnawialnych źródeł energii...
         Tekst dotyczący odnawialnych źródeł energii...Tekst dotyczący odnawialnych źródeł energii...Tekst dotyczący odnawialnych źródeł energii...
         Tekst dotyczący odnawialnych źródeł energii...Tekst dotyczący odnawialnych źródeł energii...Tekst dotyczący odnawialnych źródeł energii...
@@ -113,7 +200,6 @@
 
 <div id="sb-site-middle"> <!-- sb site middle //-->
     
-    <!--<div class="text-description text-description-column-white" style="max-width: 30%; color: whitesmoke; padding-top: 2%"> //-->
         
     <div class="description">
         <h1 style="color: whitesmoke">Pompy ciepła</h1>
@@ -143,6 +229,8 @@
         
     </div>
     
+    <hr class="underline">
+    
     
     <div class="description">
         <h1 style="color: whitesmoke;">Elektrownie wiatrowe</h1>
@@ -169,6 +257,8 @@
         <img src="../images/g_test.jpg" alt="Wiatraki" class="description-graphic-left">
         
     </div>
+    
+    <hr class="underline">
     
     
         <div class="description">
@@ -200,7 +290,13 @@
 </div> <!-- sb-site-middle end //-->
 
         
-<div id="sb-site-bottom"> <!-- sb-site-bottom //-->            
+<div id="sb-site-bottom"> <!-- sb-site-bottom //-->  
+    
+    <p class="sb-toggle-left" id="fixed-top" style="color: crimson"> Menu</p>
+          
+    <a href="#" title="top" id="scroll-to-top"><img src="../images/home.png" alt="strzałka do góry" /></a>
+    
+    
                 
             <div class="container slider">
 
@@ -264,7 +360,7 @@
         
         
             <!-- /container slider -->
-                
+                <script src="../js/menu_slice/modernizr.custom.79639.js" type="text/javascript"></script>
                 <script type="text/javascript" src="../js/menu_slice/jquery.ba-cond.min.js"></script>
 		<script type="text/javascript" src="../js/menu_slice/jquery.slitslider.js"></script>
 		<script>
@@ -336,10 +432,19 @@
 			
 		</script>
                 
+                
+                                
 </div>  <!-- sb-site-bottom end //-->
-   
-<div class="partners">
-            <p id="partners"> coś </p>
+
+<div class="footer">
+        
+        <div class="version">
+            v 0.6.5
+        </div>
+          
+          <a target="_blank" href="http://mfteam.com.pl" class="mf">&#169; Copyright by MFTeam</a>
+          
+</div>
         
     </body>
 </html>

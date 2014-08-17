@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        
+    <head>       
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Ekoinstal Test</title>
         <meta charset="UTF-8"> 
@@ -10,40 +8,50 @@
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+        <script type="text/javascript" src="js/jquery1.11.1.js"></script>
         <link rel="stylesheet" type="text/css" href="css/menu_slice/style.css" />
         <link rel="stylesheet" type="text/css" href="css/menu_slice/custom.css" />
-        <link rel="stylesheet" type="text/css" href="css/testMenu.css" />
-        <script type="text/javascript" src="js/menu_slice/modernizr.custom.79639.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/main_menu/stimenu.css" />
         <link rel="stylesheet" href="css/sidebar/slidebars.css">
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
         <noscript>
 	<link rel="stylesheet" type="text/css" href="css/styleNoJS.css" />
 	</noscript>
+        <script src="js/jquery-1.6.1.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            var st_jq = jQuery.noConflict(true);
+        </script>
+        <script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+        <script src="js/jquery.iconmenu.js" type="text/javascript"></script>
+
+        <link rel="stylesheet" type="text/css" href="css/main_menu/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/main_menu/stimenu.css" />
+        
         
         
     </head>
     <body>
-            
+        
+
         <!-- przesuwanie do góry strony //-->
             <script>
-             $(function(){
+             st_jq(function(){
                 var stt_is_shown = false;
-                $(window).scroll(function(){
+                st_jq(window).scroll(function(){
                    var win_height = 300;
                    var scroll_top = $(document).scrollTop(); 
                    if (scroll_top > win_height && !stt_is_shown) {
                       stt_is_shown = true;
-                      $("#scroll-to-top").fadeIn();
+                      st_jq("#scroll-to-top").fadeIn();
                    } else if (scroll_top < win_height && stt_is_shown) {
                       stt_is_shown = false;
-                      $("#scroll-to-top").fadeOut();
+                      st_jq("#scroll-to-top").fadeOut();
                    }
                });
-                            $("#scroll-to-top").click(function(e){
+                            st_jq("#scroll-to-top").click(function(e){
                    e.preventDefault();
-                   $('html, body').animate({scrollTop:0}, 1500);
+                   st_jq('html, body').animate({scrollTop:0}, 1500);
                  });
               });
               </script>
@@ -53,11 +61,11 @@
             function scroll_to(selector) {
                 $('html,body').animate({scrollTop: $(selector).offset().top}, 700);
             return false;
-               } 
+               };
                
         </script>
         
-        
+    <!-- Sidebar //-->    
             <div class="sb-slidebar sb-left">
                
                     <p style="text-align: center">Szukaj:</p>
@@ -76,6 +84,12 @@
                     <li class="sb-close"><a href="strony/piany.html">Piana poliuretanowa</a></li>
                     <li class="sb-close"><a href="strony/prace_inz.html">Prace inżynieryjne</a></li>
                     <li class="sb-close"><a href="strony/termowizja.html">Termowizja</a></li>
+                    <li class="sb-close"><a href="strony/dotacje.html">Dotacje</a></li>
+                    <li class="sb-close"><a href="strony/pompy.html">Pompy ciepła</a></li>
+                    <li class="sb-close"><a href="strony/ogniwa.html">Panele słoneczne</a></li>
+                    <li class="sb-close"><a href="#"></a></li>
+                    <li class="sb-close"><a href="strony/katalog.html">Katalog</a></li>
+                    
                 </ul>
 
             </div>
@@ -84,9 +98,7 @@
               <!-- Your right Slidebar content. -->
             </div>
 
-            <!-- jQuery -->
-            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.js"></script>
-
+          
             <!-- Slidebars -->
             <script src="js/slidebars.js"></script>
             <script>
@@ -95,7 +107,14 @@
                   $.slidebars();
                 });
               }) (jQuery);
-            </script>    
+            </script> 
+
+    <!-- main_menu //-->             
+        <script type="text/javascript">
+            $(function() {
+                    $('#sti-menu').iconmenu();
+            });
+	</script>
         
         
     
@@ -103,40 +122,72 @@
     
     <!-- TOP //-->  <!-- TOP //--> <!-- TOP //--> <!-- TOP //--> <!-- TOP //--> <!-- TOP //--> <!-- TOP //--> <!-- TOP //--> <!-- TOP //--> <!-- TOP //-->
     
-    <div id="sb-site"> 
+    <div id="sb-site">
+
         
-        <a href="#" title="top" id="scroll-to-top"><img src="images/home.png" alt="strzałka do góry" /></a>
-        
-        <p class="sb-toggle-left" id="fixed-top"> Menu</p>
-        
-        <img class="logo_head" src="images/logo.png" alt="Ekoinstal">
+        <a href="index.html"><img class="logo_head" src="images/logo.png" alt="Ekoinstal"></a>
         
         
         
         <div class="topMenu">
             <ul>
-                <li><a href="index.html"><img class="m" src="images/home.png" alt="Strona dmowa" style="width: 8%"></a></li>
-                <li><a href="javascript:void();" onclick="scroll_to('#onas');"><img class="m" src="images/onas.jpg" alt="O nas" style="width: 8%"></a></li>
-                <li><a href="javascript:void();" onclick="scroll_to('#kontakt');"><img class="m" src="images/kontakt.jpg" alt="Kontakt" style=" width: 8%"></a></li>
-                <li><a href="http://wp.pl"> <img class="m" src="images/sklep.jpg" alt="Sklep" style="position: related; width: 8%"></a></li>
-                <li><a href="szukaj.html"><img class="m" src="images/szukaj.jpg" alt="Szukaj" style="width:8%"></a></li>
+                <li><a href="index.html"><img src="images/home.png" alt="Strona dmowa"></a></li>
+                <li><a href="javascript:void();" onclick="scroll_to('#onas');"><img src="images/onas.jpg" alt="O nas"></a></li>
+                <li><a href="javascript:void();" onclick="scroll_to('#kontakty');"><img src="images/kontakt.jpg" alt="Kontakt"></a></li>
+                <li><a href="http://wp.pl"> <img src="images/sklep.jpg" alt="Sklep"></a></li>
+                <li><a href="szukaj.html"><img src="images/szukaj.jpg" alt="Szukaj"></a></li>
                 
             </ul>
         </div>
-            
-          
-        
-
-        
         
         <div class="main">
-            <span>coś tam coś tamcoś tam coś tamcoś tam coś tamcoś tam coś tamcoś tam coś tamcoś tam coś tamcoś tam coś tam</span>
+            
+                <div class="container">
+			<ul id="sti-menu" class="sti-menu" style="float: left; margin-left: 12%">
+				<li data-hovercolor="#37c5e9">
+					<a href="strony/oze.html">
+						<h2 data-type="mText" class="sti-item">Źródła odnawialne</h2>
+						<h3 data-type="sText" class="sti-item">OZE dla każdego</h3>
+						<span data-type="icon" class="sti-icon sti-icon-care sti-item"></span>
+					</a>
+				</li>
+				<li data-hovercolor="#ff395e">
+					<a href="strony/piany.html">
+						<h2 data-type="mText" class="sti-item">Piana poliuretanowa</h2>
+						<h3 data-type="sText" class="sti-item">Najskuteczniejsza izolacja</h3>
+						<span data-type="icon" class="sti-icon sti-icon-alternative sti-item"></span>
+					</a>
+				</li>
+				<li data-hovercolor="#57e676">
+					<a href="#">
+						<h2 data-type="mText" class="sti-item">Dotacje</h2>
+						<h3 data-type="sText" class="sti-item">UE i nie tylko</h3>
+						<span data-type="icon" class="sti-icon sti-icon-info sti-item"></span>
+					</a>
+				</li>
+				<li data-hovercolor="#d869b2">
+					<a href="#">
+						<h2 data-type="mText" class="sti-item">Prace inżynieryjne</h2>
+						<h3 data-type="sText" class="sti-item">For a healthier future</h3>
+						<span data-type="icon" class="sti-icon sti-icon-family sti-item"></span>
+					</a>
+				</li>
+				<li data-hovercolor="#ffdd3f">
+					<a href="#">
+						<h2 data-type="mText" class="sti-item">Termowizja</h2>
+						<h3 data-type="sText" class="sti-item">From the latest research</h3>
+						<span data-type="icon" class="sti-icon sti-icon-technology sti-item"></span>
+					</a>
+				</li>
+			</ul>
+                </div>
+                    
             
         </div>
         
         <br><br>
         
-        <h1 id="header-main">Witamy na naszej stronie!</h1>
+        <h1 class="header-main">Witamy na naszej stronie!</h1>
 
         
         <div class="text-main-description text-main-description-column">
@@ -150,56 +201,93 @@
       
       <div id="sb-site-middle"> <a id="onas"></a>
           
+          <div class="description">
+      
+          <h1 class="header-main-default" style="color: whitesmoke">Kilka słów o naszej firmie:</h1>
+          
+          <p class="description-text-left" style="color: whitesmoke">
+              O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie 
+              O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie 
+              O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie 
+              O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie 
+              O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie 
+              O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie 
+              O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie 
+              O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie
+              O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie
+              O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie
+              O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie
+              O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie
+              O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie
+              O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie
+          </p> 
+          
+          <a href="http://www.wp.pl" data-title="Siedziba EKOINSTAL" class="title ribbon">
+            <img src="images/siedziba.jpg" alt="Siedziba EKOINSTAL" style="height: 500px; width: auto" />
+        </a>
+          
+          </div>
           
       
       </div> <!-- // end sb-site center -->
       
       <!-- bottom //--><!-- bottom //--><!-- bottom //--><!-- bottom //--><!-- bottom //--><!-- bottom //--><!-- bottom //--><!-- bottom //--><!-- bottom //-->
       
-      <div id="sb-site-bottom"> <a id="kontakt"></a>
+      
+      
+      <div id="sb-site-bottom"> <a id="kontakty"></a>
           
-          <h1 id="header-main-default">Skontaktuj się z nami:</h1>
+          <p class="sb-toggle-left" id="fixed-top" style="color: crimson"> Menu</p>
+          
+          <a href="#" title="top" id="scroll-to-top"><img src="images/home.png" alt="strzałka do góry" /></a>
+          
+          <h1 class="header-main-default" style="padding-bottom: 2%">Skontaktuj się z nami:</h1>
        
         
-            <div class="kontakt" id="text-main-kontakty-first">
+            <div class="kontakt" id="text-main-kontakty-left">
             
-                <p>
+                
                 <a href="strony/oze.html"><h1>Odnawialne źródła:</h1></a>
                 <br>Michał Kowalski 
                 <br> 695 95 93 92 
                 <br> <a href="mailto:kamil.kazmierowski@gmail.com">kamil.kazmierowski@gmail.com</a>
-                </p>
                 
-                <p>
+                
+                
                 <a href="strony/piany.html"><h1>Piany poliuretanowe:</h1></a>
                 <br>Daniel Kowalski
                 <br> 888 222 333
                 <br> <a href="mailto:kamil.kazmierowski@gmail.com">daniel.kowalski@gmail.com</a>
-                </p>
                 
-                <p>
+                
+                
                 <a href="strony/prace_inz.html"><h1>Prace inżynieryjne:</h1></a>
                 <br> Robert Kowalski
                 <br> 666 558 456
                 <br> <a href="mailto:kamil.kazmierowski@gmail.com">robert.kowalski@gmail.com</a>
-                </p>
                 
-                <p>
+                
+                
                 <a href="strony/termowizja.html"><h1>Termowizja:</h1></a>
                 <br>Anna Kowalska
                 <br> 800 458 693
                 <br> <a href="mailto:kamil.kazmierowski@gmail.com">anna.kowalska@gmail.com</a>
-                </p>
+                
                 
             
         </div>
         
         <div class="kontakt" id="text-main-kontakty-middle">
             
-            <h1>Grupa Ekoinstal sp. z o.o.</h1>
+            <h1>Grupa Ekoinstal <br> sp. z o.o.</h1>
             <p>ul. Warszawska 1a
             <br> 87-162 Lubicz
             <br> NIP: 444-555-66-77
+            <br>
+            <br>tel.+48 56 674 48 50
+            <br>fax +48 56 674 48 50 (wew. 0)
+            <br>
+            <br>biuro@grupaekoinstal.pl
             </p>
             
                 
@@ -213,30 +301,31 @@
           
     <!-- MAPA -->
         <div id="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2399.590721645145!2d18.766460000000002!3d53.02771999999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ccbf52515104f%3A0x3d4ec3773d1b1db5!2sEkoinstal.+PW.+Gachewicz+M.!5e0!3m2!1spl!2spl!4v1406492750777" frameborder="0" scrolling=no seamless="seamless" style="border:0; width: 100%; height: 30%; margin-top: 2%; "></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2399.590721645145!2d18.766460000000002!3d53.02771999999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ccbf52515104f%3A0x3d4ec3773d1b1db5!2sEkoinstal.+PW.+Gachewicz+M.!5e0!3m2!1spl!2spl!4v1406492750777" frameborder="0" scrolling=no seamless="seamless" style="border:0; width: 100%; height: 30%; margin-top: 2% "></iframe>
+        </div>
+    
+    <div class="social">
+        
+    </div> 
+    
+    <div class="mail">
+        
+    </div>
+    
+      </div> <!-- sb-site bottom end //-->
+      
+    <div class="footer">
+        
+        <div class="version">
+            v 0.8
         </div>
           
-      </div> <!-- sb-site bottom end //-->
+          <a target="_blank" href="http://mfteam.com.pl" class="mf">&#169; Copyright by MFTeam</a>
+          
+    </div>  
 
-      <div class="footer">
-          
-          <div id="partners">
-              <img src="images/partners/purinova.png" alt="PURINOVA" style="width: 200px">
-              <img src="images/partners/stibel.png" alt="STIBEL" style="width: 200px">
-              <!--<img src="images/partners/ibc.gif" alt="IBC" style="width: 200px"> //-->
-              <img src="images/partners/nibe.png" alt="NIBE" style="width: 200px">
-          </div>
-          
-          <p id="info">
-              jakiś tekstjakiś tekstjakiś tekstjakiś tekstjakiś tekstjakiś tekstjakiś tekstjakiś tekstjakiś tekst
-              jakiś tekstjakiś tekstjakiś tekstjakiś tekstjakiś tekstjakiś tekstjakiś tekstjakiś tekstjakiś tekst
-          </p>
-          
-      </div>
     
-    <div class="version">
-        v 0.4.6
-    </div>
+    
 
     </body>
 </html>
