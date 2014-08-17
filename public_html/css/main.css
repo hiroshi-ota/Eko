@@ -92,7 +92,9 @@ body, html {
     float: right;
     padding-right: 15%;
     padding-top: 2%;
+    margin-bottom: 2%;
     width: 20%;
+    position: relative;
 }
 
     .topMenu li{
@@ -493,6 +495,9 @@ body, html {
     
 /* kontenery strony */
 #sb-site, .sb-site-container {
+    height: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
     width: 100%;
     position: relative;
     z-index: 1; /* Site sits above Slidebars */
@@ -500,6 +505,9 @@ body, html {
 }
 
         #sb-site-middle, .sb-site-container-middle { 
+            padding-top: 0px;
+            margin-top: 0px;
+            height: auto;
             width: 100%;
             position: relative;
             z-index: 1; /* Site sits above Slidebars */
@@ -507,6 +515,7 @@ body, html {
         }
         
         #sb-site-bottom, .sb-site-container-bottom {
+            height: auto;
             width: 100%;
             position: relative;
             z-index: 1; /* Site sits above Slidebars */
