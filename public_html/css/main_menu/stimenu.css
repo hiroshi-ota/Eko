@@ -90,3 +90,17 @@
         left: 40px;
     }
 }
+
+@media all and (max-width: 2000px){
+    
+    .sti-menu li a h2{
+        font-size: 24px;
+        top: 165px;
+    }
+    
+    .sti-menu li a h3{
+        font-size: 15px;
+    }
+    
+    
+}
