@@ -279,6 +279,10 @@ body, html {
     margin-bottom: 4%;
 }
 
+.description p span{
+    font-weight: bolder;
+}
+
  
 .description h1{
     margin-bottom: 2%;
