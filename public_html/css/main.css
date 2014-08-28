@@ -291,8 +291,67 @@ body, html {
         .text-main-description-column p{
             margin:0;
         }
+        
+        
+/*Logotypy dotacje*/
 
+.logo-dotacje{
+    position: absolute;
+    bottom: 20px;
+    margin-left: 15%;
+    width: 70%;
+    text-align: center;
+    z-index: -1;
+}
 
+    .logo-dotacje img{
+        opacity: 0.2;
+        display: inline-block;
+        width: 30%;
+        padding: 5%;
+    }
+
+.logo-dotacje-left{
+    position: absolute;
+    bottom: 20px;
+    margin-left: 15%;
+    width: 25%;
+    opacity: 0.2;
+}
+        
+/*Krótki opis z "więcej" (dotacje itp...)*/        
+        
+.left{
+    float: left;
+    margin-left: 15%;
+}
+
+.right{
+    float: right;
+    margin-right: 15%;
+}
+
+.description-s{
+    color: #666666;
+    width: 33%;
+    /*margin-left: 15%;*/
+    text-align: justify; 
+}
+
+    .description-s span{
+        float: right;
+        color: crimson;
+        text-decoration: none;
+    }
+    
+    .description-s span a{
+        text-decoration: none;
+        color: crimson;
+        opacity: 1.0;
+    }
+        .description-s span a:hover{
+            opacity:0.5;
+        }
 
 .description{
     width: 100%;
