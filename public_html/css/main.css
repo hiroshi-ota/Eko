@@ -464,7 +464,7 @@ body, html {
     margin-right: 15%;
 }
         
-.img_top{
+.bg_img{
     position: absolute;
     min-width: 100%;
     top: 0%;
@@ -472,7 +472,7 @@ body, html {
     z-index: -1;
 }
 
-    .img_top img{
+    .bg_img img{
         position: relative;
         width: 100%;
 /*        border-top: 40px solid #666666;
@@ -484,7 +484,7 @@ body, html {
     }
     
 
-    .img_top p{
+    .bg_img p{
         position: relative;
         width: 70%;
         bottom:0px;
@@ -566,20 +566,6 @@ body, html {
             //text-align: justify;
             //text-transform: capitalize;
         }
-    
-    .kontakt_form{
-        float: right;
-        margin-right: 15%;
-        width: 25%;
-        height: 45%;
-        background-color: transparent;
-        color: #666666;
-        border: 1px solid #666666;
-    }
-    
-    .kontakt_form p{
-        
-    }
     
     .search{
         float: bottom;
@@ -696,10 +682,10 @@ body, html {
 
 #map{
     position: relative;
-    margin-left: 15%;
+    /*padding-left: 5%;*/
     margin-right: 15%;
-    height: 30%;
-    margin-bottom: 1%;
+    height: 50%;
+    /*margin-bottom: 1%;*/
 }
 
 /* płynne przewijanie do góry strony */
@@ -712,7 +698,8 @@ body, html {
             position:fixed;
             bottom:15px;
             right:20px;
-            opacity:0.8;
+            opacity:0.6;
+            
         }
         #scroll-to-top:hover{
             opacity:1;
