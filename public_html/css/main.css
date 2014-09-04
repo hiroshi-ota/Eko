@@ -830,7 +830,7 @@ body, html {
     
 /* test   responsywności */
 
-@media all and (min-width:1301px) and (max-width: 2000px) {
+@media all and (min-width:1701px) and (max-width: 2000px) {
     p{
         font-size: 15px;
     }
@@ -849,7 +849,7 @@ body, html {
     
 }
 
-@media all and (min-width:501px) and (max-width: 1300px) {
+@media all and (min-width:501px) and (max-width: 1700px) {
     
     .img-top{
         width: 470px;
@@ -892,6 +892,10 @@ body, html {
         font-size: 12px;
         width: 14px;
         line-height: 18px;
+    }
+    
+    .mail{
+        top: 90%;
     }
 }
 
