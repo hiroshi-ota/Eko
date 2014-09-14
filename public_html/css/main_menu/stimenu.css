@@ -91,7 +91,7 @@
     }
 }
 
-@media all and (min-width: 501px) and (max-width: 1300px){
+@media all and (min-width: 501px) and (max-width: 1700px){
     
     .sti-menu li a h2{
         font-size: 20px;
@@ -106,7 +106,7 @@
     
 }
 
-@media all and (min-width:1301px) and (max-width: 2000px){
+@media all and (min-width:1701px) and (max-width: 2000px){
     
     .sti-menu li a h2{
         font-size: 24px;
@@ -116,6 +116,10 @@
     .sti-menu li a h3{
         font-size: 15px;
     }
+}
     
-    
+@media all and (min-height:500px) and (max-height:800px){
+    .sti-menu li{
+        height: 250px;
+    }
 }
