@@ -192,6 +192,7 @@ body, html {
     /*border: 1px solid whitesmoke;*/
     border-radius: 20px;
     /*-webkit-box-shadow: 5px 5px 2px black;*/
+    z-index: 100;
 }
 
     .social:hover{
@@ -230,6 +231,7 @@ body, html {
         /*cursor: pointer;*/
         /*border: 1px solid whitesmoke;*/
         border-radius: 20px;
+        z-index: 100;
     }
 
     .mail:hover{
@@ -243,7 +245,7 @@ body, html {
 .header-main{
     /*text-decoration: underline;*/
     margin-left: 15%;
-    padding-top: 25%;
+    padding-top: 22%;
     font-size: 54px;
     font-weight: bold;
     color: #666666;
