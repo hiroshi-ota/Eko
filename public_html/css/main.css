@@ -414,7 +414,7 @@ body, html {
     opacity: 0.2;
 }
         
-/*Krótki opis z "więcej" (dotacje itp...)*/        
+/*KrĂłtki opis z "wiÄ™cej" (dotacje itp...)*/        
         
 .left{
     float: left;
@@ -448,7 +448,7 @@ body, html {
             opacity:0.5;
         }
   
-/*Obrazek pod głównym tekstem (np. schemat pompy top)*/
+/*Obrazek pod gĹ‚Ăłwnym tekstem (np. schemat pompy top)*/
         
 .img-top{
     width:auto;
@@ -679,7 +679,7 @@ body, html {
    
     
             #sb-site, .sb-site-container {
-                padding: 0; /* odległość strony od brzegów */
+                padding: 0; /* odlegĹ‚oĹ›Ä‡ strony od brzegĂłw */
             }
 
             .sb-slidebar {
@@ -699,8 +699,8 @@ body, html {
             #fixed-top { 
                     position: fixed;
                     top: 0;
-                    left: 20px; /* odległość od pbrzegu przycisku */
-                    width: 5px; /* szerokość przycisku*/
+                    left: 20px; /* odlegĹ‚oĹ›Ä‡ od pbrzegu przycisku */
+                    width: 5px; /* szerokoĹ›Ä‡ przycisku*/
                     height: 50px;
                     background-color: transparent;
                     z-index: 4;
@@ -785,7 +785,7 @@ body, html {
     /*margin-bottom: 1%;*/
 }
 
-/* płynne przewijanie do góry strony */
+/* pĹ‚ynne przewijanie do gĂłry strony */
 
 .to-top{
     text-align:center;
@@ -815,7 +815,7 @@ body, html {
     padding-top: 0;
 }
 
-/*Podpisy zdjęć*/
+/*Podpisy zdjÄ™Ä‡*/
 
 .title {
     position: relative;
@@ -915,7 +915,7 @@ body, html {
 	transition-delay: .1s;
 }
     
-/* test   responsywności */
+/* Responsywność */
 
 @media all and (min-width:1701px) and (max-width: 2000px) {
     p{
