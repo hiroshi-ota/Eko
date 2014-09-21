@@ -125,8 +125,13 @@
     }
 }
     
-@media all and (min-height:500px) and (max-height:800px){
+@media all and (min-height:500px) and (max-height:901px){
     .sti-menu li{
-        height: 250px;
+        height: 260px;
+    }
+    
+    .gallery a{
+        width: 300px;
+        height: 300px;
     }
 }
