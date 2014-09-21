@@ -216,7 +216,7 @@ body, html {
         margin-top: 1%;
         width: 640px;
         height: 480px;
-        border: 1px solid blue;
+        /*border: 1px solid blue;*/
         overflow: hidden;
     }
     
@@ -263,6 +263,11 @@ body, html {
         color: whitesmoke;
         opacity: 1;
     }
+
+/*Linki z dodatkową wiedzą*/
+    
+/*Boczki*/
+
  
 /*Boczki social i media*/    
     
@@ -1140,4 +1145,10 @@ body, html {
 
 .sti-icon-pompy{
         background-image:url(../images/pompy.png);
+}
+
+
+p.build{
+    font-size: 80px;
+    color: #666666;
 }
