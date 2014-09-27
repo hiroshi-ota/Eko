@@ -162,30 +162,30 @@ body, html {
 
 .realizations{
     position: relative;
-    max-width: 70%;
-    margin-left: 15%;
-    /*border: 1px solid black;*/
+    max-width: 50%;
+    margin-left: 25%;
+/*    border: 1px solid black;*/
     text-align: center;
 }
     .realizations a{
         display: inline-block;
         text-decoration: none;
-        padding: 2px;
-        width: 300px;
-        height: 300px;
+        width: 100%;
+        height: 250px;
+        margin-top: 50px;
         overflow: hidden;
-        /*border: 1px solid #666666;*/
-        margin: 5%;
+        /*border-top: 7px solid #666666;*/
+        border-bottom: 10px solid black;
         opacity: 0.7;
-        border-radius: 20%;
+/*        border-radius: 20%;*/
     }
     
     .realizations a span{
         width: 100%;
-        height: 40px;
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
-        background-color: crimson;
+        height: 20px;
+        color: whitesmoke;
+        background-color: black;
+        position: absolute;
     }
         
     .realizations a:hover{
@@ -195,14 +195,13 @@ body, html {
     
     
     .realizations a img{
-        height: 420px;
-        margin-left: -60px;
-        margin-top: -20px;
+        width: 100%;
+        margin-top: -50px;
     }
     
 /*Galeria*/
 
-.gallery{
+/*.gallery{
     width: 70%;
     margin-left: 15%;
     text-align: center;
@@ -216,7 +215,41 @@ body, html {
         margin-top: 1%;
         width: 640px;
         height: 480px;
-        /*border: 1px solid blue;*/
+        border: 1px solid blue;
+        overflow: hidden;
+    }
+    
+    .gallery h1{
+        font-size: 30px;
+        display: inline;
+        float: right;
+    }
+    
+    .gallery p{
+        display: inline-block;
+        font-size: 15px;
+        letter-spacing: 1px;
+        text-align: justify;
+        max-width: 45%;
+        float: right;
+    }*/
+    
+    .gallery{
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+    letter-spacing: 30px;
+    margin-top: 3%;
+    padding-bottom: 1%;
+}
+
+    .gallery a{
+        display: inline-block;
+        margin-top: 1%;
+        width: 640px;
+        height: 300px;
+        border-bottom: 10px solid black;
+        border-top: 10px solid black;
         overflow: hidden;
     }
     
@@ -561,7 +594,7 @@ body, html {
     
     .description-text-right{
         margin-right: 15%;
-        margin-left: 5%;
+/*        margin-left: 5%;*/
         float: right;
 /*        font-size: 15px;*/
         letter-spacing: 1px;
@@ -593,6 +626,53 @@ body, html {
     .description-graphic-left{
         float: left;
         margin-left: 15%;
+    }
+    
+    .description-add-right{
+        margin-top: 50px;
+        /*display: inline-block;*/
+        margin-right: 15%;
+        float: right;
+        text-align: center;
+        /*border: 1px solid whitesmoke;*/
+        width: 32%;
+        letter-spacing: 1px;
+        font-size: 20px;
+    }
+    
+    .description-add-right li{
+        /*display: inline-block;*/
+        list-style-type: none;
+        margin-top: 10px;
+    }
+    
+    .description-add-right li a{
+        color: whitesmoke;
+        text-decoration: none;
+    }
+    
+    
+    .description-add-left{
+        margin-top: 50px;
+        /*display: inline-block;*/
+        margin-left: 15%;
+        float: left;
+        text-align: center;
+        /*border: 1px solid whitesmoke;*/
+        width: 32%;
+        letter-spacing: 1px;
+        font-size: 20px;
+    }
+    
+    .description-add-left li{
+        /*display: inline-block;*/
+        list-style-type: none;
+        margin-top: 10px;
+    }
+    
+    .description-add-left li a{
+        color: whitesmoke;
+        text-decoration: none;
     }
     
 .to-katalog{
@@ -858,7 +938,7 @@ body, html {
     padding-top: 0;
 }
 
-/*Podpisy zdjÄ™Ä‡*/
+/*Podpisy zdjęć*/
 
 .title {
     position: relative;

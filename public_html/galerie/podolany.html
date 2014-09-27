@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Galeria karbówek</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+        <script type="text/javascript" src="../js/jquery1.11.1.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/menu_slice/style.css" />
+        <link rel="stylesheet" type="text/css" href="../css/menu_slice/custom.css" />
+        <link rel="stylesheet" type="text/css" href="../css/main_menu/stimenu.css" />
+        <link rel="stylesheet" href="../css/sidebar/slidebars.css">
+        <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+        <noscript>
+	<link rel="stylesheet" type="text/css" href="../css/styleNoJS.css" />
+	</noscript>
+        <script src="../js/jquery-1.6.1.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            var st_jq = jQuery.noConflict(true);
+        </script>
+        <script src="../js/jquery.easing.1.3.js" type="text/javascript"></script>
+        <script type="text/javascript" src="../js/gallery/mlbox.js"></script>
+    </head>
+    <body>
+        
+<!--Odtwarzanie filmów-->
+        
+<!-- 1. skin -->
+<link rel="stylesheet" href="//releases.flowplayer.org/5.4.6/skin/minimalist.css">
+ 
+<!-- 2. jquery library -->
+<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+ 
+<!-- 3. flowplayer -->
+<script src="//releases.flowplayer.org/5.4.6/flowplayer.min.js"></script>
+        
+        <!-- przesuwanie do góry strony //-->
+            <script>
+             st_jq(function(){
+                var stt_is_shown = false;
+                st_jq(window).scroll(function(){
+                   var win_height = 300;
+                   var scroll_top = $(document).scrollTop(); 
+                   if (scroll_top > win_height && !stt_is_shown) {
+                      stt_is_shown = true;
+                      st_jq("#scroll-to-top").fadeIn();
+                   } else if (scroll_top < win_height && stt_is_shown) {
+                      stt_is_shown = false;
+                      st_jq("#scroll-to-top").fadeOut();
+                   }
+               });
+                            st_jq("#scroll-to-top").click(function(e){
+                   e.preventDefault();
+                   st_jq('html, body').animate({scrollTop:0}, 1500);
+                 });
+              });
+              </script>
+
+    <!-- płynne przewijanie  //-->
+        <script>
+            function scroll_to(selector) {
+                $('html,body').animate({scrollTop: $(selector).offset().top}, 700);
+            return false;
+               };
+               
+        </script>
+        
+    <!-- Sidebar //-->    
+        <div class="sb-slidebar sb-left">
+              
+                
+                    <!-- wyszukiwarka do wersji 2.0 <li class="sb-close"><a href="strony/szukaj.html">Szukaj</a></li> -->
+                    <p style="text-align: center">Szukaj:</p>
+                    <div class="search">
+                        
+                        <form action="http://www.google.pl/search" method="get">
+                        <input type="text" name="q" />
+                        <input type="hidden" name="ie" value="UTF-8" />
+                        <input type="hidden" name="sitesearch" value="domena" />
+
+                        </form>
+                    </div>
+                    <ul class="sb-menu">
+                    <li class="sb-close"><a href="../strony/oze.html">Odnawialne źródła energii</a></li>
+                    <li class="sb-close"><a href="../strony/piany.html">Piana poliuretanowa</a></li>
+                    <li class="sb-close"><a href="../strony/prace_inz.html">Prace inżynieryjne</a></li>
+                    <li class="sb-close"><a href="../strony/termowizja.html">Termowizja</a></li>
+                    <li class="sb-close"><a href="../strony/dotacje.html">Dotacje</a></li>
+                    <li class="sb-close"><a href="../strony/pompy.html">Pompy ciepła</a></li>
+                    <li class="sb-close"><a href="../strony/ogniwa.html">Panele słoneczne</a></li>
+                    <li class="sb-close"><a href="#"></a></li>
+                    <li class="sb-close"><a href="../strony/katalog.html">Katalog</a></li>
+                    
+                    
+                </ul>
+            
+
+        </div>
+
+            <div class="sb-slidebar sb-right">
+              <!-- Your right Slidebar content. -->
+            </div>
+        
+            <!-- Slidebars -->
+            <script src="../js/slidebars.js"></script>
+            <script>
+                
+              (function($) {
+                $(document).ready(function() {
+                  $.slidebars();
+                });
+              }) (jQuery);
+            </script>
+            
+            
+<!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY -->
+<div id="sb-site" style="height: auto;"> <!-- sb-site TOP -->
+        
+                    <a href="../index.html"><img class="logo_head" src="../images/logo.png" alt="Ekoinstal"></a>
+
+
+
+                    <div class="topMenu">
+                        <ul>
+                            <li><a href="../index.html"><img src="../images/home.png" alt="Strona dmowa"></a></li>
+                            <li><a href="../index.html#onas"><img src="../images/onas.png" alt="O nas"></a></li>
+                            <li><a href="../index.html#kontakty"><img src="../images/kontakt.png" alt="Kontakt"></a></li>
+                            <li><a href="../index.html#kontakt"> <img src="../images/sklep.png" alt="Sklep"></a></li>
+                            <li><a href="szukaj.html"><img src="../images/szukaj.png" alt="Szukaj"></a></li>
+
+                        </ul>
+                    </div>
+                    
+    <h1 class="header-main-default" style="z-index: 3; position: relative">Osada Karbówek</h1>   
+    
+    <p class="text-main-description text-main-description-column" style="position: relative; z-index: 3">
+        Kolejna ciekawa inwestycja oparta na pompach ciepła. Zadaniem trzech urządzeń o mocy 
+        66 kW każde, jest oprócz przygotowania ciepłej wody użytkowej i ogrzewania nowo 
+        powstałego budynku hotelowo-rekreacyjnego, przygotowanie ciepła technologicznego 
+        na potrzeby technologii basenowej oraz instalacji wentylacji.   
+    </p>
+
+
+<div class="gallery">
+    
+    <a href="../images/galerie/podolany/pod1.jpg" title="Osada Karbówek" class="mlbox"> 
+        <img src="../images/galerie/podolany/pod1.jpg" alt="pod1"/>
+    </a>
+    
+    <a href="../images/galerie/podolany/pod2.jpg" title="Osada Karbówek" class="mlbox">
+        <img src="../images/galerie/podolany/pod2.jpg" alt="pod2"/>
+    </a>
+    
+    <a href="../images/galerie/podolany/pod3.jpg" title="Osada Karbówek" class="mlbox">
+        <img src="../images/galerie/podolany/pod3.jpg" alt="pod3"/>
+    </a>
+    
+    <a href="../images/galerie/podolany/pod4.jpg" title="Osada Karbówek" class="mlbox">
+        <img src="../images/galerie/podolany/pod4.jpg" alt="pod4"/>
+    </a>
+    
+</div>
+
+</div> <!-- sb-site   END //-->
+
+    <p class="sb-toggle-left" id="fixed-top" style="color: crimson"> Menu</p>
+          
+    <a href="#" title="top" id="scroll-to-top"><img src="../images/up.png" alt="do góry" /></a>
+
+    <div class="social">
+        
+        <a href="https://www.facebook.com/pages/Budujemy-Dom/423667501001852?fref=ts">
+            <img src="../images/facebook_box.png" alt="facebook" style="width: 40px; position: absolute; margin-left:40px; margin-top: 20px; cursor: pointer">
+        </a>
+        
+        <a href="https://www.youtube.com/channel/UC2RvVXWlynSG6p-2hquuK0A">
+            <img src="../images/youtube.png" alt="youtube" style="width: 70px; position: absolute; margin-top: 80px; margin-left: 25px" >
+        </a>
+        
+        <p><span> M E D I A </span></p>
+        
+    </div> 
+    
+    <div class="mail">
+        <a href="mailto:biuro@grupaekoinstal.pl">
+            <p>Skontaktuj się</p>
+        </a>
+            <img src="../images/mail.png" alt="mail" style="width:25px; margin-left: 115px; margin-top: 10px" >
+    </div>
+
+
+    <div class="footer">
+        
+        <div class="version">
+            v 0.9.8
+        </div>
+          
+          <a target="_blank" href="http://mfteam.com.pl" class="mf">&#169 Copyright by MFTeam</a>
+          
+    </div> 
+    </body>
+</html>
