@@ -510,12 +510,12 @@ body, html {
 }
 
     .description-s span{
-        float: right;
         color: crimson;
         text-decoration: none;
     }
     
     .description-s span a{
+        float: right;
         text-decoration: none;
         color: crimson;
         opacity: 1.0;
@@ -673,6 +673,12 @@ body, html {
     .description-add-left li a{
         color: whitesmoke;
         text-decoration: none;
+    }
+    
+    #porownanie img{
+        width: 70%;
+        margin-left: 15%; 
+        margin-top: 10px;
     }
     
 .to-katalog{
@@ -1061,6 +1067,27 @@ body, html {
 
 @media all and (min-width:501px) and (max-width: 1700px) {
     
+    #sb-site-middle{
+        text-align: center;
+    }
+        
+        .title-left, .title-right{
+            float: none;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+    
+        .description-add-left, .description-add-right{
+            float: none;
+            margin-left: 33%;
+            margin-right: 33%;
+        }
+        
+    #porownanie img{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    
     .img-top{
         width: 470px;
         margin-top: 10px;
@@ -1083,7 +1110,7 @@ body, html {
     }
     
     .header-main{
-        font-size: 37px;
+        font-size: 30px;
     }
     
     .header-main-default{
@@ -1136,6 +1163,7 @@ body, html {
     .title-left, .title-right{
     float: none;
     margin-left: 15%;
+    margin-right: 15%;
 }
 }
 
@@ -1219,6 +1247,7 @@ body, html {
 .sti-icon-termowizja{
 	background-image:url(../images/termowizja.png);
 }
+
 .sti-icon-panele{
         background-image:url(../images/panele.png);
 }
