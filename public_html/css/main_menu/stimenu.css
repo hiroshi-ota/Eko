@@ -45,7 +45,7 @@
 .sti-menu li a h3{
 	font-family: Baskerville, "Hoefler Text", Garamond, "Times New Roman", serif; 
 	font-size:18px;
-	font-style:italic;
+	/*font-style:italic;*/
 	color: #111;
 	position:absolute;
 	top:248px;
