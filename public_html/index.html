@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+
     <head>       
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
         <title>Ekoinstal Test</title>
-        <meta charset="UTF-8"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
         <link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
         <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
@@ -192,11 +194,19 @@
         
         <br><br>
         
-        <h1 class="header-main">Witamy na naszej stronie!</h1>
+        <h1 class="header-main">Witamy na stronie internetowej Grupy Budowlanej Ekoinstal</h1>
 
         
         <div class="text-main-description text-main-description-column">
-            <p>Ekoinstal to trzy odrębne dziedziny funkcjonowania wspierane pracą dedykowanych specjalistów. Dział pompy ciepła specjalizuje się w systemach grzewczych z zastosowaniem technologii odnawialnych źródeł energii. Proponujemy najniższe koszty eksploatacyjne, maksymalny komfort, dbałość o ochronę środowiska i współodpowiedzialność za przyszłość Służymy pomocą również w zakresie sprzedaży i doboru pogrzewaczy wody użytkowej, suszarek do rąk. Współpracujemy z klientem indywidualnym i biznesowym.</p>
+            <p> 
+                Grupę Ekoinstal tworzą trzy działy z wieloletnim doświadczeniem w branży specjalizującej się odnawialnymi  źródłami energii z wykorzystaniem nowoczesnych systemów grzewczych ,pomp ciepła technik izolacji natryskowej oraz fotowoltaiki.
+                Sukces naszej grupy opiera się zwłaszcza na znakomitej wiedzy i doświadczeniu wykwalifikowanej kadry naszych pracowników.
+                Oferta Ekoinstalu skierowana jest głównie do firm, klientów indywidualnych,  jednostek użyteczności publicznej itp.
+                Grupa Ekoinstal mając na uwadze coraz większe wymagania swoich klientów, nieustannie podnosi poziom  jakości świadczonych usług wdrażając przy tym na bieżąco najnowocześniejsze technologie dostępne  na rynku..
+                Jesteśmy przekonani ,że nasza oferta pozwoli nam nawiązać  z państwem owocną współpracę..
+                W przypadku pytań służymy państwu pomocą i zachęcamy do kontaktu telefonicznego , mailowego bądź odwiedzenia naszego biura mieszczącego się w Lubiczu górnym przy ulicy warszawskiej 1a.
+                Raz jeszcze zapraszamy państwa do szczegółowego zapoznania się  z ofertą grupy  Ekoinstal.
+            </p>
             
         </div>        
         
@@ -205,37 +215,132 @@
       <!-- center //-->  <!-- center //--> <!-- center //--> <!-- center //--> <!-- center //--> <!-- center //--> <!-- center //--> <!-- center //--> <!-- center //-->
       
       <div id="sb-site-middle"> <a id="onas"></a>
+         
+          <script>
+          $(function(){  
+            $('.news p').hide();
+            $('.news p').removeClass("minus").addClass("plus");
+            $('.news a').click(function(){
+                  if ($(this).hasClass("minus")) {
+                  $(this).removeClass("minus").addClass("plus").parent().next().show(300);
+                  }
+                  else {
+                  $(this).removeClass("plus").addClass("minus").parent().next().hide(300);
+                  }
+               });  
+            });
+          </script>
           
-        <div class="description"> 
-      
-          <!--<h1 class="header-main-default" style="color: whitesmoke; float: right">Kilka słów o naszej firmie:</h1>-->
-          
-<!--          <p class="description-text-left" style="color: #666666; padding-top: 30px">
-              O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie 
-              O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie 
-              O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie 
-              O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie 
-              O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie 
-              O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie 
-              O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie 
-              O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie
-              O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie
-              O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie
-              O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie
-              O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie
-              O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie
-              O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie O naszej firmie
-          </p> -->
-          
-          <div class="bg_img">
-              <img src="images/siedziba.gif" alt="siedziba" style="opacity: 0.3">
+          <div id="news_block">
+              
+              <div class="news">
+                  <h1><a class="minus">Pierwszy news - coś dla tygrysków....</a></h1>
+                  
+                  <p class="minus">
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      <span>Więcej </span>
+                  </p>
+                  
+                  
+              </div>
+              
+              <div class="news">
+                  <h1><a class="minus">Drugi news - coś czego nie lubią tygryski....</a></h1>
+                  
+                  <p>
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      <span> Więcej </span>
+                  </p>
+                  
+                  
+              </div>
+              
+              <div class="news">
+                  <h1><a class="minus">Trzeci news - Coś tam....</a></h1>
+                  
+                  <p>
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      <span> Więcej </span>
+                  </p>
+                  
+                  
+              </div>
+              
+              <div class="news">
+                  <h1><a class="minus">Czwarty news - ....</a></h1>
+                  
+                  <p>
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      <span> Więcej </span>
+                  </p>
+                  
+                  
+              </div>
+              
+                            <div class="news">
+                  <h1><a class="minus">Piąty news - ....</a></h1>
+                  
+                  <p>
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
+                      <span> Więcej </span>
+                  </p>
+                  
+                  
+              </div>
+              
+              
           </div>
-          
-<!--          <a href="http://www.wp.pl" data-title="Siedziba EKOINSTAL" class="title ribbon">
-            <img src="images/siedziba.jpg" alt="Siedziba EKOINSTAL" style="height: 500px; width: auto" />
-          </a>-->
-          
-        </div>
+
           
       
       </div> <!-- // end sb-site center -->
@@ -298,10 +403,23 @@
             
         </div>
           
-    <!-- MAPA -->
-        <div id="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2399.590721645145!2d18.766460000000002!3d53.02771999999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ccbf52515104f%3A0x3d4ec3773d1b1db5!2sEkoinstal.+PW.+Gachewicz+M.!5e0!3m2!1spl!2spl!4v1406492750777" frameborder="0" scrolling=no seamless="seamless" style="margin-left: 6%; border:0; width: 30%; height: 50%"></iframe>
-        </div>
+    <!-- Formularz kontaktowy -->
+    
+            <form class="formularz" action="mail.php" method="post">
+                <p>Adres e-mail</p>
+                <input id="email" type="text" name="mail" class="input-xlarge" placeholder=" Twój e-mail" />
+                <p>Numer kontaktowy</p>
+                <input id="nr" type="text" name="nr" class="input-xlarge" placeholder=" Twój numer kontaktowy" />
+                <p>Temat</p>
+                <input id="temat" type="text" name="temat" class="input-xlarge" placeholder=" Twój temat" />
+                <p>Treść wiadomości</p>
+                <textarea id="tresc" type="text" name="tresc" class="input-xlarge" placeholder=" Twoja wiadomość" rows="8"></textarea>
+                <br>
+                    <!--<button type="submit" class="btn-mini" style="color: white; background-color: steelblue"> Wyślij wiadomość</button>-->
+                    <br>
+                    <input type="submit" value="Wyślij" id="send" name="send" style="color: steelblue" />
+            </form>
+
     
     
 <a href="#" title="top" id="scroll-to-top"><img src="images/up.png" alt="do góry" /></a>    
