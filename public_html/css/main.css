@@ -145,6 +145,7 @@ body, html {
     
     .news p{
         text-align: justify;
+        background: red;
     }
     
     .news p:first-child{
