@@ -6,7 +6,7 @@ $temat =  htmlspecialchars(trim($_POST['temat']));
 $wiadomosc = htmlspecialchars(trim($_POST['tresc']));
 $send = $_POST['send'];
 //mail na który będa wysyłane wiadomości
-$odbiorca = "kamil.kazmierowski@gmail.com";
+$odbiorca = "biuro@grupaekoinstal.com";
 //nagłówki
 $header = "Content-type: text/html; charset=utf-8\r\nFrom: $mail";
 

@@ -145,7 +145,7 @@ body, html {
     
     .news p{
         text-align: justify;
-        background: red;
+        /*background: red;*/
     }
     
     .news p:first-child{
@@ -527,6 +527,20 @@ body, html {
         .text-main-description-column p{
             margin:0;
         }
+
+        .list-main-default{
+            color: #666666;
+            margin-left: 15%;
+            margin-top: 4%;
+        }
+
+            .list-main-default ul{
+                list-style-type: disc;
+            }
+
+            .list-main-default p{
+                font-size: 15px;
+            }
         
   
 /*Linki dotacje*/
