@@ -27,8 +27,8 @@
         <script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
         <script src="js/jquery.iconmenu.js" type="text/javascript"></script>
 
-        <link rel="stylesheet" type="text/css" href="css/main_menu/style.css" />
-        <link rel="stylesheet" type="text/css" href="css/main_menu/stimenu.css" />
+        <!--<link rel="stylesheet" type="text/css" href="css/main_menu/style.css" />-->
+        <!--<link rel="stylesheet" type="text/css" href="css/main_menu/stimenu.css" />-->
         
         
         
@@ -88,7 +88,7 @@
                     <li class="sb-close"><a href="strony/termowizja.html">Termowizja</a></li>
                     <li class="sb-close"><a href="strony/dotacje.html">Dotacje</a></li>
                     <li class="sb-close"><a href="strony/pompy.html">Pompy ciepła</a></li>
-                    <li class="sb-close"><a href="strony/ogniwa.html">Panele słoneczne</a></li>
+                    <li class="sb-close"><a href="strony/ogniwa.html">Fotowoltaika</a></li>
                     <li class="sb-close"><a href="galerie/default.html">Galeria</a></li>
                     <li class="sb-close"><a href="#"></a></li>
                     <li class="sb-close"><a href="strony/katalog.html">Katalog</a></li>
@@ -214,7 +214,7 @@
     </div>
       <!-- center //-->  <!-- center //--> <!-- center //--> <!-- center //--> <!-- center //--> <!-- center //--> <!-- center //--> <!-- center //--> <!-- center //-->
       
-      <div id="sb-site-middle"> <a id="onas"></a>
+      <div id="sb-site-middle" style="background-image: url(images/pattern.png);"> <a id="onas"></a>
          
           <script>
           $(function(){  
@@ -222,36 +222,30 @@
             $('.news p').removeClass("minus").addClass("plus");
             $('.news a').click(function(){
                   if ($(this).hasClass("minus")) {
-                  $(this).removeClass("minus").addClass("plus").parent().next().show(300);
+                  $(this).removeClass("minus").addClass("plus").parent().next().slideToggle(300);
                   }
                   else {
-                  $(this).removeClass("plus").addClass("minus").parent().next().hide(300);
+                  $(this).removeClass("plus").addClass("minus").parent().next().slideToggle(300);
                   }
                });  
             });
           </script>
           
           
-          <h1 class="header-main-default" style="color: whitesmoke; padding-top: 3%">Aktualności:</h1>
+          <h1 class="header-main-default" style="color: whitesmoke; padding-top: 3%; text-align: left">Aktualności:</h1>
           
           <div id="news_block">
               
               <div class="news">
-                  <h1><a class="minus">Pierwszy news - coś dla tygrysków....</a></h1>
-                  
+                  <h1><a class="minus">Dotacja dla Gminy Lubicz</a></h1>
+
+
                   <p class="minus">
-                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
-                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
-                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
-                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
-                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
-                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
-                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
-                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
-                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
-                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
-                      jakiś news jakiś news jakiś news jakiś news fsdfsdfdfvzs
-                      <span>Więcej </span>
+                      <data>12.10.2014</data><br/>
+                      Informujemy mieszkańców gminy Lubicz , że nadal istnieje możliwość dotacji w
+                      wysokości 3000 zł przez Urząd gminy w Lubiczu na zakup i montaż powietrznych
+                      pomp ciepła do podgrzewania ciepłej wody.
+                      <span><a href="http://www.lubicz.pl/6774,wniosek-o-dofinansowanie-budowy-kolektora-slonecznego-powietrznej-pompy-ciepla.html">Więcej... </a></span>
                   </p>
                   
                   
@@ -356,41 +350,8 @@
           
           
           <h1 class="header-main-default" style="padding-bottom: 2%; padding-top: 5%">Skontaktuj się z nami:</h1>
-       
         
-            <div class="kontakt" id="text-main-kontakty-left">
-            
-                
-                <a href="strony/oze.html"><h1>Odnawialne źródła energii:</h1></a>
-                <br>Paweł Bańkowski 
-                <br> 797 517 317 
-                <br> <a href="mailto:bankowski@grupaekoinstal.pl">bankowski@grupaekoinstal.pl</a>
-                
-                
-                
-                <a href="strony/piany.html"><h1>Pianka poliuretanowe:</h1></a>
-                <br>Kamil Breński
-                <br> 797 022 044
-                <br> <a href="mailto:brenski@grupaekoinstal.pl">brenski@grupaekoinstal.pl</a>
-                
-                
-                
-                <a href="strony/prace_inz.html"><h1>Prace inżynieryjne:</h1></a>
-                <br> Marian Gachewicz
-                <br> 797 022 042
-                <br> <a href="mailto:gachewicz@grupaekoinstal.pl">gachewicz@grupaekoinstal.pl</a>
-                
-                
-                
-                <a href="strony/termowizja.html"><h1>Termowizja:</h1></a>
-                <br> 56 678 21 47
-                <br> <a href="mailto:biuro@grupaekoinstal.pl">biuro@grupaekoinstal.pl</a>
-                
-                
-            
-        </div>
-        
-        <div class="kontakt" id="text-main-kontakty-middle">
+        <div class="kontakt" id="text-main-kontakty-default">
             
             <h1>Ekoinstal <br>Grupa Budowlana</h1>
             <p>ul. Warszawska 1a

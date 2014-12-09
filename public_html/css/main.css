@@ -123,21 +123,22 @@ body, html {
 
     }
 
-    /*aktualności*/
+    /*aktualnoÃƒâ€¦Ã¢â‚¬Âºci*/
 
 #news_block{
-    padding-top: 30px;
-    width: 70%;
+    padding-top: 5px;
+    width: 40%;
     height: 100%;
     //border: 1px solid whitesmoke;
     margin-left: 15%;
     margin-right: 15%;
     //display: inline-block;
+    text-align: left;
 }
 
     .news{
-        //display: block;
-        border-bottom: 1px solid whitesmoke;
+        display: block;
+        border-bottom: 1px solid #aaaaaa;
         width: 100%;
         color: whitesmoke;
         margin-top: 50px;
@@ -146,6 +147,12 @@ body, html {
     .news p{
         text-align: justify;
         /*background: red;*/
+    }
+
+    .news p span{
+        color: #aaaaaa;
+        float: right;
+        font-size: 12px;
     }
     
     .news p:first-child{
@@ -161,11 +168,18 @@ body, html {
         color: Whitesmoke;
         font-size: 30px;
     }
+
+    .news data{
+        font-size: 12px;
+        color: #aaaaaa;
+    }
             
         .minus{
+
         }
         
         .plus{
+
         }
 
     
@@ -202,11 +216,11 @@ body, html {
     
     .formularz{
     display: inline-block;
-    margin-right: 15%;
+    margin-left: 15%;
     width: 20%;
     //display: inline-block;
-    float: right;
-    text-align: right;
+    float: left;
+    text-align: left;
 }
 
     .formularz p{
@@ -222,10 +236,42 @@ body, html {
         width: 250px;
         border-radius: 4px;        
     }
-    
-    
-    
-    
+
+
+    .trigers{
+        width: 100%;
+        height: 100%;
+    }
+
+    .triger {
+        position: relative;
+        display: block;
+        width: 100%;
+        //border-bottom: 1px solid #666666;
+        text-align: center;
+    }
+
+    .triger a{
+        text-decoration: none;
+        /*text-align: right;*/
+        float: right;
+        margin-right: 15%;
+    }
+
+    .triger photo{
+        /*height: 500px;*/
+        padding: 10px;
+        width: 100%;
+        border-bottom: 1px solid grey;
+        /*background-color: #666666;*/
+        /*box-shadow: inset 0em 0.5em 3em 0.5em #aaaaaa;*/
+    }
+
+    .triger photo img{
+        width: 200px;
+        margin-right: 5px;
+        display: inline-block;
+    }
     
     
 /*Menu realizacji*/
@@ -367,7 +413,7 @@ body, html {
         opacity: 1;
     }
 
-/*Linki z dodatkową wiedzą*/
+/*Linki z dodatkowÃƒâ€žÃ¢â‚¬Â¦ wiedzÃƒâ€žÃ¢â‚¬Â¦*/
     
 /*Boczki*/
 
@@ -530,8 +576,11 @@ body, html {
 
         .list-main-default{
             color: #666666;
-            margin-left: 15%;
-            margin-top: 4%;
+            margin-right: 15%;
+            /*margin-top: 4%;*/
+            width: 30%;
+            float: right;
+            display: inline-block;
         }
 
             .list-main-default ul{
@@ -574,7 +623,7 @@ body, html {
     opacity: 0.2;
 }
         
-/*KrĂłtki opis z "wiÄ™cej" (dotacje itp...)*/        
+/*KrÃƒâ€žÃ¢â‚¬Å¡Ãƒâ€¦Ã¢â‚¬Å¡tki opis z "wiÃƒÆ’Ã¢â‚¬Å¾ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢cej" (dotacje itp...)*/        
         
 .left{
     float: left;
@@ -608,7 +657,7 @@ body, html {
             opacity:0.5;
         }
   
-/*Obrazek pod gĹ‚Ăłwnym tekstem (np. schemat pompy top)*/
+/*Obrazek pod gÃƒâ€žÃ‚Â¹ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€žÃ¢â‚¬Å¡Ãƒâ€¦Ã¢â‚¬Å¡wnym tekstem (np. schemat pompy top)*/
         
 .img-top{
     width:auto;
@@ -832,6 +881,18 @@ body, html {
         text-decoration-line: underline;
         margin-bottom: 0px;
     }
+
+        #text-main-kontakty-default{
+            margin-top: 8%;
+            margin-right: 25%;
+            padding-left: 3%;
+            color: #666666;
+            font-size: 15px;
+            text-align: center;
+            float: right;
+
+        }
+
     
         #text-main-kontakty-left{
             /*padding-top: 10px;*/
@@ -844,7 +905,7 @@ body, html {
             //letter-spacing: 1px;
             //text-align: justify;
             //text-transform: capitalize;
-            border-right: 1px solid #666666;
+            //border-right: 1px solid #666666;
 
         }
 
@@ -892,7 +953,7 @@ body, html {
    
     
             #sb-site, .sb-site-container {
-                padding: 0; /* odlegĹ‚oĹ›Ä‡ strony od brzegĂłw */
+                padding: 0; /* odlegÃƒâ€žÃ‚Â¹ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡oÃƒâ€žÃ‚Â¹ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂºÃƒÆ’Ã¢â‚¬Å¾ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¡ strony od brzegÃƒâ€žÃ¢â‚¬Å¡Ãƒâ€¦Ã¢â‚¬Å¡w */
             }
 
             .sb-slidebar {
@@ -912,8 +973,8 @@ body, html {
             #fixed-top { 
                     position: fixed;
                     top: 0;
-                    left: 20px; /* odlegĹ‚oĹ›Ä‡ od pbrzegu przycisku */
-                    width: 5px; /* szerokoĹ›Ä‡ przycisku*/
+                    left: 20px; /* odlegÃƒâ€žÃ‚Â¹ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡oÃƒâ€žÃ‚Â¹ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂºÃƒÆ’Ã¢â‚¬Å¾ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¡ od pbrzegu przycisku */
+                    width: 5px; /* szerokoÃƒâ€žÃ‚Â¹ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂºÃƒÆ’Ã¢â‚¬Å¾ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¡ przycisku*/
                     height: 50px;
                     background-color: transparent;
                     z-index: 4;
@@ -998,7 +1059,7 @@ body, html {
     /*margin-bottom: 1%;*/
 }
 
-/* pĹ‚ynne przewijanie do gĂłry strony */
+/* pÃƒâ€žÃ‚Â¹ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ynne przewijanie do gÃƒâ€žÃ¢â‚¬Å¡Ãƒâ€¦Ã¢â‚¬Å¡ry strony */
 
 .to-top{
     text-align:center;
@@ -1028,7 +1089,7 @@ body, html {
     padding-top: 0;
 }
 
-/*Podpisy zdjęć*/
+/*Podpisy zdjÃƒâ€žÃ¢â€žÂ¢Ãƒâ€žÃ¢â‚¬Â¡*/
 
 .title {
     position: relative;
@@ -1128,7 +1189,7 @@ body, html {
 	transition-delay: .1s;
 }
     
-/* Responsywność */
+/* ResponsywnoÃƒâ€¦Ã¢â‚¬ÂºÃƒâ€žÃ¢â‚¬Â¡ */
 
 @media all and (min-width:1701px) and (max-width: 2000px) {
     p{
@@ -1338,6 +1399,10 @@ body, html {
 
 .sti-icon-pompy{
         background-image:url(../images/pompy.png);
+}
+
+.sti-icon-rekuperacja{
+    background-image:url(../images/rekuperacja.png);
 }
 
 

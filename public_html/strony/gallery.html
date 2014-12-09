@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Ekoinstal Test</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="../css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../css/demo.css" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&v1' rel='stylesheet' type='text/css' />
+    <script type="text/javascript" src="../js/jquery1.11.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/menu_slice/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/menu_slice/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../css/main_menu/stimenu.css" />
+    <link rel="stylesheet" href="../css/sidebar/slidebars.css">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+    <noscript>
+        <link rel="stylesheet" type="text/css" href="../css/styleNoJS.css" />
+    </noscript>
+    <script src="../js/jquery-1.6.1.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var st_jq = jQuery.noConflict(true);
+    </script>
+    <script src="../js/jquery.easing.1.3.js" type="text/javascript"></script>
+    <script src="../js/jquery.iconmenu.js" type="text/javascript"></script>
+
+    <!--<link rel="stylesheet" type="text/css" href="css/main_menu/style.css" />-->
+    <!--<link rel="stylesheet" type="text/css" href="css/main_menu/stimenu.css" />-->
+
+
+
+</head>
+<body>
+
+<script>
+    $(function(){
+    $('.gallery2 photo ').hide();
+    $('.gallery2 photo ').removeClass("minus").addClass("plus");
+    $('.gallery2 a').click(function(){
+        if ($(this).hasClass("minus")) {
+            $(this).removeClass("minus").addClass("plus").next().slideToggle(1000);
+        }
+        else {
+            $(this).removeClass("plus").addClass("minus").next().slideToggle(1000);
+        }
+    });
+    });
+</script>
+
+    <div class="triger">
+        <a href="#">Trigger</a>
+        <photo>
+        <img class="minus" src="../images/galerie/prace_inz/1.jpg">
+        <img class="minus" src="../images/galerie/prace_inz/2.jpg">
+        <img class="minus" src="../images/galerie/prace_inz/3.jpg">
+            </photo>
+
+    </div>
+
+
+</body>
+</html>

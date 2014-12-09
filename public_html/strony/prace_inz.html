@@ -57,35 +57,33 @@
 
         </script>
         
-    <!-- Sidebar //-->    
+    <!-- Sidebar //-->
         <div class="sb-slidebar sb-left">
-              
-                
-                    <!-- wyszukiwarka do wersji 2.0 <li class="sb-close"><a href="strony/szukaj.html">Szukaj</a></li> -->
-                    <p style="text-align: center">Szukaj:</p>
-                    <div class="search">
-                        
-                        <form action="http://www.google.pl/search" method="get">
+
+            <ul class="sb-menu">
+                <!-- wyszukiwarka do wersji 2.0 <li class="sb-close"><a href="strony/szukaj.html">Szukaj</a></li> -->
+                <p style="text-align: center">Szukaj:</p>
+                <div class="search">
+
+                    <form action="http://www.google.pl/search" method="get">
                         <input type="text" name="q" />
                         <input type="hidden" name="ie" value="UTF-8" />
                         <input type="hidden" name="sitesearch" value="domena" />
 
-                        </form>
-                    </div>
-                    <ul class="sb-menu">
-                    <li class="sb-close"><a href="oze.html">Odnawialne źródła energii</a></li>
-                    <li class="sb-close"><a href="piany.html">Piana poliuretanowa</a></li>
-                    <li class="sb-close"><a href="prace_inz.html">Prace inżynieryjne</a></li>
-                    <li class="sb-close"><a href="termowizja.html">Termowizja</a></li>
-                    <li class="sb-close"><a href="dotacje.html">Dotacje</a></li>
-                    <li class="sb-close"><a href="pompy.html">Pompy ciepła</a></li>
-                    <li class="sb-close"><a href="ogniwa.html">Panele słoneczne</a></li>
-                    <li class="sb-close"><a href="#"></a></li>
-                    <li class="sb-close"><a href="katalog.html">Katalog</a></li>
-                    
-                    
-                </ul>
-            
+                    </form>
+                </div>
+
+                <li class="sb-close"><a href="oze.html">Odnawialne źródła energii</a></li>
+                <li class="sb-close"><a href="piany.html">Piana poliuretanowa</a></li>
+                <li class="sb-close"><a href="prace_inz.html">Prace inżynieryjne</a></li>
+                <li class="sb-close"><a href="termowizja.html">Termowizja</a></li>
+                <li class="sb-close"><a href="dotacje.html">Dotacje</a></li>
+                <li class="sb-close"><a href="pompy.html">Pompy ciepła</a></li>
+                <li class="sb-close"><a href="ogniwa.html">Fotowoltaika</a></li>
+
+
+            </ul>
+
 
         </div>
         
@@ -101,7 +99,7 @@
             </script>
                     
 <!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY -->
-    <div id="sb-site">
+    <div id="sb-site" style="height: auto;">
         
         <a href="../index.html"><img class="logo_head" src="../images/logo.png" alt="Ekoinstal"></a>
 
@@ -119,7 +117,7 @@
         <h1 class="header-main-default" style="padding-top: 5%; z-index: 3; position: relative">Prace inżynieryjne</h1>
         
         
-            <p class="text-main-description text-main-description-column" style="position: relative; z-index: 3">
+            <p class="text-main-description" style="position: relative; z-index: 3; width: 30%; display: inline-block; margin-right: 0">
                 Grupa  Budowlana Ekoinstal - dział  inżynieryjny, w swojej bogatej ofercie  oferuje państwu kompleksową
                 obsługę prac inżynieryjnych wewnątrz jak i na zewnątrz obiektów. Zatrudnienie wykwalifikowanych fachowców,
                 oraz specjalistyczny sprzęt, którym dysponuje nasza firma  pozwala nam na profesjonalną realizację każdego
@@ -148,100 +146,73 @@
 
         </div>
 
-    </div>
+        <br/>
 
+<!-- Triger's - gallery and apointment -->
 
-            <!--<div class="content-menu">-->
-            <!--<a href="javascript:void()" onclick="scroll_to('#wewnetrzne')">wewnętrzne</a>-->
-            <!--<a href="javascript:void()" onclick="scroll_to('#zewnetrzne')">zewnętrzne</a>-->
+        <script>
+            $(function(){
+                $('.triger photo ').hide();
+                $('.triger photo ').removeClass("minus").addClass("plus");
+                $('.triger a').click(function(){
+                    if ($(this).hasClass("minus")) {
+                        $(this).removeClass("minus").addClass("plus").nextAll().slideToggle(600);
+                    }
+                    else {
+                        $(this).removeClass("plus").addClass("minus").nextAll().slideToggle(600);
+                    }
+                });
+            });
+        </script>
+        <br/>
+
+        <div class="triger">
+
+            <a href="#">galeria</a><br/>
+
+            <photo class="minus">
+                <img src="../images/galerie/prace_inz/1.jpg">
+                <img src="../images/galerie/prace_inz/2.jpg">
+                <img src="../images/galerie/prace_inz/3.jpg">
+                <img src="../images/galerie/prace_inz/4.jpg">
+                <img src="../images/galerie/prace_inz/5.JPG">
+                <img src="../images/galerie/prace_inz/6.JPG">
+                <img src="../images/galerie/prace_inz/7.JPG">
+                <img src="../images/galerie/prace_inz/8.JPG">
+
+            </photo>
+
+        </div>
+
+        <br/>
+
+        <div class="triger">
+
+            <a href="#">umów spotkanie</a><br/>
+
+            <photo class="minus">
+
+            </photo>
+
+        </div>
+
+        <!--<br/>-->
+
+        <!--<div class="gallery2">-->
+            <!--<a href="#">umów spotkanie</a>-->
+
+            <!--<photo class="minus">-->
+
+            <!--</photo>-->
         <!--</div>-->
 
-    <!--<div id="sb-site-middle">  &lt;!&ndash; sb-site-middle  // &ndash;&gt;-->
 
-        <!--<div class="description"><a id="wewnętrzne"></a>-->
+    </div> <!-- sb-site end -->
 
-            <!--<h1 style="color: whitesmoke">Pompa ciepła woda/woda</h1>-->
-
-            <!--<p class="description-text-left" style="color: whitesmoke">-->
-                <!--Woda gruntowa jest dobrym akumulatorem ciepła. Nawet podczas bardzo chłodnej zimy zachowuje dość-->
-                <!--wysoki, jak na dolne źródło ciepła, parametr temperaturowy. Temperatura wody waha się w przedziale-->
-                <!--od ok. 7°C do ok. 12°C i ma charakter stały. Jest to efekt pożądany, gdyż współczynnik efektywności-->
-                <!--pompy ciepła jest wprost proporcjonalny do temperatury dolnego źródła. Do wykorzystania ciepła z wód-->
-                <!--podziemnych potrzebne są dwie studnie. Jedna z nich pełni rolę studni czerpalnej, druga zaś zrzutowej.-->
-                <!--Podczas ich wykonywania określa się kierunek i jakość wód podziemnych. W studni czerpalnej znajduje się-->
-                <!--pompa głębinowa, która powoduje obieg wody przez wymiennik znajdujący się w pompie ciepła. Woda po-->
-                <!--oddaniu ciepła wędruje do studni zrzutowej. Studnie czerpalna i zrzutowa powinny znajdować się w-->
-                <!--znacznej odległości od siebie, żeby chłodna woda zrzucana nie mieszała się z wodą czerpaną,-->
-                <!--niekorzystnie obniżając jej temperaturę. Dodatkowo obie studnie muszą korzystać z tej samej-->
-                <!--warstwy wodonośnej. To rozwiązanie może być zastosowane w przypadku, gdy warunki hydrogeologiczne-->
-                <!--na to pozwalają. Często okazuje się, że napływ wody gruntowej jest niedostateczny. Limituje to-->
-                <!--utrzymanie wymaganego przepływu wody przez wymiennik. Obecne możliwości technologiczne pozwalają-->
-                <!--wykonać studnie głębinową praktycznie w każdym terenie, ale może się okazać, że koszty jej wykonania,-->
-                <!--bądź późniejszego wydobycia wody, będą niewspółmierne do założonego efektu ekonomicznego.-->
-                <!--Należy również pamiętać, że w przypadku, gdy studnia jest głębsza niż 30mb lub, gdy ilość-->
-                <!--czerpanej wody jest większa niż 15m3/dobę to wymagane jest pozwolenie wodnoprawne. Ma to-->
-                <!--szczególne znaczenie przy większych jednostkach pomp ciepła typu woda-woda. Inną przeszkodą-->
-                <!--systemu woda-woda może być zła jakość wody. Niewłaściwe parametry wody, szczególnie z dużą-->
-                <!--zawartością żelaza, manganu lub wysoką twardością, mogą powodować korodowanie wymiennika,-->
-                <!--osadzanie się osadów w instalacji. Jest to efekt niepożądany, gdyż znacząco wpływa na parametry-->
-                <!--pracy pompy ciepła, a przy długoletnim użytkowaniu może doprowadzić do całkowitej niedrożności-->
-                <!--układu po stronie dolnego źródła ciepła. Każdy producent określa parametry graniczne jakimi,-->
-                <!--powinna charakteryzować się woda używana jako dolne źródło ciepła w pompach ciepła typu woda-woda.-->
-                <!--Jako dolne źródło ciepła można wykorzystać również wody powierzchniowe, np. jeziora, rzeki, stawy.-->
-            <!--</p>-->
-
-            <!--<a href="http://www.wp.pl" data-title="Pompa woda/woda firmy DIMPLEX" class="title title-right ribbon" style="margin-top: 2%">-->
-                    <!--<img src="../images/pompy_woda_woda.jpg" alt="Siedziba EKOINSTAL" style="height: 500px; width: auto" />-->
-            <!--</a>-->
-        <!--</div>-->
-
-        <!--<hr style="width: 70%">-->
-
-        <!--<div class="description"><a id="woda_woda"></a>-->
-
-            <!--<h1 style="color: whitesmoke">Pompa ciepła woda/woda</h1>-->
-
-            <!--<p class="description-text-right" style="color: whitesmoke">-->
-                <!--Woda gruntowa jest dobrym akumulatorem ciepła. Nawet podczas bardzo chłodnej zimy zachowuje dość-->
-                <!--wysoki, jak na dolne źródło ciepła, parametr temperaturowy. Temperatura wody waha się w przedziale-->
-                <!--od ok. 7°C do ok. 12°C i ma charakter stały. Jest to efekt pożądany, gdyż współczynnik efektywności-->
-                <!--pompy ciepła jest wprost proporcjonalny do temperatury dolnego źródła. Do wykorzystania ciepła z wód-->
-                <!--podziemnych potrzebne są dwie studnie. Jedna z nich pełni rolę studni czerpalnej, druga zaś zrzutowej.-->
-                <!--Podczas ich wykonywania określa się kierunek i jakość wód podziemnych. W studni czerpalnej znajduje się-->
-                <!--pompa głębinowa, która powoduje obieg wody przez wymiennik znajdujący się w pompie ciepła. Woda po-->
-                <!--oddaniu ciepła wędruje do studni zrzutowej. Studnie czerpalna i zrzutowa powinny znajdować się w-->
-                <!--znacznej odległości od siebie, żeby chłodna woda zrzucana nie mieszała się z wodą czerpaną,-->
-                <!--niekorzystnie obniżając jej temperaturę. Dodatkowo obie studnie muszą korzystać z tej samej-->
-                <!--warstwy wodonośnej. To rozwiązanie może być zastosowane w przypadku, gdy warunki hydrogeologiczne-->
-                <!--na to pozwalają. Często okazuje się, że napływ wody gruntowej jest niedostateczny. Limituje to-->
-                <!--utrzymanie wymaganego przepływu wody przez wymiennik. Obecne możliwości technologiczne pozwalają-->
-                <!--wykonać studnie głębinową praktycznie w każdym terenie, ale może się okazać, że koszty jej wykonania,-->
-                <!--bądź późniejszego wydobycia wody, będą niewspółmierne do założonego efektu ekonomicznego.-->
-                <!--Należy również pamiętać, że w przypadku, gdy studnia jest głębsza niż 30mb lub, gdy ilość-->
-                <!--czerpanej wody jest większa niż 15m3/dobę to wymagane jest pozwolenie wodnoprawne. Ma to-->
-                <!--szczególne znaczenie przy większych jednostkach pomp ciepła typu woda-woda. Inną przeszkodą-->
-                <!--systemu woda-woda może być zła jakość wody. Niewłaściwe parametry wody, szczególnie z dużą-->
-                <!--zawartością żelaza, manganu lub wysoką twardością, mogą powodować korodowanie wymiennika,-->
-                <!--osadzanie się osadów w instalacji. Jest to efekt niepożądany, gdyż znacząco wpływa na parametry-->
-                <!--pracy pompy ciepła, a przy długoletnim użytkowaniu może doprowadzić do całkowitej niedrożności-->
-                <!--układu po stronie dolnego źródła ciepła. Każdy producent określa parametry graniczne jakimi,-->
-                <!--powinna charakteryzować się woda używana jako dolne źródło ciepła w pompach ciepła typu woda-woda.-->
-                <!--Jako dolne źródło ciepła można wykorzystać również wody powierzchniowe, np. jeziora, rzeki, stawy.-->
-            <!--</p>-->
-
-            <!--<a href="http://www.wp.pl" data-title="Pompa woda/woda firmy DIMPLEX" class="title title-left ribbon" style="margin-top: 2%">-->
-                    <!--<img src="../images/pompy_woda_woda.jpg" alt="Siedziba EKOINSTAL" style="height: 500px; width: auto" />-->
-            <!--</a>-->
-        <!--</div>-->
-
-    <!--</div>  &lt;!&ndash; sb-site-middle  END  // &ndash;&gt;-->
-
-
-    <!--<div id="sb-site-bottom"> &lt;!&ndash; sb-site-bottom // &ndash;&gt;-->
 
         <!--<p class="sb-toggle-left" id="fixed-top" style="color: crimson"> Menu</p>-->
 
-        <!--<a href="#" title="top" id="scroll-to-top"><img src="../images/home.png" alt="strzałka do góry" /></a>-->
+        <!--<a href="#" title="top" id="scroll-to-top"><img src="../images/up.png" alt="do góry" /></a>-->
 
         <!--<div class="social">-->
 
@@ -259,17 +230,16 @@
 
         <!--<div class="mail">-->
             <!--<a href="mailto:biuro@grupaekoinstal.pl">-->
-                <!--<img src="../images/mail.png" alt="mail" style="width:25px; margin-left: 115px; margin-top: 10px" >-->
+                <!--<p>Skontaktuj się</p>-->
             <!--</a>-->
+            <!--<img src="../images/mail.png" alt="mail" style="width:25px; margin-left: 115px; margin-top: 10px" >-->
         <!--</div>-->
-
-    <!--</div>  &lt;!&ndash; sb-site-bottom   END  // &ndash;&gt;-->
 
 
     <div class="footer">
 
         <div class="version">
-            v 0.8.9
+            v 0.9.9
         </div>
 
           <a target="_blank" href="http://mfteam.com.pl" class="mf">&#169 Copyright by MFTeam</a>
