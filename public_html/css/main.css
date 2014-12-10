@@ -3,7 +3,7 @@ body, html {
 	width: 100%;
 	min-height:100%;
         font-family: 'calibri';
-        background-color: #666666; /* Default background colour, overwrite this with your own css. I suggest moving your html or body background styling here. Making this transparent will allow the Slidebars beneath to be visible. */
+        background-color: #333333; /* Default background colour, overwrite this with your own css. I suggest moving your html or body background styling here. Making this transparent will allow the Slidebars beneath to be visible. */
 }
 
     
@@ -37,7 +37,7 @@ body, html {
     }
 
 .logo_head{
-    width: 25%;
+    width: 30%;
     margin-left: 15%;
     
 }
@@ -61,7 +61,7 @@ body, html {
 
 .footer{
     position: relative;
-    background-color: #666666;
+    background-color: #333333;
     width: 100%;
     height: 0;
     padding: 1%;
@@ -97,11 +97,16 @@ body, html {
 .topMenu{
     float: right;
     padding-right: 15%;
-    padding-top: 2%;
+    padding-top: 4%;
     margin-bottom: 2%;
-    /*width: 23%;*/
+    width: 20%;
     position: relative;
 }
+
+    /*.topMenu ul{*/
+        /*width: 260px;*/
+        /*height: 60px;*/
+    /*}*/
 
     .topMenu li{
         display: inline;
@@ -113,7 +118,7 @@ body, html {
         width: 10%;
         opacity: 0.7;
         filter: alpha(opacity=70);
-        -webkit-box-shadow: 1px #666666;
+        /*-webkit-box-shadow: 1px #666666;*/
 
     }
 
@@ -238,24 +243,22 @@ body, html {
     }
 
 
-    .trigers{
-        width: 100%;
-        height: 100%;
-    }
-
+/*Triger galeria i umawianie spotkania*/
     .triger {
         position: relative;
-        display: block;
+        /*display: inline-block;*/
         width: 100%;
-        //border-bottom: 1px solid #666666;
+        /*border-bottom: 1px solid #666666;*/
         text-align: center;
     }
 
-    .triger a{
+    .triger p{
+        color: #666666;
         text-decoration: none;
         /*text-align: right;*/
         float: right;
         margin-right: 15%;
+        cursor: pointer;
     }
 
     .triger photo{
@@ -267,10 +270,17 @@ body, html {
         /*box-shadow: inset 0em 0.5em 3em 0.5em #aaaaaa;*/
     }
 
+    .triger photo a{
+        float: inherit;
+        display: inline-block;
+        margin: 5px;
+    }
+
     .triger photo img{
         width: 200px;
         margin-right: 5px;
         display: inline-block;
+        text-align: center;
     }
     
     
@@ -664,6 +674,85 @@ body, html {
     margin-top: 10px;
 }
 
+.description2left{
+    width: 38%;
+    margin-left: 15%;
+    display: inline-block;
+    margin-bottom: 4%;
+    float: left;
+    text-align: left;
+}
+
+    .description2left p{
+        color: whitesmoke;
+        text-align: justify;
+
+    }
+
+    .description2left li{
+        list-style: disc;
+        color: whitesmoke;
+    }
+
+    .description2left h1{
+        color: whitesmoke;
+        margin-top: 15%;
+    }
+
+    .description2left h2{
+        color: whitesmoke;
+        margin-top: 180px;
+    }
+
+.description2right{
+    width: 30%;
+    margin-right: 15%;
+    float: right;
+    text-align: right;
+    margin-bottom: 4%;
+    display: inline-block;
+}
+
+    .description2right img{
+        width: 350px;
+        margin-top: 35px;
+    }
+
+img.description_center{
+    margin-top: 3%;
+    width:70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.line_left{
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    float: left;
+    margin-left: 15px;
+    background-color: crimson;
+}
+
+.line_left2{
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    float: left;
+    margin-left: 12px;
+    background-color: crimson;
+}
+
+.line_right{
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    right: 15px;
+    background-color: crimson;
+}
+
+
+
 .description{
     width: 100%;
     display: inline-block;
@@ -1032,9 +1121,19 @@ body, html {
             min-height: 100%;
             /*max-height: 100%;*/
             position: relative;
+            /*border: inset 1px solid whitesmoke;*/
             z-index: 1; /* Site sits above Slidebars */
-            background-color: #666666; /* Default background colour, overwrite this with your own css. I suggest moving your html or body background styling here. Making this transparent will allow the Slidebars beneath to be visible. */
+            background-color: #333333; /* Default background colour, overwrite this with your own css. I suggest moving your html or body background styling here. Making this transparent will allow the Slidebars beneath to be visible. */
+            background-image: url(../images/pattern.png);
         }
+
+        /*#sb-site-middle span{*/
+            /*width:50%;*/
+            /*height: 100%;*/
+            /*background: transparent;*/
+            /*border-left: 2px solid whitesmoke;*/
+            /*border-right: 2px solid whitesmoke;*/
+        /*}*/
         
         #sb-site-bottom, .sb-site-container-bottom {
             height: auto;
@@ -1232,6 +1331,16 @@ body, html {
         margin-left: 15%;
         margin-right: 15%;
     }
+
+    .description2left{
+        width: 38%;
+        margin-left: 10%;
+    }
+
+    .description2right{
+        width: 30%;
+        margin-right: 10%;
+    }
     
     .img-top{
         width: 470px;
@@ -1253,6 +1362,10 @@ body, html {
     p{
         font-size: 14px;
     }
+
+    li{
+        font-size: 14px;
+    }
     
     .header-main{
         font-size: 30px;
@@ -1264,6 +1377,14 @@ body, html {
        
     .topMenu img{
         width: 10%;
+    }
+
+    .topMenu{
+        width: 27%;
+    }
+
+    .topMenu li{
+        margin:0;
     }
     
     .content-menu{

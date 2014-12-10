@@ -10,6 +10,8 @@
         <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="../css/demo.css" />
         <script type="text/javascript" src="../js/jquery1.11.1.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/menu_slice/style.css" />
+        <link rel="stylesheet" type="text/css" href="../css/menu_slice/custom.css" />
         <link rel="stylesheet" type="text/css" href="../css/main_menu/stimenu.css" />
         <link rel="stylesheet" href="../css/sidebar/slidebars.css">
         <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
@@ -26,16 +28,16 @@
     
     <body>
     
-<!--Odtwarzanie filmów-->
-        
-<!-- 1. skin -->
-<link rel="stylesheet" href="//releases.flowplayer.org/5.4.6/skin/minimalist.css">
- 
-<!-- 2. jquery library -->
-<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
- 
-<!-- 3. flowplayer -->
-<script src="//releases.flowplayer.org/5.4.6/flowplayer.min.js"></script>
+<!--&lt;!&ndash;Odtwarzanie filmów&ndash;&gt;-->
+        <!---->
+<!--&lt;!&ndash; 1. skin &ndash;&gt;-->
+<!--<link rel="stylesheet" href="//releases.flowplayer.org/5.4.6/skin/minimalist.css">-->
+ <!---->
+<!--&lt;!&ndash; 2. jquery library &ndash;&gt;-->
+<!--<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>-->
+ <!---->
+<!--&lt;!&ndash; 3. flowplayer &ndash;&gt;-->
+<!--<script src="//releases.flowplayer.org/5.4.6/flowplayer.min.js"></script>-->
         
         <!-- przesuwanie do góry strony //-->
             <script>
@@ -91,6 +93,7 @@
                 <li class="sb-close"><a href="dotacje.html">Dotacje</a></li>
                 <li class="sb-close"><a href="pompy.html">Pompy ciepła</a></li>
                 <li class="sb-close"><a href="ogniwa.html">Fotowoltaika</a></li>
+                <li class="sb-close"><a href="rekuperacja.html">Rekuperacja</a></li>
 
 
             </ul>
@@ -115,7 +118,7 @@
             
             
 <!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY -->
-<div id="sb-site"> <!-- sb-site TOP -->
+<div id="sb-site" style="height: auto;"> <!-- sb-site TOP -->
         
     <a href="../index.html"><img class="logo_head" src="../images/logo.png" alt="Ekoinstal"></a>
 
@@ -137,7 +140,7 @@
         <img src="../images/top_piany_s.png" alt="Pompy tło">
     </div>    
                     
-    <h1 class="header-main-default" style="padding-top: 5%; z-index: 3; position: relative">Izolacja pianą poliuretanową</h1>   
+    <h1 class="header-main-default" style="padding-top: 5%; z-index: 3; position: relative">Izolacja pianą poliuretanową</h1>
     
     
     <p class="text-main-description text-main-description-column" style="position: relative; z-index: 3">
@@ -145,16 +148,16 @@
         wszelkiego rodzaju, włącznie z przestrzeniami kłopotliwymi i trudno dostępnymi. System poliuretanowy
         jest tworzony poprzez natrysk bezpośrenio na podłożu, które ma być zaizolowane. Natryskiwany materiał
         tworzy ciągłą, równą warstwę bez złączy i szczelin, eliminując wszystkie mostki cieplne. Izolacja
-        natryskowa jest idealnym rozwiązaniem dla bardzo szerokiej gamy powierzchni i kształtów, ponieważ 
+        natryskowa jest idealnym rozwiązaniem dla bardzo szerokiej gamy powierzchni i kształtów, ponieważ
         materiał dostosowuje się bez przerw do każdego profilu.
         <br>
-        Zastosowania izolacji natryskowej obejmują w zasadzie wszystkie obszary dachów płaskich i 
+        Zastosowania izolacji natryskowej obejmują w zasadzie wszystkie obszary dachów płaskich i
         skośnych, sufitów, ścian i podłóg.
         <br>
         Na przykłąd izolacja natryskowa jest często stosowana do uszczelnienia przestrzeni dachowych,
-        zapewniając jednocześnie izolację, nieprzewiewność,odporność na wpływy atmosferyczne i czasem 
-        także stateczność konstrukcyjną. Taka izolacja ma przewodność cieplną niższą niż wiele innych 
-        powszechnie stosowanych wyrobów izolacyjnych, nie musi więc być tak gruba, by osiągnąć ten sam 
+        zapewniając jednocześnie izolację, nieprzewiewność,odporność na wpływy atmosferyczne i czasem
+        także stateczność konstrukcyjną. Taka izolacja ma przewodność cieplną niższą niż wiele innych
+        powszechnie stosowanych wyrobów izolacyjnych, nie musi więc być tak gruba, by osiągnąć ten sam
         poziom izolowania dachu.
     </p>
     
@@ -164,51 +167,121 @@
         <a href="javascript:void()" onclick="scroll_to('#zamknieta')">zamknięta komórka</a>
         <a href="javascript:void()" onclick="scroll_to('#realizacje')"><span>realizacje</span></a>
     </div>
-     
-</div>  <!-- sb-site end //-->
+
+
+    <!-- Triger's - gallery and apointment -->
+
+    <script>
+        $(function(){
+            $('.triger photo ').hide();
+            $('.triger photo ').removeClass("minus").addClass("plus");
+            $('.triger p').click(function(){
+                if ($(this).hasClass("minus")) {
+                    $(this).removeClass("minus").addClass("plus").nextAll().slideToggle(600);
+                }
+                else {
+                    $(this).removeClass("plus").addClass("minus").nextAll().slideToggle(600);
+                }
+            });
+        });
+    </script>
+    <br/>
+
+    <div class="triger">
+
+        <p class="minus">galeria</p><br/>
+
+        <photo class="minus">
+<br/>
+            <a href="../images/galerie/piany/1.JPG"><img src="../images/galerie/piany/1.JPG"></a>
+            <a href="../images/galerie/piany/2.JPG"><img src="../images/galerie/piany/2.JPG"></a>
+            <a href="../images/galerie/piany/3.JPG"><img src="../images/galerie/piany/3.JPG"></a>
+            <a href="../images/galerie/piany/4.JPG"><img src="../images/galerie/piany/4.JPG"></a>
+            <a href="../images/galerie/piany/5.JPG"><img src="../images/galerie/piany/5.JPG"></a>
+            <a href="../images/galerie/piany/6.JPG"><img src="../images/galerie/piany/6.JPG"></a>
+            <a href="../images/galerie/piany/7.JPG"><img src="../images/galerie/piany/7.JPG"></a>
+            <a href="../images/galerie/piany/8.JPG"><img src="../images/galerie/piany/8.JPG"></a>
+            <a href="../images/galerie/piany/9.JPG"><img src="../images/galerie/piany/9.JPG"></a>
+            <a href="../images/galerie/piany/10.JPG"><img src="../images/galerie/piany/10.JPG"></a>
+            <a href="../images/galerie/piany/11.JPG"><img src="../images/galerie/piany/11.JPG"></a>
+            <a href="../images/galerie/piany/12.JPG"><img src="../images/galerie/piany/12.JPG"></a>
+            <a href="../images/galerie/piany/13.JPG"><img src="../images/galerie/piany/13.JPG"></a>
+            <a href="../images/galerie/piany/14.JPG"><img src="../images/galerie/piany/14.JPG"></a>
+            <a href="../images/galerie/piany/15.JPG"><img src="../images/galerie/piany/15.JPG"></a>
+            <a href="../images/galerie/piany/16.JPG"><img src="../images/galerie/piany/16.JPG"></a>
+            <a href="../images/galerie/piany/17.JPG"><img src="../images/galerie/piany/17.JPG"></a>
+            <a href="../images/galerie/piany/18.JPG"><img src="../images/galerie/piany/18.JPG"></a>
+            <a href="../images/galerie/piany/19.JPG"><img src="../images/galerie/piany/19.JPG"></a>
+            <a href="../images/galerie/piany/20.JPG"><img src="../images/galerie/piany/20.JPG"></a>
+            <a href="../images/galerie/piany/21.JPG"><img src="../images/galerie/piany/21.JPG"></a>
+            <a href="../images/galerie/piany/22.JPG"><img src="../images/galerie/piany/22.JPG"></a>
+            <a href="../images/galerie/piany/23.JPG"><img src="../images/galerie/piany/23.JPG"></a>
+            <a href="../images/galerie/piany/24.JPG"><img src="../images/galerie/piany/24.JPG"></a>
+            <a href="../images/galerie/piany/25.JPG"><img src="../images/galerie/piany/25.JPG"></a>
+            <a href="../images/galerie/piany/26.JPG"><img src="../images/galerie/piany/26.JPG"></a>
+            <a href="../images/galerie/piany/27.JPG"><img src="../images/galerie/piany/27.JPG"></a>
+            <a href="../images/galerie/piany/28.JPG"><img src="../images/galerie/piany/28.JPG"></a>
+
+        </photo>
+
+        </div>
+
+        <br/>
+
+        <div class="triger">
+
+            <p class="minus">umów spotkanie</p><br/>
+
+            <photo class="minus">
+
+            </photo>
+
+        </div>
+
+    </div>  <!-- sb-site end //-->
             
 <div id="sb-site-middle">  <!-- sb-site-middle  //-->
 
     <div class="description"><a id="otwarta"></a>
-        
-        <h1 style="color: whitesmoke"> Pianka otwartokomórkowa</h1> 
-        
+
+        <h1 style="color: whitesmoke"> Pianka otwartokomórkowa</h1>
+
         <p class="description-text-left" style="color: whitesmoke">
-            Pianka poliuretanowa otwartokomórkowa posiada w swojej 
-            budowie przeważająca liczbę komórek otwartych, dzięki czemu „oddycha”. Pozwala 
-            to na utrzymanie przyjemnego środowiska w pomieszczeniu. Para wodna krążąca w 
-            powietrzu (będąca wynikiem złej wentylacji) nie skrapla się na jej powierzchni 
-            i nie powoduje powstania pleśni. Ten rodzaj jest idealny do ocieplania i 
-            wygłuszania poddaszy użytkowych, nie tylko ze względu na swoją paro przepuszczalność. 
-            Masa pianki lekkiej to około 12kg/m³ (ciężkiej od30-60kg/m³), nie obciąża więc 
-            ona konstrukcji, a sztywniejąc dodatkowo ją wzmacnia. Piana nakładana jest 
-            przez hydrodynamiczny natrysk, co pozwala na wypełnienie wszystkich trudno 
-            dostępnych miejsc. Jest to istotne ze względu na skomplikowane kształty 
-            konstrukcji dachowych. Piana poliuretanowa otwartokomórkowa nie nadaje się, ze 
+            Pianka poliuretanowa otwartokomórkowa posiada w swojej
+            budowie przeważająca liczbę komórek otwartych, dzięki czemu „oddycha”. Pozwala
+            to na utrzymanie przyjemnego środowiska w pomieszczeniu. Para wodna krążąca w
+            powietrzu (będąca wynikiem złej wentylacji) nie skrapla się na jej powierzchni
+            i nie powoduje powstania pleśni. Ten rodzaj jest idealny do ocieplania i
+            wygłuszania poddaszy użytkowych, nie tylko ze względu na swoją paro przepuszczalność.
+            Masa pianki lekkiej to około 12kg/m³ (ciężkiej od30-60kg/m³), nie obciąża więc
+            ona konstrukcji, a sztywniejąc dodatkowo ją wzmacnia. Piana nakładana jest
+            przez hydrodynamiczny natrysk, co pozwala na wypełnienie wszystkich trudno
+            dostępnych miejsc. Jest to istotne ze względu na skomplikowane kształty
+            konstrukcji dachowych. Piana poliuretanowa otwartokomórkowa nie nadaje się, ze
             względu na swoje właściwości, do ocieplania fundamentów.
         </p>
-        
+
     </div>
-    
+
     <hr style="width: 70%">
-    
+
         <div class="description"><a id="zamknieta"></a>
-        
-        <h1 style="color: whitesmoke"> Pianka zamkniętokomórkowa</h1> 
-        
+
+        <h1 style="color: whitesmoke"> Pianka zamkniętokomórkowa</h1>
+
         <p class="description-text-left" style="color: whitesmoke">
-            Pianka zamkniętokomórkowa zawiera komórki zamknięte (minimum 90% takich komórek 
-            w zależności od przeznaczenia). Jej gęstość będzie się wahać od 30-60kg/m³. 
-            Ten rodzaj pianki ze względu na duża gęstość, zamknięte komórki, małą paro 
-            przepuszczalność oraz dużą odporność na zgniatanie nadaje się idealnie do termo 
-            i hydroizolacji płaskich dachów i stropodachów, ścian, fundamentów, budynków 
+            Pianka zamkniętokomórkowa zawiera komórki zamknięte (minimum 90% takich komórek
+            w zależności od przeznaczenia). Jej gęstość będzie się wahać od 30-60kg/m³.
+            Ten rodzaj pianki ze względu na duża gęstość, zamknięte komórki, małą paro
+            przepuszczalność oraz dużą odporność na zgniatanie nadaje się idealnie do termo
+            i hydroizolacji płaskich dachów i stropodachów, ścian, fundamentów, budynków
             inwentarskich, chłodni itp.
         </p>
-        
+
     </div>
-    
+
     <hr style="width: 70%">
-    
+
 <!--Porównanie dwóch rodzajów pian-->
     <div class="description" id="porownanie">
         <h1 style="color: whitesmoke"> Porównanie</h1>
@@ -218,160 +291,158 @@
 </div> <!-- sb-site-middle  end  //-->
 
 
-<div id="sb-site-bottom">  <a id="realizacje"></a><!-- sb-site-bottom  //-->
-    
-    <h1 class="header-main-default">Nasze realizacje</h1>
-    
-    <div class="realizations">
-        
-        <a href="../images/galerie/piany/27.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
-            <img src="../images/galerie/piany/27.JPG" alt="piany 27">  
-        </a>
-        
-        <a href="../images/galerie/piany/28.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
-            <img src="../images/galerie/piany/28.JPG" alt="piany 28">  
-        </a>
-        
-        <a href="../images/galerie/piany/29.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
-            <img src="../images/galerie/piany/29.jpg" alt="piany 29">  
-        </a>
-        
-        <a href="../images/galerie/piany/1.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
-            <img src="../images/galerie/piany/1.JPG" alt="piany 1">  
-        </a>
-        
-        <a href="../images/galerie/piany/2.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
-            <img src="../images/galerie/piany/2.JPG" alt="piany 2">  
-        </a>
-        
-        <a href="../images/galerie/piany/3.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
-            <img src="../images/galerie/piany/3.JPG" alt="piany 3">  
-        </a>
-        
-        <a href="../images/galerie/piany/4.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
-            <img src="../images/galerie/piany/4.JPG" alt="piany 4">  
-        </a>
-        
-        <a href="../images/galerie/piany/5.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
-            <img src="../images/galerie/piany/5.JPG" alt="piany 5">  
-        </a>
-        
-        <a href="../images/galerie/piany/6.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
-            <img src="../images/galerie/piany/6.JPG" alt="piany 6">  
-        </a>
-        
-        <a href="../images/galerie/piany/7.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
-            <img src="../images/galerie/piany/7.JPG" alt="piany 7">  
-        </a>
-        
-        <a href="../images/galerie/piany/8.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
-            <img src="../images/galerie/piany/8.JPG" alt="piany 8">  
-        </a>
-        
-        <a href="../images/galerie/piany/9.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
-            <img src="../images/galerie/piany/9.JPG" alt="piany 9">  
-        </a>
-        
-        <a href="../images/galerie/piany/10.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
-            <img src="../images/galerie/piany/10.JPG" alt="piany 10">  
-        </a>
-        
-        <a href="../images/galerie/piany/11.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
-            <img src="../images/galerie/piany/11.JPG" alt="piany 11">  
-        </a>
-        
-        <a href="../images/galerie/piany/12.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
-            <img src="../images/galerie/piany/12.JPG" alt="piany 12">  
-        </a>
-        
-        <a href="../images/galerie/piany/13.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
-            <img src="../images/galerie/piany/13.JPG" alt="piany 13">  
-        </a>
-        
-        <a href="../images/galerie/piany/14.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
-            <img src="../images/galerie/piany/14.JPG" alt="piany 14">  
-        </a>
-        
-        <a href="../images/galerie/piany/15.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
-            <img src="../images/galerie/piany/15.JPG" alt="piany 15">  
-        </a>
-        
-        <a href="../images/galerie/piany/16.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
-            <img src="../images/galerie/piany/16.JPG" alt="piany 16">  
-        </a>
-        
-        <a href="../images/galerie/piany/17.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
-            <img src="../images/galerie/piany/17.JPG" alt="piany 17">  
-        </a>
-        
-        <a href="../images/galerie/piany/18.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
-            <img src="../images/galerie/piany/18.JPG" alt="piany 18">  
-        </a>
-        
-        <a href="../images/galerie/piany/19.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
-            <img src="../images/galerie/piany/19.JPG" alt="piany 19">  
-        </a>
-        
-        <a href="../images/galerie/piany/20.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
-            <img src="../images/galerie/piany/20.JPG" alt="piany 20">  
-        </a>
-        
-        <a href="../images/galerie/piany/21.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
-            <img src="../images/galerie/piany/21.JPG" alt="piany 21">  
-        </a>
-        
-        <a href="../images/galerie/piany/22.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
-            <img src="../images/galerie/piany/22.JPG" alt="piany 22">  
-        </a>
-        
-        <a href="../images/galerie/piany/23.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
-            <img src="../images/galerie/piany/23.JPG" alt="piany 23">  
-        </a>
-        
-        <a href="../images/galerie/piany/24.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
-            <img src="../images/galerie/piany/24.JPG" alt="piany 24">  
-        </a>
-        
-        <a href="../images/galerie/piany/25.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
-            <img src="../images/galerie/piany/25.JPG" alt="piany 25">  
-        </a>
-        
-        <a href="../images/galerie/piany/26.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
-            <img src="../images/galerie/piany/26.JPG" alt="piany 26">  
-        </a>
-        
-        
-    
-    </div>
-    
+<!--<div id="sb-site-bottom">  <a id="realizacje"></a>&lt;!&ndash; sb-site-bottom  //&ndash;&gt;-->
 
-   
-</div>  <!-- sb-site-bottom   end  //-->
+    <!--<h1 class="header-main-default">Nasze realizacje</h1>-->
+
+    <!--<div class="realizations">-->
+
+        <!--<a href="../images/galerie/piany/27.JPG" title="Izolacja pianą poliuretanową" class="mlbox">-->
+            <!--<img src="../images/galerie/piany/27.JPG" alt="piany 27">-->
+        <!--</a>-->
+
+        <!--<a href="../images/galerie/piany/28.JPG" title="Izolacja pianą poliuretanową" class="mlbox">-->
+            <!--<img src="../images/galerie/piany/28.JPG" alt="piany 28">-->
+        <!--</a>-->
+
+        <!--<a href="../images/galerie/piany/29.JPG" title="Izolacja pianą poliuretanową" class="mlbox">-->
+            <!--<img src="../images/galerie/piany/29.jpg" alt="piany 29">-->
+        <!--</a>-->
+
+        <!--<a href="../images/galerie/piany/1.JPG" title="Izolacja pianą poliuretanową" class="mlbox">-->
+            <!--<img src="../images/galerie/piany/1.JPG" alt="piany 1">-->
+        <!--</a>-->
+
+        <!--<a href="../images/galerie/piany/2.JPG" title="Izolacja pianą poliuretanową" class="mlbox">-->
+            <!--<img src="../images/galerie/piany/2.JPG" alt="piany 2">-->
+        <!--</a>-->
+
+        <!--<a href="../images/galerie/piany/3.JPG" title="Izolacja pianą poliuretanową" class="mlbox">-->
+            <!--<img src="../images/galerie/piany/3.JPG" alt="piany 3">-->
+        <!--</a>-->
+
+        <!--<a href="../images/galerie/piany/4.JPG" title="Izolacja pianą poliuretanową" class="mlbox">-->
+            <!--<img src="../images/galerie/piany/4.JPG" alt="piany 4">-->
+        <!--</a>-->
+
+        <!--<a href="../images/galerie/piany/5.JPG" title="Izolacja pianą poliuretanową" class="mlbox">-->
+            <!--<img src="../images/galerie/piany/5.JPG" alt="piany 5">-->
+        <!--</a>-->
+
+        <!--<a href="../images/galerie/piany/6.JPG" title="Izolacja pianą poliuretanową" class="mlbox">-->
+            <!--<img src="../images/galerie/piany/6.JPG" alt="piany 6">-->
+        <!--</a>-->
+
+        <!--<a href="../images/galerie/piany/7.JPG" title="Izolacja pianą poliuretanową" class="mlbox">-->
+            <!--<img src="../images/galerie/piany/7.JPG" alt="piany 7">-->
+        <!--</a>-->
+
+        <!--<a href="../images/galerie/piany/8.JPG" title="Izolacja pianą poliuretanową" class="mlbox">-->
+            <!--<img src="../images/galerie/piany/8.JPG" alt="piany 8">-->
+        <!--</a>-->
+
+        <!--<a href="../images/galerie/piany/9.JPG" title="Izolacja pianą poliuretanową" class="mlbox">-->
+            <!--<img src="../images/galerie/piany/9.JPG" alt="piany 9">-->
+        <!--</a>-->
+
+        <!--<a href="../images/galerie/piany/10.JPG" title="Izolacja pianą poliuretanową" class="mlbox">-->
+            <!--<img src="../images/galerie/piany/10.JPG" alt="piany 10">-->
+        <!--</a>-->
+
+        <!--<a href="../images/galerie/piany/11.JPG" title="Izolacja pianą poliuretanową" class="mlbox">-->
+            <!--<img src="../images/galerie/piany/11.JPG" alt="piany 11">-->
+        <!--</a>-->
+
+        <!--<a href="../images/galerie/piany/12.JPG" title="Izolacja pianą poliuretanową" class="mlbox">-->
+            <!--<img src="../images/galerie/piany/12.JPG" alt="piany 12">-->
+        <!--</a>-->
+
+        <!--<a href="../images/galerie/piany/13.JPG" title="Izolacja pianą poliuretanową" class="mlbox">-->
+            <!--<img src="../images/galerie/piany/13.JPG" alt="piany 13">-->
+        <!--</a>-->
+
+        <!--<a href="../images/galerie/piany/14.JPG" title="Izolacja pianą poliuretanową" class="mlbox">-->
+            <!--<img src="../images/galerie/piany/14.JPG" alt="piany 14">-->
+        <!--</a>-->
+
+        <!--<a href="../images/galerie/piany/15.JPG" title="Izolacja pianą poliuretanową" class="mlbox">-->
+            <!--<img src="../images/galerie/piany/15.JPG" alt="piany 15">-->
+        <!--</a>-->
+
+        <!--<a href="../images/galerie/piany/16.JPG" title="Izolacja pianą poliuretanową" class="mlbox">-->
+            <!--<img src="../images/galerie/piany/16.JPG" alt="piany 16">-->
+        <!--</a>-->
+
+        <!--<a href="../images/galerie/piany/17.JPG" title="Izolacja pianą poliuretanową" class="mlbox">-->
+            <!--<img src="../images/galerie/piany/17.JPG" alt="piany 17">-->
+        <!--</a>-->
+
+        <!--<a href="../images/galerie/piany/18.JPG" title="Izolacja pianą poliuretanową" class="mlbox">-->
+            <!--<img src="../images/galerie/piany/18.JPG" alt="piany 18">-->
+        <!--</a>-->
+
+        <!--<a href="../images/galerie/piany/19.JPG" title="Izolacja pianą poliuretanową" class="mlbox">-->
+            <!--<img src="../images/galerie/piany/19.JPG" alt="piany 19">-->
+        <!--</a>-->
+
+        <!--<a href="../images/galerie/piany/20.JPG" title="Izolacja pianą poliuretanową" class="mlbox">-->
+            <!--<img src="../images/galerie/piany/20.JPG" alt="piany 20">-->
+        <!--</a>-->
+
+        <!--<a href="../images/galerie/piany/21.JPG" title="Izolacja pianą poliuretanową" class="mlbox">-->
+            <!--<img src="../images/galerie/piany/21.JPG" alt="piany 21">-->
+        <!--</a>-->
+
+        <!--<a href="../images/galerie/piany/22.JPG" title="Izolacja pianą poliuretanową" class="mlbox">-->
+            <!--<img src="../images/galerie/piany/22.JPG" alt="piany 22">-->
+        <!--</a>-->
+
+        <!--<a href="../images/galerie/piany/23.JPG" title="Izolacja pianą poliuretanową" class="mlbox">-->
+            <!--<img src="../images/galerie/piany/23.JPG" alt="piany 23">-->
+        <!--</a>-->
+
+        <!--<a href="../images/galerie/piany/24.JPG" title="Izolacja pianą poliuretanową" class="mlbox">-->
+            <!--<img src="../images/galerie/piany/24.JPG" alt="piany 24">-->
+        <!--</a>-->
+
+        <!--<a href="../images/galerie/piany/25.JPG" title="Izolacja pianą poliuretanową" class="mlbox">-->
+            <!--<img src="../images/galerie/piany/25.JPG" alt="piany 25">-->
+        <!--</a>-->
+
+        <!--<a href="../images/galerie/piany/26.JPG" title="Izolacja pianą poliuretanową" class="mlbox">-->
+            <!--<img src="../images/galerie/piany/26.JPG" alt="piany 26">-->
+        <!--</a>-->
+
+
+
+    <!--</div>-->
+
+
+
+<!--</div>  &lt;!&ndash; sb-site-bottom   end  //&ndash;&gt;-->
+
+
+
 
     <p class="sb-toggle-left" id="fixed-top" style="color: crimson"> Menu</p>
-          
-    <a href="#" title="top" id="scroll-to-top"><img src="../images/up.png" alt="strzałka do góry" /></a>
-    
- 
-    <p class="sb-toggle-left" id="fixed-top" style="color: crimson"> Menu</p>
-          
+
     <a href="#" title="top" id="scroll-to-top"><img src="../images/up.png" alt="do góry" /></a>
- 
+
 
     <div class="social">
-        
+
         <a href="https://www.facebook.com/pages/Budujemy-Dom/423667501001852?fref=ts">
             <img src="../images/facebook_box.png" alt="facebook" style="width: 40px; position: absolute; margin-left:40px; margin-top: 20px; cursor: pointer">
         </a>
-        
+
         <a href="https://www.youtube.com/channel/UC2RvVXWlynSG6p-2hquuK0A">
             <img src="../images/youtube.png" alt="youtube" style="width: 70px; position: absolute; margin-top: 80px; margin-left: 25px" >
         </a>
-        
+
         <p><span> M E D I A </span></p>
-        
-    </div> 
-    
+
+    </div>
+
     <div class="mail">
         <a href="mailto:biuro@grupaekoinstal.pl">
             <p>Skontaktuj się</p>
@@ -380,14 +451,14 @@
     </div>
 
     <div class="footer">
-        
+
         <div class="version">
             v 1.0
         </div>
-          
+
           <a target="_blank" href="http://mfteam.com.pl" class="mf">&#169 Copyright by MFTeam</a>
-          
-    </div> 
+
+    </div>
         
        
             
