@@ -27,15 +27,37 @@
     <body>
 
     <script>
+
         $(function(){
-            $('.triger div ').hide();
-            $('.triger div ').removeClass("minus").addClass("plus");
-            $('.trigers p').click(function(){
-                if ($('.triger div').hasClass("minus")) {
-                    $('.triger div').removeClass("minus").addClass("plus").nextAll().slideToggle(600);
+            $('.trigered div').hide();
+            $('.trigered div').removeClass("minus").addClass("plus");
+
+            $('.triger p').click(function(){
+                if ($('.trigered div').hasClass("minus")) {
+                    $('.trigered div').removeClass("minus").addClass("plus").nextAll().slideToggle(1000);
+
                 }
                 else {
-                    $('.triger div').removeClass("plus").addClass("minus").nextAll().slideToggle(600);
+                    $('.trigered div').removeClass("plus").addClass("minus").nextAll().slideToggle(1000);
+                    scroll_to('.trigered');
+                }
+            });
+            $('.trigered').click(function(){
+                $('.trigered div').slideToggle(1000);
+            })
+        });
+
+        $(function() {
+            $('.trigered photo').hide();
+            $('.trigered photo').removeClass("minus").addClass("plus");
+
+            $('.triger_photo p').click(function(){
+                if ($('.trigered photo').hasClass("minus")) {
+                    $('.trigered photo').removeClass("minus").addClass("plus").nextAll().slideToggle(1000);
+
+                }
+                else {
+                    $('.trigered photo').removeClass("plus").addClass("minus").nextAll().slideToggle(1000);
                 }
             });
         });
@@ -171,23 +193,41 @@
         <!--<img src="../images/panele_main.png" alt="panele_main">-->
     <!---->
     <!--</div>-->
-<div class="trigers"><p class="minus">Dane techniczne</p></div>
-
+    <div class="trigers">
+        <div class="triger"><p class="minus">Dane techniczne</p></div>
+        <div class="triger2"><p><a href="javascript:void();" onclick="scroll_to('iframe');">Kalkulator Enerii Solarnej</a></p></div>
+        <div class="triger_photo"><p class="minus">galeria</p></div>
+    </div>
 
      
 </div>  <!-- sb-site end //-->
 
+    <div class="trigered">
 
+        <photo class="minus">
+            <a href="../images/galerie/prace_inz/1.jpg"><img src="../images/galerie/prace_inz/1.jpg"></a>
+            <a href="../images/galerie/prace_inz/2.jpg"><img src="../images/galerie/prace_inz/2.jpg"></a>
+            <a href="../images/galerie/prace_inz/3.jpg"><img src="../images/galerie/prace_inz/3.jpg"></a>
+            <a href="../images/galerie/prace_inz/4.jpg"><img src="../images/galerie/prace_inz/4.jpg"></a>
+            <a href="../images/galerie/prace_inz/5.JPG"><img src="../images/galerie/prace_inz/5.JPG"></a>
+            <a href="../images/galerie/prace_inz/6.JPG"><img src="../images/galerie/prace_inz/6.JPG"></a>
+            <a href="../images/galerie/prace_inz/7.JPG"><img src="../images/galerie/prace_inz/7.JPG"></a>
+            <a href="../images/galerie/prace_inz/8.JPG"><img src="../images/galerie/prace_inz/8.JPG"></a>
+            <a href="../images/galerie/prace_inz/9.JPG"><img src="../images/galerie/prace_inz/9.JPG"></a>
 
-<div class="triger">
+        </photo>
 
-<!--<div id="sb-site-middle" class="minus" style="min-height: 0px;">    &lt;!&ndash;sb-site-middle  //&ndash;&gt;-->
+    </div>
+
+<div class="trigered">
+
 
 
     <div class="line_left"></div>
+
     <div class="line_left2"></div>
 
-    <div class="description2left">
+    <div class="description2left white">
         <h1>
             IBC MonoSol 200 CS, 205 CS, 210 CS
         </h1>
@@ -239,21 +279,89 @@
         <img src="../images/ibc_przebieg.png">
     </div>
 
+    <div class="description_center">
+        <img src="../images/parametry_icb_mono_sol.png">
+    </div>
 
-        <img class="description_center" src="../images/parametry_icb_mono_sol.png">
-
-    <hr class="underline">
-
-
-    <a href="http://www.ibc-solar.pl/fileadmin/content/animation/solarrechner_pl.swf" target="_blank"><img src="../images/kalkulator_solar.jpg"> </a>
-
-
-<!--</div>&lt;!&ndash;sb-site-middle   END  // &ndash;&gt;-->
 </div>
 
-<div id="sb-site-bottom">   <!--sb-site-bottom  //-->
-    
 
+
+<div id="sb-site-bottom">   <!--sb-site-bottom  //-->
+
+    <div class="description2left dark">
+
+        <h1>Zalety systemów fotowoltaicznych</h1>
+
+        <ul>
+            <li>uniezależnienie się od rosnących cen energii elektrycznej</li>
+            <li>możliwość obniżenia,a nawet wyeliminowania opłat za prąd</li>
+            <li>stałe i niewyczerpalne źródło energii</li>
+            <li>po zamontowaniu panele fotowoltaiczne nie wymagają obsługi</li>
+            <li>brak zanieczyszczenia środowiska-ograniczenie emisji co2</li>
+
+        </ul>
+
+
+
+
+        <h1>Zastosowanienie paneli fotowoltaicznych</h1>
+
+        <ul>
+            <li>domy jednorodzinne</li>
+            <li>gospodarstwa rolne</li>
+            <li>obiekty użyteczności publicznej</li>
+            <li>domki letniskowe</li>
+            <li>spółdzielnie mieszkaniowe itp.</li>
+        </ul>
+
+
+
+
+        <h1>Rodzaje instalacji fotowoltaicznych</h1>
+
+        <p>
+            <span>Instalacja off grid</span> (wyspowa)-rozwiązanie to wiąże się  z wyposażeniem systemu
+            w akumulatory magazynujące wyprodukowaną energię. Instalacja ta nie wymaga połączenia z siecią
+            elektroenergetyczną.<br/><br/>
+            <span>Instalacja on grid</span> (sieciowa)- rozwiązanie  to wiąże się z podłączeniem do sieci
+            elektroenergetycznej. Przy tym rozwiązaniu produkowana energia może zostać wykorzystana na własne
+            potrzeby, a ewentualne  nadwyżki odsprzedane do sieci.system ten nie wymaga użycia akumulatorów,
+            a co sie z tym wiąże ,znacznie  obniża koszty realizacji inwestycji.
+        </p>
+
+
+
+
+        <h1>Rodzaje ogniw fotowoltaicznych</h1>
+
+        <p>
+            <span>Ogniwa monokrystaliczne</span> - wykonane z jednego monolitycznego kryształu krzemu.
+            Wyróżniają się sprawnością oscylującą w granicach 18-22%. Posiadają ciemny kolor.<br/><br/>
+            <span>Ogniwa polikrystaliczne</span> - wykonane z wykrystalizowanego krzemu. Sprawnośc  waha
+            się w granicach 14-18%.są one najczęściej stosowane  w instalacjach montowanych na domach
+            jednorodzinnych.posiadają charakterystyczny niebieski kolor. <br/><br/>
+            <span>Ogniwa amorficzne</span> - wykonane z amorficznego krzemu. Sprawność ich waha się
+            w granicach 6-10%. Charakteryzują się lekko bordowym kolorem.
+        </p>
+
+
+
+
+        <h1>Montaż paneli fotowoltaicznych</h1>
+
+        <p>
+            Njapopularniejszą lokalizacją montażu pv są dachy budynków. Równie dobrze można zastosować montaż
+            na fasadzie budynku, czy też gruncie. Przy montażu bardzo ważną rolę odgrywa orientacja i kąt nachylenia pv.
+            Najlepszą efektywnością będą wykazywały się  panele skierowane na południe, natomiast optymalny kąt
+            nachylenia  paneli w polsce wynosi ok. 30-40%. Przy montażu instalacji należy unikać  zacienienia pv.
+        </p>
+    </div>
+
+
+    <iframe class="fotowoltaika_frame" src="http://www.ibc-solar.pl/fileadmin/content/animation/solarrechner_pl.swf">
+
+    </iframe>
     
     
 </div>   <!--sb-site-bottom  END //-->

@@ -198,7 +198,7 @@ body, html {
     width: 70%;
     margin-left: 15%;
     text-align: center;
-    background: #666666;
+    background: #333333;
     padding: 0.5%;
     border-radius: 20px;
     opacity: 0.8;
@@ -246,39 +246,37 @@ body, html {
 
 
 /*Triger galeria i umawianie spotkania*/
-    .triger {
+    .trigered {
         position: relative;
         /*display: inline-block;*/
         width: 100%;
-        /*border-bottom: 1px solid #666666;*/
-        text-align: center;
     }
 
-    .triger p{
-        color: #666666;
+    .trigered p{
+        /*color: #333333;*/
         text-decoration: none;
         /*text-align: right;*/
         float: right;
-        margin-right: 15%;
+        /*margin-right: 15%;*/
         cursor: pointer;
     }
 
-    .triger photo{
+    .trigered photo{
         /*height: 500px;*/
         padding: 10px;
         width: 100%;
         border-bottom: 1px solid grey;
-        /*background-color: #666666;*/
+        /*background-color: #333333;*/
         /*box-shadow: inset 0em 0.5em 3em 0.5em #aaaaaa;*/
     }
 
-    .triger photo a{
+    .trigered photo a{
         float: inherit;
         display: inline-block;
         margin: 5px;
     }
 
-    .triger photo img{
+    .trigered photo img{
         width: 200px;
         margin-right: 5px;
         display: inline-block;
@@ -286,8 +284,42 @@ body, html {
     }
 
     .trigers{
-
+        position: absolute;
+        width: auto;
+        right: 15%;
+        bottom: 5%;
+        text-align: right;
     }
+
+    .trigers a{
+        text-decoration: none;
+        color: #333333;
+    }
+
+    .triger, .triger_photo {
+        cursor: pointer;
+        margin-right: 15%;
+    }
+
+    .triger2 {
+        cursor: pointer;
+        margin-right: 15%;
+    }
+
+    /*oblicz fotowoltaika*/
+
+.fotowoltaika_frame{
+    width: 70%;
+    height: 500px;
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+/*opisy*/
+
+
     
     
 /*Menu realizacji*/
@@ -331,41 +363,6 @@ body, html {
         margin-top: -50px;
     }
     
-/*Galeria*/
-
-/*.gallery{
-    width: 70%;
-    margin-left: 15%;
-    text-align: center;
-    letter-spacing: 30px;
-    margin-top: 3%;
-    padding-bottom: 1%;
-}
-
-    .gallery a{
-        display: inline-block;
-        margin-top: 1%;
-        width: 640px;
-        height: 480px;
-        border: 1px solid blue;
-        overflow: hidden;
-    }
-    
-    .gallery h1{
-        font-size: 30px;
-        display: inline;
-        float: right;
-    }
-    
-    .gallery p{
-        display: inline-block;
-        font-size: 15px;
-        letter-spacing: 1px;
-        text-align: justify;
-        max-width: 45%;
-        float: right;
-    }*/
-    
     .gallery{
     width: 70%;
     margin-left: 15%;
@@ -404,7 +401,7 @@ body, html {
 
     a.dymek{
         text-decoration: none;
-        color: #666666;
+        color: #333333;
     }
 
     a.dymek:hover{
@@ -424,7 +421,7 @@ body, html {
         border: 1px solid transparent;
         border-radius: 10px;
         display: inline;
-        background: #666666;
+        background: #333333;
         color: whitesmoke;
         opacity: 1;
     }
@@ -437,6 +434,7 @@ body, html {
 /*Boczki social i media*/    
     
 .social{
+    display: none;
     width: 139px;
     height: 150px;
     position: fixed;
@@ -468,7 +466,7 @@ body, html {
         padding:5px;
         /*border:1px solid #AAA;*/
         /*border-radius:0 6px 0 6px;*/
-        border-left: 1px solid #666666;
+        border-left: 1px solid #333333;
         font-family: 'social_font';
         font-size: 20px;
         cursor: pointer;
@@ -500,7 +498,7 @@ body, html {
         position: absolute;
         text-decoration: none;
         margin-top: 10px;
-        color: #666666;
+        color: #333333;
     }
 
 
@@ -511,7 +509,7 @@ body, html {
     padding-top: 22%;
     font-size: 54px;
     font-weight: bold;
-    color: #666666;
+    color: #333333;
     font-family: 'Calibri';
     }   
     
@@ -521,14 +519,14 @@ body, html {
     /*padding-top: 25%;*/
     font-size: 54px;
     font-weight: bold;
-    color: #666666;
+    color: #333333;
     font-family: 'Calibri';
     }   
 
     .text-main{
         font-size: 15px;
         letter-spacing: 1px;
-        color: #666666;
+        color: #333333;
         text-align: justify;
     }
     
@@ -544,7 +542,7 @@ body, html {
             /*padding-top: 10px;*/
             margin-left: 15%;
             margin-right: 15%;
-            color: #666666;
+            color: #333333;
             /*font-size: 15px;*/
             letter-spacing: 1px;
             text-align: justify;
@@ -558,7 +556,7 @@ body, html {
             margin-left:15%;
             max-width: 30%;
             font-size: 15px;
-            color: #666666;
+            color: #333333;
             text-align: justify;
         }
 
@@ -567,23 +565,23 @@ body, html {
 
             -webkit-column-count: 2;
             -webkit-column-gap: 5em;
-            -webkit-column-rule: 1px solid #666666;
+            -webkit-column-rule: 1px solid #333333;
 
             -moz-column-count: 2;
             -moz-column-gap: 5em;
-            -moz-column-rule: 1px solid #666666;
+            -moz-column-rule: 1px solid #333333;
 
             -o-column-count: 2;
             -o-column-gap: 5em;
-            -o-column-rule: 1px solid #666666;
+            -o-column-rule: 1px solid #333333;
 
             -ms-column-count: 2;
             -ms-column-gap: 5em;
-            -ms-column-rule: 1px solid #666666;
+            -ms-column-rule: 1px solid #333333;
 
             column-count: 2;
             column-gap: 5em;
-            column-rule: 1px solid #666666;
+            column-rule: 1px solid #333333;
         }
         
         .text-main-description-column p{
@@ -591,7 +589,7 @@ body, html {
         }
 
         .list-main-default{
-            color: #666666;
+            color: #333333;
             margin-right: 15%;
             /*margin-top: 4%;*/
             width: 30%;
@@ -652,7 +650,7 @@ body, html {
 }
 
 .description-s{
-    color: #666666;
+    color: #333333;
     width: 33%;
     /*margin-left: 15%;*/
     text-align: justify; 
@@ -687,27 +685,44 @@ body, html {
     margin-bottom: 4%;
     float: left;
     text-align: left;
+    color: #333333;
 }
 
-    .description2left p{
+    .white{
         color: whitesmoke;
+    }
+
+    .dark{
+        color: #333333;
+    }
+
+    .description2left span{
+        font-weight: bolder;
+    }
+
+    .description2left p span{
+        font-weight: bolder;
+    }
+
+    .description2left p{
+        /*color: whitesmoke;*/
         text-align: justify;
 
     }
 
     .description2left li{
         list-style: disc;
-        color: whitesmoke;
+        /*color: whitesmoke;*/
     }
 
     .description2left h1{
-        color: whitesmoke;
-        margin-top: 15%;
+        /*color: whitesmoke;*/
+        margin-top: 20%;
     }
 
     .description2left h2{
-        color: whitesmoke;
-        margin-top: 180px;
+        /*color: whitesmoke;*/
+        margin-top: 300px;
     }
 
 .description2right{
@@ -724,16 +739,20 @@ body, html {
         margin-top: 35px;
     }
 
-img.description_center{
-    margin-top: 3%;
-    width:70%;
-    margin-left: 15%;
+.description_center{
+    position: relative;
+    display: inline-block;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width:20%;
+    margin-left: 10%;
     margin-right: 15%;
+    text-align: center;
 }
 
 .line_left{
     position: absolute;
-    width: 5px;
+    width: 20px;
     height: 100%;
     float: left;
     margin-left: 15px;
@@ -742,7 +761,7 @@ img.description_center{
 
 .line_left2{
     position: absolute;
-    width: 1px;
+    width: 5px;
     height: 100%;
     float: left;
     margin-left: 12px;
@@ -959,7 +978,7 @@ img.description_center{
 }
     
     .kontakt a {
-       color: #666666; 
+       color: #333333;
        text-decoration: none;
        opacity: 1.0;
        filter: alpha(opacity=100);
@@ -972,7 +991,7 @@ img.description_center{
     
     .kontakt h1{
         font-size: 18px;
-        color: #666666;
+        color: #333333;
         text-decoration-line: underline;
         margin-bottom: 0px;
     }
@@ -981,7 +1000,7 @@ img.description_center{
             margin-top: 8%;
             margin-right: 25%;
             padding-left: 3%;
-            color: #666666;
+            color: #333333;
             font-size: 15px;
             text-align: center;
             float: right;
@@ -995,12 +1014,12 @@ img.description_center{
             margin-left: 15%;
             margin-right: 0%;
             padding-right: 3%;
-            color: #666666;
+            color: #333333;
             font-size: 15px;
             //letter-spacing: 1px;
             //text-align: justify;
             //text-transform: capitalize;
-            //border-right: 1px solid #666666;
+            //border-right: 1px solid #333333;
 
         }
 
@@ -1012,12 +1031,12 @@ img.description_center{
             margin-left: 3%;
             margin-right: 0%;
             padding-right: 3%;
-            color: #666666;
+            color: #333333;
             font-size: 15px;
             //letter-spacing: 1px;
             //text-align: justify;
             //text-transform: capitalize;
-            border-right: 1px solid #666666;
+            border-right: 1px solid #333333;
         }
 
         #text-main-kontakty-right{
@@ -1025,7 +1044,7 @@ img.description_center{
             padding-bottom: 0px;
             margin-left: 3%;
             margin-right: 15%;
-            color: #666666;
+            color: #333333;
             font-size: 15px;
             //letter-spacing: 1px;
             //float: right;
@@ -1142,6 +1161,7 @@ img.description_center{
         /*}*/
         
         #sb-site-bottom, .sb-site-container-bottom {
+            border-top: 2px solid #333333;
             height: auto;
             width: 100%;
             height: auto;
@@ -1252,7 +1272,7 @@ img.description_center{
 }
 
 .title.ribbon:before {
-	background: #666666;
+	background: #333333;
 	left: .1em;
 	bottom: .9em;
 	width: 0em;
@@ -1347,6 +1367,11 @@ img.description_center{
         width: 30%;
         margin-right: 10%;
     }
+
+    .description_center img{
+
+    }
+
     
     .img-top{
         width: 470px;
@@ -1535,5 +1560,5 @@ img.description_center{
 
 p.build{
     font-size: 80px;
-    color: #666666;
+    color: #333333;
 }
