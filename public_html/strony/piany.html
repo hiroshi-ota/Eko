@@ -119,7 +119,7 @@
             
             
 <!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY -->
-<div id="sb-site" style="height: auto;"> <!-- sb-site TOP -->
+<div id="sb-site"> <!-- sb-site TOP -->
         
     <a href="../index.html"><img class="logo_head" src="../images/logo.png" alt="Ekoinstal"></a>
 
@@ -174,21 +174,21 @@
 
     <script>
         $(function(){
-            $('.trigered photo').hide();
-            $('.trigered photo').removeClass("minus").addClass("plus");
+            $('.realizations a').hide();
+            $('.realizations a').removeClass("minus").addClass("plus");
 
             $('.triger_photo p').click(function(){
-                if ($('.trigered photo').hasClass("minus")) {
-                    $('.trigered photo').removeClass("minus").addClass("plus").nextAll().slideToggle(1000);
-                    scroll_to('.trigered');
-                }
-                else {
-                    $('.trigered photo').removeClass("plus").addClass("minus").nextAll().slideToggle(1000);
+                if ($('.realizations a').hasClass("minus")) {
+                    $('.realizations a').removeClass("minus").addClass("plus").nextAll().slideToggle(1000);
 
                 }
+                else {
+                    $('.realizations a').removeClass("plus").addClass("minus").nextAll().slideToggle(1000);
+                    scroll_to('.realizations');
+                }
             });
-            $('.trigered').click(function(){
-                $('.trigered div').removeClass("plus").addClass("minus").nextAll().slideToggle(1000);
+            $('.realizations').click(function(){
+                $('.realizations a').removeClass("plus").addClass("minus").nextAll().slideToggle(1000);
 
             })
         });
@@ -208,10 +208,6 @@
 
 <!-- GALERIA -->
 
-<div class="trigered">
-
-    <photo class="minus">
-    <br/>
     <div class="realizations minus">
 
         <a href="../images/galerie/piany/27.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
@@ -331,9 +327,6 @@
         </a>
     </div>
 
-</photo>
-
-</div>
 
 <div id="sb-site-bottom">
 

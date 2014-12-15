@@ -3,7 +3,7 @@ body, html {
 	width: 100%;
 	min-height:100%;
         font-family: 'calibri';
-        background-color: #333333; /* Default background colour, overwrite this with your own css. I suggest moving your html or body background styling here. Making this transparent will allow the Slidebars beneath to be visible. */
+        background-color: #333333;  //Default background colour, overwrite this with your own css. I suggest moving your html or body background styling here. Making this transparent will allow the Slidebars beneath to be visible.
 }
 
     
@@ -253,6 +253,7 @@ body, html {
         width: 100%;
     }
 
+
     .trigered p, .trigered_photo p, .spotkanie p{
         /*color: #333333;*/
         text-decoration: none;
@@ -263,12 +264,12 @@ body, html {
     }
 
     .trigered_photo photo{
-        /*height: 500px;*/
+        height: 500px;
         padding: 10px;
         width: 100%;
         border-bottom: 1px solid grey;
         background: whitesmoke url(../images/pattern.png) repeat top left;
-        /*box-shadow: inset 0em 0.5em 3em 0.5em #aaaaaa;*/
+        box-shadow: inset 0em 0.5em 3em 0.5em #aaaaaa;
     }
 
 
@@ -322,6 +323,7 @@ body, html {
         background: #333333 url(../images/pattern.png) repeat top left;
     }
 
+
     /*oblicz fotowoltaika*/
 
 .fotowoltaika_frame{
@@ -342,11 +344,12 @@ body, html {
 
 .realizations{
     position: relative;
+    top: 100%;
     max-width: 100%;
     /*margin-left: 25%;*/
 /*    border: 1px solid black;*/
     text-align: center;
-    display: inline-block;
+    /*display: inline-block;*/
 }
     .realizations a{
         display: inline-block;
@@ -377,7 +380,7 @@ body, html {
     
     .realizations a img{
         width: 100%;
-        margin-top: -50px;
+        /*margin-top: -50px;*/
         display: inline-block;
     }
     
@@ -717,43 +720,6 @@ body, html {
     color: #333333;
 }
 
-    .white{
-        color: whitesmoke;
-    }
-
-    .dark{
-        color: #333333;
-    }
-
-    .description2left span{
-        font-weight: bolder;
-    }
-
-    .description2left p span{
-        font-weight: bolder;
-    }
-
-    .description2left p{
-        /*color: whitesmoke;*/
-        text-align: justify;
-
-    }
-
-    .description2left li{
-        list-style: disc;
-        /*color: whitesmoke;*/
-    }
-
-    .description2left h1{
-        /*color: whitesmoke;*/
-        margin-top: 20%;
-    }
-
-    .description2left h2{
-        /*color: whitesmoke;*/
-        margin-top: 300px;
-    }
-
 .description2right{
     width: 30%;
     margin-right: 15%;
@@ -763,7 +729,44 @@ body, html {
     display: inline-block;
 }
 
-    .description2right img{
+    .white{
+        color: whitesmoke;
+    }
+
+    .dark{
+        color: #333333;
+    }
+
+    .description2left span, .description2right span{
+        font-weight: bolder;
+    }
+
+    .description2left p span, .description2right p span{
+        font-weight: bolder;
+    }
+
+    .description2left p, .description2right p{
+        /*color: whitesmoke;*/
+        text-align: justify;
+
+    }
+
+    .description2left li, .description2right li{
+        list-style: disc;
+        /*color: whitesmoke;*/
+    }
+
+    .description2left h1, .description2right h1{
+        /*color: whitesmoke;*/
+        margin-top: 70px;
+    }
+
+    .description2left h2, .description2right h2{
+        /*color: whitesmoke;*/
+
+    }
+
+    .description2left img, .description2right img{
         width: 350px;
         margin-top: 35px;
     }
@@ -772,7 +775,7 @@ body, html {
     position: relative;
     display: inline;
     width:20%;
-    margin: 5% 15% 5% 15%;
+    margin: 5% 10% 5% 10%;
     text-align: center;
 }
 
@@ -964,6 +967,7 @@ body, html {
 }
         
 .bg_img{
+    display: block;
     position: absolute;
     min-width: 100%;
     top: 0%;
@@ -977,24 +981,24 @@ body, html {
 /*        border-top: 40px solid #666666;
         border-bottom: 50px solid #666666;*/
         /*width: 100%;*/
-        opacity: 0.2;
+        opacity: 0.4;
         /*-webkit-box-shadow: 5px 8px 2px #666666;*/
         /*margin-right: 15%;*/ 
     }
     
 
-    .bg_img p{
-        position: relative;
-        width: 70%;
-        bottom:0px;
-        margin-left: 15%;
-        margin-right: 15%;
-        height: 10%;
-        font-size: 12px;
-        color: whitesmoke;
-        background-color: #666666;
-        font-style: italic;
-    }
+    /*.bg_img p{*/
+        /*position: relative;*/
+        /*width: 70%;*/
+        /*bottom:0px;*/
+        /*margin-left: 15%;*/
+        /*margin-right: 15%;*/
+        /*height: 10%;*/
+        /*font-size: 12px;*/
+        /*color: whitesmoke;*/
+        /*background-color: #666666;*/
+        /*font-style: italic;*/
+    /*}*/
     
 .kontakt{
     display: inline-block;
