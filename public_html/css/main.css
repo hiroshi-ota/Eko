@@ -37,9 +37,10 @@ body, html {
     }
 
 .logo_head{
-    width: 30%;
-    margin-left: 15%;
-    
+    width: 35%;
+    max-width: 400px;
+    /*margin-left: 5%;*/
+    margin: 3% 0 2% 13%;
 }
 
 .hr {
@@ -246,13 +247,13 @@ body, html {
 
 
 /*Triger galeria i umawianie spotkania*/
-    .trigered {
+    .trigered, .trigered_photo {
         position: relative;
         /*display: inline-block;*/
         width: 100%;
     }
 
-    .trigered p{
+    .trigered p, .trigered_photo p, .spotkanie p{
         /*color: #333333;*/
         text-decoration: none;
         /*text-align: right;*/
@@ -261,22 +262,23 @@ body, html {
         cursor: pointer;
     }
 
-    .trigered photo{
+    .trigered_photo photo{
         /*height: 500px;*/
         padding: 10px;
         width: 100%;
         border-bottom: 1px solid grey;
-        /*background-color: #333333;*/
+        background: whitesmoke url(../images/pattern.png) repeat top left;
         /*box-shadow: inset 0em 0.5em 3em 0.5em #aaaaaa;*/
     }
 
-    .trigered photo a{
+
+    .trigered_photo photo a{
         float: inherit;
         display: inline-block;
         margin: 5px;
     }
 
-    .trigered photo img{
+    .trigered_photo photo img{
         width: 200px;
         margin-right: 5px;
         display: inline-block;
@@ -286,9 +288,10 @@ body, html {
     .trigers{
         position: absolute;
         width: auto;
-        right: 15%;
+        right: 10%;
         bottom: 5%;
         text-align: right;
+        border-right: 2px solid crimson;
     }
 
     .trigers a{
@@ -296,14 +299,27 @@ body, html {
         color: #333333;
     }
 
-    .triger, .triger_photo {
+    .triger, .triger_photo, .triger2, .triger_spotkanie {
+        font-size: 14px;
         cursor: pointer;
-        margin-right: 15%;
+        margin-right: 10%;
+        font-weight: bolder;
+    }
+
+    .triger:hover, .triger_photo:hover, .triger2 a:hover, .triger_spotkanie:hover{
+        color: crimson;
     }
 
     .triger2 {
+        font-size: 20px;
         cursor: pointer;
-        margin-right: 15%;
+        margin-right: 10%;
+        font-weight: bolder;
+    }
+
+    .spotkanie{
+        height: 1000px;
+        background: #333333 url(../images/pattern.png) repeat top left;
     }
 
     /*oblicz fotowoltaika*/
@@ -326,20 +342,21 @@ body, html {
 
 .realizations{
     position: relative;
-    max-width: 50%;
-    margin-left: 25%;
+    max-width: 100%;
+    /*margin-left: 25%;*/
 /*    border: 1px solid black;*/
     text-align: center;
+    display: inline-block;
 }
     .realizations a{
         display: inline-block;
         text-decoration: none;
-        width: 100%;
-        height: 250px;
+        width: 25%;
+        height: 100px;
         margin-top: 50px;
         overflow: hidden;
         /*border-top: 7px solid #666666;*/
-        border-bottom: 10px solid black;
+        /*border-bottom: 10px solid black;*/
         opacity: 0.7;
 /*        border-radius: 20%;*/
     }
@@ -349,7 +366,7 @@ body, html {
         height: 20px;
         color: whitesmoke;
         background-color: black;
-        position: absolute;
+        /*position: absolute;*/
     }
         
     .realizations a:hover{
@@ -361,6 +378,7 @@ body, html {
     .realizations a img{
         width: 100%;
         margin-top: -50px;
+        display: inline-block;
     }
     
     .gallery{
@@ -515,7 +533,7 @@ body, html {
     
     .header-main-default{
     /*text-decoration: underline;*/
-    margin-left: 15%;
+    margin-left: 10%;
     /*padding-top: 25%;*/
     font-size: 54px;
     font-weight: bold;
@@ -612,6 +630,17 @@ body, html {
 }
         
 /*Logotypy dotacje*/
+
+.button{
+    font-size: 0px;
+    height: 35px;
+    width: 150px;
+    background-image: url("../images/b_galeria.png");
+    cursor: pointer;
+}
+.button:hover{
+    background-image: url("../images/b_galeria_b.png");
+}
 
 .logo-dotacje{
     position: absolute;
@@ -741,12 +770,9 @@ body, html {
 
 .description_center{
     position: relative;
-    display: inline-block;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    display: inline;
     width:20%;
-    margin-left: 10%;
-    margin-right: 15%;
+    margin: 5% 15% 5% 15%;
     text-align: center;
 }
 
@@ -974,7 +1000,6 @@ body, html {
     display: inline-block;
     width: 15%;
     float: left;
-    //padding-left: 0%;
 }
     
     .kontakt a {
@@ -998,12 +1023,13 @@ body, html {
 
         #text-main-kontakty-default{
             margin-top: 8%;
-            margin-right: 25%;
-            padding-left: 3%;
+            /*margin-right: 25%;*/
+            padding-left: 5%;
+            padding-right: 5%;
             color: #333333;
             font-size: 15px;
             text-align: center;
-            float: right;
+            /*float: right;*/
 
         }
 
@@ -1372,6 +1398,10 @@ body, html {
 
     }
 
+    .text-main-description{
+        margin: 0 10% 0 10%;
+    }
+
     
     .img-top{
         width: 470px;
@@ -1400,6 +1430,7 @@ body, html {
     
     .header-main{
         font-size: 30px;
+        margin-left: 10%;
     }
     
     .header-main-default{

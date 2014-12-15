@@ -18,6 +18,7 @@
 	<link rel="stylesheet" type="text/css" href="../css/styleNoJS.css" />
 	</noscript>
         <script src="../js/jquery-1.6.1.js" type="text/javascript"></script>
+
         <script type="text/javascript">
             var st_jq = jQuery.noConflict(true);
         </script>
@@ -26,51 +27,40 @@
     </head>
     <body>
 
-    <script>
+    <script><!--
+        (function($) {
+            $(function(){
+                $('.trigered div').hide();
+                $('.trigered div').removeClass("minus").addClass("plus");
 
-        $(function(){
-            $('.trigered div').hide();
-            $('.trigered div').removeClass("minus").addClass("plus");
+                $('.triger p').click(function(){
+                    if ($('.trigered div').hasClass("minus")) {
+                        $('.trigered div').removeClass("minus").addClass("plus").nextAll().slideToggle(1000);
 
-            $('.triger p').click(function(){
-                if ($('.trigered div').hasClass("minus")) {
+                    }
+                    else {
+                        $('.trigered div').removeClass("plus").addClass("minus").nextAll().slideToggle(1000);
+                        scroll_to('.trigered');
+                    }
+                });
+                $('.trigered').click(function(){
                     $('.trigered div').removeClass("minus").addClass("plus").nextAll().slideToggle(1000);
 
-                }
-                else {
-                    $('.trigered div').removeClass("plus").addClass("minus").nextAll().slideToggle(1000);
-                    scroll_to('.trigered');
-                }
+                })
             });
-            $('.trigered').click(function(){
-                $('.trigered div').slideToggle(1000);
-            })
-        });
+        })(jQuery); //-->
+            </script>
 
-        $(function() {
-            $('.trigered photo').hide();
-            $('.trigered photo').removeClass("minus").addClass("plus");
 
-            $('.triger_photo p').click(function(){
-                if ($('.trigered photo').hasClass("minus")) {
-                    $('.trigered photo').removeClass("minus").addClass("plus").nextAll().slideToggle(1000);
 
-                }
-                else {
-                    $('.trigered photo').removeClass("plus").addClass("minus").nextAll().slideToggle(1000);
-                }
-            });
-        });
-    </script>
 
-        
         <!-- przesuwanie do góry strony //-->
             <script>
              st_jq(function(){
                 var stt_is_shown = false;
                 st_jq(window).scroll(function(){
                    var win_height = 300;
-                   var scroll_top = $(document).scrollTop(); 
+                   var scroll_top = $(document).scrollTop();
                    if (scroll_top > win_height && !stt_is_shown) {
                       stt_is_shown = true;
                       st_jq("#scroll-to-top").fadeIn();
@@ -195,29 +185,15 @@
     <!--</div>-->
     <div class="trigers">
         <div class="triger"><p class="minus">Dane techniczne</p></div>
+        <div class="triger_spotkanie"><p class="minus">Umów spotkanie</p></div>
         <div class="triger2"><p><a href="javascript:void();" onclick="scroll_to('iframe');">Kalkulator Enerii Solarnej</a></p></div>
-        <div class="triger_photo"><p class="minus">galeria</p></div>
+        <div class="triger_photo"><p class="minus">Galeria</p></div>
     </div>
 
      
 </div>  <!-- sb-site end //-->
 
-    <div class="trigered">
 
-        <photo class="minus">
-            <a href="../images/galerie/prace_inz/1.jpg"><img src="../images/galerie/prace_inz/1.jpg"></a>
-            <a href="../images/galerie/prace_inz/2.jpg"><img src="../images/galerie/prace_inz/2.jpg"></a>
-            <a href="../images/galerie/prace_inz/3.jpg"><img src="../images/galerie/prace_inz/3.jpg"></a>
-            <a href="../images/galerie/prace_inz/4.jpg"><img src="../images/galerie/prace_inz/4.jpg"></a>
-            <a href="../images/galerie/prace_inz/5.JPG"><img src="../images/galerie/prace_inz/5.JPG"></a>
-            <a href="../images/galerie/prace_inz/6.JPG"><img src="../images/galerie/prace_inz/6.JPG"></a>
-            <a href="../images/galerie/prace_inz/7.JPG"><img src="../images/galerie/prace_inz/7.JPG"></a>
-            <a href="../images/galerie/prace_inz/8.JPG"><img src="../images/galerie/prace_inz/8.JPG"></a>
-            <a href="../images/galerie/prace_inz/9.JPG"><img src="../images/galerie/prace_inz/9.JPG"></a>
-
-        </photo>
-
-    </div>
 
 <div class="trigered">
 
@@ -285,6 +261,46 @@
 
 </div>
 
+    <script>
+
+            jQuery(function ($) {
+                $('.trigered_photo photo').hide();
+                $('.trigered_photo photo').removeClass("minus").addClass("plus");
+
+                $('.triger_photo p').click(function () {
+                    if ($('.trigered_photo photo').hasClass("minus")) {
+                        $('.trigered_photo photo').removeClass("minus").addClass("plus").nextAll().slideToggle(1000);
+
+                    }
+                    else {
+                        $('.trigered_photo photo').removeClass("plus").addClass("minus").nextAll().slideToggle(1000);
+                        scroll_to('.trigered_photo');
+                    }
+                });
+            });
+
+    </script>
+
+    <div class="trigered_photo">
+
+        <photo class="minus">
+            <p>
+                dua dupa dupa
+            </p>
+            <a href="../images/galerie/prace_inz/1.jpg"><img src="../images/galerie/prace_inz/1.jpg"></a>
+            <a href="../images/galerie/prace_inz/2.jpg"><img src="../images/galerie/prace_inz/2.jpg"></a>
+            <a href="../images/galerie/prace_inz/3.jpg"><img src="../images/galerie/prace_inz/3.jpg"></a>
+            <a href="../images/galerie/prace_inz/4.jpg"><img src="../images/galerie/prace_inz/4.jpg"></a>
+            <a href="../images/galerie/prace_inz/5.JPG"><img src="../images/galerie/prace_inz/5.JPG"></a>
+            <a href="../images/galerie/prace_inz/6.JPG"><img src="../images/galerie/prace_inz/6.JPG"></a>
+            <a href="../images/galerie/prace_inz/7.JPG"><img src="../images/galerie/prace_inz/7.JPG"></a>
+            <a href="../images/galerie/prace_inz/8.JPG"><img src="../images/galerie/prace_inz/8.JPG"></a>
+            <a href="../images/galerie/prace_inz/9.JPG"><img src="../images/galerie/prace_inz/9.JPG"></a>
+
+        </photo>
+
+    </div>
+
 
 
 <div id="sb-site-bottom">   <!--sb-site-bottom  //-->
@@ -339,7 +355,7 @@
             <span>Ogniwa monokrystaliczne</span> - wykonane z jednego monolitycznego kryształu krzemu.
             Wyróżniają się sprawnością oscylującą w granicach 18-22%. Posiadają ciemny kolor.<br/><br/>
             <span>Ogniwa polikrystaliczne</span> - wykonane z wykrystalizowanego krzemu. Sprawnośc  waha
-            się w granicach 14-18%.są one najczęściej stosowane  w instalacjach montowanych na domach
+            się w granicach 14-18%. Są one najczęściej stosowane  w instalacjach montowanych na domach
             jednorodzinnych.posiadają charakterystyczny niebieski kolor. <br/><br/>
             <span>Ogniwa amorficzne</span> - wykonane z amorficznego krzemu. Sprawność ich waha się
             w granicach 6-10%. Charakteryzują się lekko bordowym kolorem.
@@ -354,7 +370,7 @@
             Njapopularniejszą lokalizacją montażu pv są dachy budynków. Równie dobrze można zastosować montaż
             na fasadzie budynku, czy też gruncie. Przy montażu bardzo ważną rolę odgrywa orientacja i kąt nachylenia pv.
             Najlepszą efektywnością będą wykazywały się  panele skierowane na południe, natomiast optymalny kąt
-            nachylenia  paneli w polsce wynosi ok. 30-40%. Przy montażu instalacji należy unikać  zacienienia pv.
+            nachylenia  paneli w polsce wynosi ok. 30-40&#176;. Przy montażu instalacji należy unikać  zacienienia pv.
         </p>
     </div>
 
