@@ -1,117 +1,110 @@
 <!DOCTYPE html>
+
 <html>
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Pompy ciepła</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="../css/main_menu/stimenu.css" />
         <link rel="stylesheet" type="text/css" href="../css/main.css">
         <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
-	<link rel="stylesheet" type="text/css" href="../css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="../css/demo.css" />
         <script type="text/javascript" src="../js/jquery1.11.1.js"></script>
-        <link rel="stylesheet" type="text/css" href="../css/menu_slice/style.css" />
-        <link rel="stylesheet" type="text/css" href="../css/menu_slice/custom.css" />
-        <link rel="stylesheet" type="text/css" href="../css/main_menu/stimenu.css" />
+
         <link rel="stylesheet" href="../css/sidebar/slidebars.css">
         <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
         <noscript>
-	<link rel="stylesheet" type="text/css" href="../css/styleNoJS.css" />
-	</noscript>
+            <link rel="stylesheet" type="text/css" href="../css/styleNoJS.css" />
+        </noscript>
         <script src="../js/jquery-1.6.1.js" type="text/javascript"></script>
+
         <script type="text/javascript">
             var st_jq = jQuery.noConflict(true);
         </script>
         <script src="../js/jquery.easing.1.3.js" type="text/javascript"></script>
+        <script type="text/javascript" src="../js/gallery/mlbox.js"></script>
+
     </head>
-    <body>
-       
-<!--Odtwarzanie filmów-->
-        
-<!-- 1. skin -->
-<link rel="stylesheet" href="//releases.flowplayer.org/5.4.6/skin/minimalist.css">
- 
-<!-- 2. jquery library -->
-<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
- 
-<!-- 3. flowplayer -->
-<script src="//releases.flowplayer.org/5.4.6/flowplayer.min.js"></script>
-        
-        <!-- przesuwanie do góry strony //-->
-            <script>
-             st_jq(function(){
-                var stt_is_shown = false;
-                st_jq(window).scroll(function(){
-                   var win_height = 300;
-                   var scroll_top = $(document).scrollTop(); 
-                   if (scroll_top > win_height && !stt_is_shown) {
-                      stt_is_shown = true;
-                      st_jq("#scroll-to-top").fadeIn();
-                   } else if (scroll_top < win_height && stt_is_shown) {
-                      stt_is_shown = false;
-                      st_jq("#scroll-to-top").fadeOut();
-                   }
-               });
-                            st_jq("#scroll-to-top").click(function(e){
-                   e.preventDefault();
-                   st_jq('html, body').animate({scrollTop:0}, 1500);
-                 });
-              });
-              </script>
-
-    <!-- płynne przewijanie  //-->
-        <script>
-            function scroll_to(selector) {
-                $('html,body').animate({scrollTop: $(selector).offset().top}, 700);
-            return false;
-               };
-               
-        </script>
-        
-    <!-- Sidebar //-->
-        <div class="sb-slidebar sb-left">
-
-            <ul class="sb-menu">
-                <!-- wyszukiwarka do wersji 2.0 <li class="sb-close"><a href="strony/szukaj.html">Szukaj</a></li> -->
-                <p style="text-align: center">Szukaj:</p>
-                <div class="search">
-
-                    <form action="http://www.google.pl/search" method="get">
-                        <input type="text" name="q" />
-                        <input type="hidden" name="ie" value="UTF-8" />
-                        <input type="hidden" name="sitesearch" value="domena" />
-
-                    </form>
-                </div>
-
-                <li class="sb-close"><a href="oze.html">Odnawialne źródła energii</a></li>
-                <li class="sb-close"><a href="piany.html">Piana poliuretanowa</a></li>
-                <li class="sb-close"><a href="prace_inz.html">Prace inżynieryjne</a></li>
-                <li class="sb-close"><a href="termowizja.html">Termowizja</a></li>
-                <li class="sb-close"><a href="dotacje.html">Dotacje</a></li>
-                <li class="sb-close"><a href="pompy.html">Pompy ciepła</a></li>
-                <li class="sb-close"><a href="ogniwa.html">Fotowoltaika</a></li>
-                <li class="sb-close"><a href="rekuperacja.html">Rekuperacja</a></li>
+<body>
 
 
-            </ul>
+<!-- przesuwanie do góry strony //-->
+<script>
+    st_jq(function(){
+        var stt_is_shown = false;
+        st_jq(window).scroll(function(){
+            var win_height = 300;
+            var scroll_top = $(document).scrollTop();
+            if (scroll_top > win_height && !stt_is_shown) {
+                stt_is_shown = true;
+                st_jq("#scroll-to-top").fadeIn();
+            } else if (scroll_top < win_height && stt_is_shown) {
+                stt_is_shown = false;
+                st_jq("#scroll-to-top").fadeOut();
+            }
+        });
+        st_jq("#scroll-to-top").click(function(e){
+            e.preventDefault();
+            st_jq('html, body').animate({scrollTop:0}, 1500);
+        });
+    });
+</script>
 
+<!-- płynne przewijanie  //-->
+<script>
+    function scroll_to(selector) {
+        $('html,body').animate({scrollTop: $(selector).offset().top}, 700);
+        return false;
+    };
 
+</script>
+
+<!-- Sidebar //-->
+<div class="sb-slidebar sb-left">
+
+    <ul class="sb-menu">
+        <!-- wyszukiwarka do wersji 2.0 <li class="sb-close"><a href="strony/szukaj.html">Szukaj</a></li> -->
+        <p style="text-align: center">Szukaj:</p>
+        <div class="search">
+
+            <form action="http://www.google.pl/search" method="get">
+                <input type="text" name="q" />
+                <input type="hidden" name="ie" value="UTF-8" />
+                <input type="hidden" name="sitesearch" value="domena" />
+
+            </form>
         </div>
 
-            <div class="sb-slidebar sb-right">
-              <!-- Your right Slidebar content. -->
-            </div>
-        
-            <!-- Slidebars -->
-            <script src="../js/slidebars.js"></script>
-            <script>
-                
-              (function($) {
-                $(document).ready(function() {
-                  $.slidebars();
-                });
-              }) (jQuery);
-            </script>
+        <li class="sb-close"><a href="oze.html">Odnawialne źródła energii</a></li>
+        <li class="sb-close"><a href="piany.html">Piana poliuretanowa</a></li>
+        <li class="sb-close"><a href="prace_inz.html">Prace inżynieryjne</a></li>
+        <li class="sb-close"><a href="termowizja.html">Termowizja</a></li>
+        <li class="sb-close"><a href="dotacje.html">Dotacje</a></li>
+        <li class="sb-close"><a href="pompy.html">Pompy ciepła</a></li>
+        <li class="sb-close"><a href="ogniwa.html">Fotowoltaika</a></li>
+        <li class="sb-close"><a href="rekuperacja.html">Rekuperacja</a></li>
+
+
+    </ul>
+
+
+</div>
+
+<div class="sb-slidebar sb-right">
+    <!-- Your right Slidebar content. -->
+</div>
+
+<!-- Slidebars -->
+<script src="../js/slidebars.js"></script>
+<script>
+
+    (function($) {
+        $(document).ready(function() {
+            $.slidebars();
+        });
+    }) (jQuery);
+</script>
             
             
 <!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY --> <!-- TREŚĆ STRONY -->
@@ -143,303 +136,254 @@
         zastosowanego dolnego źródła ciepła pompy ciepła możemy podzielić na:
     
     </p>
-    
-    
-    <center><img src="../images/schemat_pompa.png" alt="schemat pompy ciepła" class="img-top" ><center>
 
-         
-<!--        <div class="flash-main">
-            <embed src="../video/pompa_zasada.swf" width="550" height="400" wmode="transparent" />
-        </div>-->
-    
-    <div class="content-menu">
-        <a href="javascript:void()" onclick="scroll_to('#powietrze_woda')">powietrze / woda</a>
-        <a href="javascript:void()" onclick="scroll_to('#woda_woda')">woda / woda</a>
-        <a href="javascript:void()" onclick="scroll_to('#solanka_woda')">solanka / woda</a>
-        <a href="javascript:void()" onclick="scroll_to('#realizacje')"><span>realizacje</span></a>
+    <div class="trigers">
+        <div class="triger_photo"><p class="minus">Galeria</p> </div>
+        <div class="triger_spotkanie"><p class="minus">Umów spotkanie</p> </div>
     </div>
+    
+    
+<!--<center><img src="../images/schemat_pompa.png" alt="schemat pompy ciepła" class="img-top" ></center>-->
     
     <div class="bg_img">
-    
+
         <img src="../images/top_pompy_s.png" alt="Pompy tło">
-    
+
     </div>
      
-</div>  <!-- sb-site end //-->  
-<div id="sb-site-middle" style="padding-top: 3%"> <!-- sb site middle //-->
-    
-    
-<!--        <a href="http://www.wp.pl" data-title="Przykładowy opis pompy" class="title ribbon">
-            <img src="../images/pompy_main.JPG" alt="Przykłądowa pompa" />
-        </a>-->
+</div>  <!-- sb-site end //-->
 
-    
-    <div class="description"><a id="powietrze_woda"></a>
-        
-        <h1 style="color: whitesmoke"> Pompa powietrze/woda</h1> 
-        
-        <p class="description-text-left" style="color: whitesmoke">
-            Powietrze ogrzane przez słońce jest wszędzie. 
-            Może ono stanowić dolne źródło ciepła dla pomp ciepła. Powietrze jest najtańszym dolnym źródłem 
-            ciepła, nie ma potrzeby budowania kosztownej instalacji dolnego źródła ciepła. Powietrze zostaje 
-            poprzez wentylator w pompie ciepła wprowadzone na parownik, a część energii w nim zmagazynowanej 
-            zostaje przekazana do układu ogrzewczego budynku. Nowoczesne pompy ciepła mają zdolność odbierania 
-            odpowiedniej ilości ciepła z powietrza o temperaturze nawet -20°C. Powietrze jako dolne źródło 
-            ciepła ma jednak taką wadę, że gdy zapotrzebowanie na ciepło jest największe jego temperatura jest 
-            najmniejsza. Wprawdzie można pozyskać ciepło z temperatury -20°C, ale współczynnik efektywności pompy 
-            ciepła zmniejsza się wraz ze spadkiem temperatury. Pomimo, że pompy ciepła powietrze-woda mogą pracować 
-            w systemie monowalentym, to powszechnie stosowane jest rozwiązanie z drugą wytwornicą ciepła w postaci 
-            np. kotła gazowego, czy olejowego. W tym przypadku kocioł wspomaga ogrzewanie w krótkim okresie sezonu 
-            grzewczego, w którym panują szczególnie niskie temperatury zewnętrzne, a równocześnie zapotrzebowanie na 
-            moc jest szczytowe. System ten nosi nazwę systemu biwalentnego. Gdy pompa ciepła pracuje w systemie 
-            monowalentym, to istnieje konieczność zastosowania grzałki elektrycznej wspomagającej ogrzewanie w okresach, 
-            o których mowa w przypadku pracy, w systemie biwalentym. W trakcie pracy pompy ciepła w niskich temperaturach 
-            zewnętrznych, parownik pompy ciepła ulega zamrożeniu. Pompy ciepła tego typu wyposażone są w system 
-            automatycznego rozmrażania parownika. System ten wymaga zainstalowania zbiornika buforowego w układzie, 
-            gdyż w funkcji automatycznego rozmrażania parownika przez krótki okres czasu pobierana jest z niego energia. 
-            Pompy ciepła powietrze-woda występują w dwóch wykonaniach, jako jednostki zewnętrzne i wewnętrzne. 
-            Jednostki wewnętrzne wymagają kontaktu z powietrzem zewnętrznym i realizowane jest to przez specjalne rękawy. 
-            Zarówno jednostki zewnętrzne jak i wewnętrzne charakteryzują się pewnym poziomem hałasu. Jednostka zewnętrzna 
-            ze względu na konieczność połączenia z budynkiem, powinna być usytułowana możliwie blisko niego. 
-            Niewłaściwe usytuowanie może powodować nadmierny, uciążliwy hałas. Rozwiązania z pompą ciepła typu 
-            powietrze-woda często stosowane są w południowej części kraju. Podyktowane jest to często brakiem możliwości 
+        <div class="realizations minus">
+
+            <a href="../images/galerie/piany/27.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
+                <img src="../images/galerie/piany/27.JPG" alt="piany 27">
+            </a>
+
+            <a href="../images/galerie/piany/28.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
+                <img src="../images/galerie/piany/28.JPG" alt="piany 28">
+            </a>
+
+            <a href="../images/galerie/piany/29.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
+                <img src="../images/galerie/piany/29.jpg" alt="piany 29">
+            </a>
+
+            <a href="../images/galerie/piany/1.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
+                <img src="../images/galerie/piany/1.JPG" alt="piany 1">
+            </a>
+
+            <a href="../images/galerie/piany/2.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
+                <img src="../images/galerie/piany/2.JPG" alt="piany 2">
+            </a>
+
+            <a href="../images/galerie/piany/3.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
+                <img src="../images/galerie/piany/3.JPG" alt="piany 3">
+            </a>
+
+            <a href="../images/galerie/piany/4.JPG" title="Izolacja pianą poliuretanową" class="mlbox">
+                <img src="../images/galerie/piany/4.JPG" alt="piany 4">
+            </a>
+        </div>
+
+<div id="sb-site-bottom">
+
+    <div class="description2left dark" style="float: none">
+        <h1>Pompa powietrze/woda</h1>
+
+        <p>
+            Powietrze ogrzane przez słońce jest wszędzie.
+            Może ono stanowić dolne źródło ciepła dla pomp ciepła. Powietrze jest najtańszym dolnym źródłem
+            ciepła, nie ma potrzeby budowania kosztownej instalacji dolnego źródła ciepła. Powietrze zostaje
+            poprzez wentylator w pompie ciepła wprowadzone na parownik, a część energii w nim zmagazynowanej
+            zostaje przekazana do układu ogrzewczego budynku. Nowoczesne pompy ciepła mają zdolność odbierania
+            odpowiedniej ilości ciepła z powietrza o temperaturze nawet -20°C. Powietrze jako dolne źródło
+            ciepła ma jednak taką wadę, że gdy zapotrzebowanie na ciepło jest największe jego temperatura jest
+            najmniejsza. Wprawdzie można pozyskać ciepło z temperatury -20°C, ale współczynnik efektywności pompy
+            ciepła zmniejsza się wraz ze spadkiem temperatury. Pomimo, że pompy ciepła powietrze-woda mogą pracować
+            w systemie monowalentym, to powszechnie stosowane jest rozwiązanie z drugą wytwornicą ciepła w postaci
+            np. kotła gazowego, czy olejowego. W tym przypadku kocioł wspomaga ogrzewanie w krótkim okresie sezonu
+            grzewczego, w którym panują szczególnie niskie temperatury zewnętrzne, a równocześnie zapotrzebowanie na
+            moc jest szczytowe. System ten nosi nazwę systemu biwalentnego. Gdy pompa ciepła pracuje w systemie
+            monowalentym, to istnieje konieczność zastosowania grzałki elektrycznej wspomagającej ogrzewanie w okresach,
+            o których mowa w przypadku pracy, w systemie biwalentym. W trakcie pracy pompy ciepła w niskich temperaturach
+            zewnętrznych, parownik pompy ciepła ulega zamrożeniu. Pompy ciepła tego typu wyposażone są w system
+            automatycznego rozmrażania parownika. System ten wymaga zainstalowania zbiornika buforowego w układzie,
+            gdyż w funkcji automatycznego rozmrażania parownika przez krótki okres czasu pobierana jest z niego energia.
+            Pompy ciepła powietrze-woda występują w dwóch wykonaniach, jako jednostki zewnętrzne i wewnętrzne.
+            Jednostki wewnętrzne wymagają kontaktu z powietrzem zewnętrznym i realizowane jest to przez specjalne rękawy.
+            Zarówno jednostki zewnętrzne jak i wewnętrzne charakteryzują się pewnym poziomem hałasu. Jednostka zewnętrzna
+            ze względu na konieczność połączenia z budynkiem, powinna być usytułowana możliwie blisko niego.
+            Niewłaściwe usytuowanie może powodować nadmierny, uciążliwy hałas. Rozwiązania z pompą ciepła typu
+            powietrze-woda często stosowane są w południowej części kraju. Podyktowane jest to często brakiem możliwości
             wykonania dolnego źródła ciepła w innej postaci.
         </p>
-        
-        
-        <a href="../images/powietrze_woda_schemat.png" data-title="Schemat pompy powietrze/woda" class="title title-right ribbon" style="margin-top: 1%">
-            <img src="../images/powietrze_woda_schemat.png" alt="schemat powietrze/woda" style="height: 400px; width: auto" />
-        </a>  
-        
-        
-        
-        <div class="description-add-right">
-            <ul>
-                <li><a style="text-decoration: underline" >Sprawdź również:</a></li>
-                <br>
-                <li><a href="http://www.glendimplex.pl/">DIMPLEX</a></li>
-                <li><a href="http://www.biawar.com.pl/pl/">NIBE / BIAWAR</a></li>
-                <li><a href="http://pl.wikipedia.org/wiki/Pompa_ciep%C5%82a">wikipedia</a></li>
-            </ul>
+
         </div>
-        
-<!--        <p><a href="katalog.html" class="to-katalog">Przejdź do katalogu</a></p>
-        
-         <div class="flowplayer movie" style="width: 600px; height: auto; float: right; margin-top: 0px; margin-left: 0px">
-                   <video>
-                      <source type="video/flv" src="../video/min.flv">
-                   </video>
-        </div>-->
-        
 
-        
-    </div>
+        <div class="description2right" style="margin-top: 100px">
+            <img src="../images/powietrze_woda_schemat.png">
+        </div>
 
-       
 
-<hr style="width: 70%">
+    <div class="description2left dark">
+        <h1>Pompa ciepła woda/woda</h1>
 
-    <div class="description"><a id="woda_woda"></a>
-
-        <h1 style="color: whitesmoke">Pompa ciepła woda/woda</h1>
-
-        <p class="description-text-right" style="color: whitesmoke">
-            Woda gruntowa jest dobrym akumulatorem ciepła. Nawet podczas bardzo chłodnej zimy zachowuje dość 
-            wysoki, jak na dolne źródło ciepła, parametr temperaturowy. Temperatura wody waha się w przedziale 
-            od ok. 7°C do ok. 12°C i ma charakter stały. Jest to efekt pożądany, gdyż współczynnik efektywności 
+        <p>
+            Woda gruntowa jest dobrym akumulatorem ciepła. Nawet podczas bardzo chłodnej zimy zachowuje dość
+            wysoki, jak na dolne źródło ciepła, parametr temperaturowy. Temperatura wody waha się w przedziale
+            od ok. 7°C do ok. 12°C i ma charakter stały. Jest to efekt pożądany, gdyż współczynnik efektywności
             pompy ciepła jest wprost proporcjonalny do temperatury dolnego źródła. Do wykorzystania ciepła z wód
-            podziemnych potrzebne są dwie studnie. Jedna z nich pełni rolę studni czerpalnej, druga zaś zrzutowej. 
-            Podczas ich wykonywania określa się kierunek i jakość wód podziemnych. W studni czerpalnej znajduje się 
-            pompa głębinowa, która powoduje obieg wody przez wymiennik znajdujący się w pompie ciepła. Woda po 
-            oddaniu ciepła wędruje do studni zrzutowej. Studnie czerpalna i zrzutowa powinny znajdować się w 
-            znacznej odległości od siebie, żeby chłodna woda zrzucana nie mieszała się z wodą czerpaną, 
-            niekorzystnie obniżając jej temperaturę. Dodatkowo obie studnie muszą korzystać z tej samej 
-            warstwy wodonośnej. To rozwiązanie może być zastosowane w przypadku, gdy warunki hydrogeologiczne 
-            na to pozwalają. Często okazuje się, że napływ wody gruntowej jest niedostateczny. Limituje to 
-            utrzymanie wymaganego przepływu wody przez wymiennik. Obecne możliwości technologiczne pozwalają 
-            wykonać studnie głębinową praktycznie w każdym terenie, ale może się okazać, że koszty jej wykonania, 
-            bądź późniejszego wydobycia wody, będą niewspółmierne do założonego efektu ekonomicznego. 
-            Należy również pamiętać, że w przypadku, gdy studnia jest głębsza niż 30mb lub, gdy ilość 
-            czerpanej wody jest większa niż 15m3/dobę to wymagane jest pozwolenie wodnoprawne. Ma to 
-            szczególne znaczenie przy większych jednostkach pomp ciepła typu woda-woda. Inną przeszkodą 
-            systemu woda-woda może być zła jakość wody. Niewłaściwe parametry wody, szczególnie z dużą 
-            zawartością żelaza, manganu lub wysoką twardością, mogą powodować korodowanie wymiennika, 
-            osadzanie się osadów w instalacji. Jest to efekt niepożądany, gdyż znacząco wpływa na parametry 
-            pracy pompy ciepła, a przy długoletnim użytkowaniu może doprowadzić do całkowitej niedrożności 
-            układu po stronie dolnego źródła ciepła. Każdy producent określa parametry graniczne jakimi, 
-            powinna charakteryzować się woda używana jako dolne źródło ciepła w pompach ciepła typu woda-woda. 
-            Jako dolne źródło ciepła można wykorzystać również wody powierzchniowe, np. jeziora, rzeki, stawy. 
+            podziemnych potrzebne są dwie studnie. Jedna z nich pełni rolę studni czerpalnej, druga zaś zrzutowej.
+            Podczas ich wykonywania określa się kierunek i jakość wód podziemnych. W studni czerpalnej znajduje się
+            pompa głębinowa, która powoduje obieg wody przez wymiennik znajdujący się w pompie ciepła. Woda po
+            oddaniu ciepła wędruje do studni zrzutowej. Studnie czerpalna i zrzutowa powinny znajdować się w
+            znacznej odległości od siebie, żeby chłodna woda zrzucana nie mieszała się z wodą czerpaną,
+            niekorzystnie obniżając jej temperaturę. Dodatkowo obie studnie muszą korzystać z tej samej
+            warstwy wodonośnej. To rozwiązanie może być zastosowane w przypadku, gdy warunki hydrogeologiczne
+            na to pozwalają. Często okazuje się, że napływ wody gruntowej jest niedostateczny. Limituje to
+            utrzymanie wymaganego przepływu wody przez wymiennik. Obecne możliwości technologiczne pozwalają
+            wykonać studnie głębinową praktycznie w każdym terenie, ale może się okazać, że koszty jej wykonania,
+            bądź późniejszego wydobycia wody, będą niewspółmierne do założonego efektu ekonomicznego.
+            Należy również pamiętać, że w przypadku, gdy studnia jest głębsza niż 30mb lub, gdy ilość
+            czerpanej wody jest większa niż 15m3/dobę to wymagane jest pozwolenie wodnoprawne. Ma to
+            szczególne znaczenie przy większych jednostkach pomp ciepła typu woda-woda. Inną przeszkodą
+            systemu woda-woda może być zła jakość wody. Niewłaściwe parametry wody, szczególnie z dużą
+            zawartością żelaza, manganu lub wysoką twardością, mogą powodować korodowanie wymiennika,
+            osadzanie się osadów w instalacji. Jest to efekt niepożądany, gdyż znacząco wpływa na parametry
+            pracy pompy ciepła, a przy długoletnim użytkowaniu może doprowadzić do całkowitej niedrożności
+            układu po stronie dolnego źródła ciepła. Każdy producent określa parametry graniczne jakimi,
+            powinna charakteryzować się woda używana jako dolne źródło ciepła w pompach ciepła typu woda-woda.
+            Jako dolne źródło ciepła można wykorzystać również wody powierzchniowe, np. jeziora, rzeki, stawy.
         </p>
+    </div>
 
-        <a href="../images/woda_woda_schemat.png" data-title="Schemat instalacji pompy woda/woda" class="title title-left ribbon" style="margin-top: 1%">
-                <img src="../images/woda_woda_schemat.png" alt="schemat woda/woda" style="height: 400px; width: auto" />
-        </a>
-        
-        
-        
-        <div class="description-add-left">
-            <ul>
-                <li><a style="text-decoration: underline" >Sprawdź również:</a></li>
-                <br>
-                <li><a href="http://www.glendimplex.pl/">DIMPLEX</a></li>
-                <li><a href="http://www.biawar.com.pl/pl/">NIBE / BIAWAR</a></li>
-                <li><a href="http://pl.wikipedia.org/wiki/Pompa_ciep%C5%82a">wikipedia</a></li>
-            </ul>
-        </div>
-        
+    <div class="description2right" style="margin-top: 100px">
+        <img src="../images/woda_woda_schemat.png">
     </div>
 
 
-        
 
-<!--        <div class="flowplayer movie" style="width: 600px; height: auto">
-                   <video>
-                      <source type="video/flv" src="../video/min.flv">
-                   </video>
-        </div>-->
+    <div class="description2left dark">
 
-<hr style="width: 70%">
+        <h1>Pompa ciepła solanka/woda</h1>
 
-    <div class="description"><a id="solanka_woda"></a>
+        <p>
+            Grunt w górnych warstwach bardzo dobrze akumuluje ciepło, które pobiera bezpośrednio jako
+            radiację ze słońca, bądź pośrednio z opadów deszczu, powietrza. Poniżej piętnastego metra pod
+            poziomem terenu uznaje się, że temperatura ziemi jest stała, a energia cieplna tam zgromadzona
+            pochodzi z wnętrza ziemi. Te warunki pozwalają na zrobienie takiego układu dolnego źródła ciepła,
+            który zagwarantuje prace pompy ciepła przez cały sezon. Jakość dolnego źródła ciepła w tym przypadku
+            będzie bezpośrednio zależna od lokalnych warunków geologicznych dla rozpatrywanego przypadku.
+            W związku z występującą różnicą źródła energii cieplnej w poszczególnych warstwach gruntu,
+            rozróżniamy dwa rodzaje dolnego źródła ciepła:
+        </p>
 
-        <h1 style="color: whitesmoke">Pompa ciepła solanka/woda</h1>
+        <ul>
+            <li>kolektor poziomy</li>
+            <li>kolektor pionowy</li>
+        </ul>
 
-        <p class="description-text-left" style="color: whitesmoke">
-            Grunt w górnych warstwach bardzo dobrze akumuluje ciepło, które pobiera bezpośrednio jako 
-            radiację ze słońca, bądź pośrednio z opadów deszczu, powietrza. Poniżej piętnastego metra pod 
-            poziomem terenu uznaje się, że temperatura ziemi jest stała, a energia cieplna tam zgromadzona 
-            pochodzi z wnętrza ziemi. Te warunki pozwalają na zrobienie takiego układu dolnego źródła ciepła, 
-            który zagwarantuje prace pompy ciepła przez cały sezon. Jakość dolnego źródła ciepła w tym przypadku 
-            będzie bezpośrednio zależna od lokalnych warunków geologicznych dla rozpatrywanego przypadku. 
-            W związku z występującą różnicą źródła energii cieplnej w poszczególnych warstwach gruntu, 
-            rozróżniamy dwa rodzaje dolnego źródła ciepła:<br>
-            - kolektor poziomy<br>
-            - kolektor pionowy<br>
-            Oba w/w gruntowe źródła ciepła mają charakter wymiennika pośredniego i pracują w układzie zamkniętym.<br>
-            <br>
-            <span style="text-underline-position: auto">Dolne źródło ciepła:</span><br>
-            <span>Kolektor poziomy </span>układany jest w gruncie na głębokości 1,5 – 1,8m ppt. w postaci pętli, 
-            wykonanych najczęściej z rur polietylenowych, połączonych ze sobą poprzez rozdzielacz kolektorowy. 
-            Układ napełniony jest wodnym roztworem glikolu.Głębokość posadowienia kolektora poziomego jest bezpośrednio 
-            uzależniona od głębokości strefy przemarzania w danej strefie klimatycznej, ale również pod uwagę brana 
-            jest maksymalna głębokość, na jakiej obecne są zyski energetyczne z warunków panujących na powierzchni. 
-            W tym przypadku należy wziąć pod uwagę fakt, iż w okresie letnim dolne źródło w postaci gruntowego kolektora 
-            płaskiego musi się zregenerować. Energia na regenerację tego dolnego źródła ciepła pozyskiwana jest z 
-            energii słonecznej, gdyż ziemia nagrzewając się przekazuje ciepło głębszym warstwom gruntu. Na podobnej 
-            zasadzie przekazywana jest energia cieplna z opadów atmosferycznych oraz powietrza. W związku z powyższym, 
-            po wykonaniu dolnego źródła ciepła w takiej postaci, nie można utrudniać naturalnej regeneracji poprzez 
-            zasłanianie terenu, w którym jest wykonana instalacja np. poprzez kostkę brukową, itp. Wadą tego rozwiązania 
-            jest konieczność posiadania działki o znacznej powierzchni, której nie można później w dowolny sposób 
-            wykorzystać oraz uzależnienie regeneracji dolnego źródła ciepła od warunków atmosferycznych, na które nie ma 
-            wpływu. <br>
-            <span>Kolektor pionowy </span>wykonywany jest jako układ połączonych ze sobą, poprzez rozdzielacz kolektorowy, 
-            sond pionowych, zamontowanych w przygotowanym otworze montażowym. Otwór taki wykonuje się przy pomocy 
-            specjalistycznego sprzętu wiertniczego. Najczęściej spotykanym sposobem wykonywania otworu montażowego 
-            pod sondy jest wiercenie przy użyciu płuczki bentonitowej. W uprzednio przygotowane, najczęściej 
-            kilkudziesięciometrowe otwory zapuszcza się pętle wykonaną z rur polietylenowych, zakończone głowicą 
-            u-kształtną. Przestrzeń pomiędzy wymiennikiem rurowym a gruntem uzupełnia się substancją o odpowiednich 
-            właściwościach. Jest to jedno z najbezpieczniejszych dolnych źródeł ciepła, ponieważ gwarantuje stałą 
-            temperaturę dolnego źródła ciepła na poziomie kilku °C. Dzieje się tak, ponieważ przy pewnym przybliżeniu 
-            można przyjąć, że poniżej 10m pod poziomem terenu, temperatura gruntu jest stała (wykres 1).<br>
-            Teren na którym wykonana jest instalacja można dowolnie zagospodarować. Wykonywanie prac przy dolnym 
-            źródle ciepła w takiej postaci, powinno być poprzedzone wykonaniem projektu geologicznego przez 
+        <p>
+            Oba w/w gruntowe źródła ciepła mają charakter wymiennika pośredniego i pracują w układzie zamkniętym.
+        </p>
+
+        <h2>Dolne źródło ciepła:</h2>
+
+        <p>
+            <span>Kolektor poziomy </span>układany jest w gruncie na głębokości 1,5 – 1,8m ppt. w postaci pętli,
+            wykonanych najczęściej z rur polietylenowych, połączonych ze sobą poprzez rozdzielacz kolektorowy.
+            Układ napełniony jest wodnym roztworem glikolu.Głębokość posadowienia kolektora poziomego jest bezpośrednio
+            uzależniona od głębokości strefy przemarzania w danej strefie klimatycznej, ale również pod uwagę brana
+            jest maksymalna głębokość, na jakiej obecne są zyski energetyczne z warunków panujących na powierzchni.
+            W tym przypadku należy wziąć pod uwagę fakt, iż w okresie letnim dolne źródło w postaci gruntowego kolektora
+            płaskiego musi się zregenerować. Energia na regenerację tego dolnego źródła ciepła pozyskiwana jest z
+            energii słonecznej, gdyż ziemia nagrzewając się przekazuje ciepło głębszym warstwom gruntu. Na podobnej
+            zasadzie przekazywana jest energia cieplna z opadów atmosferycznych oraz powietrza. W związku z powyższym,
+            po wykonaniu dolnego źródła ciepła w takiej postaci, nie można utrudniać naturalnej regeneracji poprzez
+            zasłanianie terenu, w którym jest wykonana instalacja np. poprzez kostkę brukową, itp. Wadą tego rozwiązania
+            jest konieczność posiadania działki o znacznej powierzchni, której nie można później w dowolny sposób
+            wykorzystać oraz uzależnienie regeneracji dolnego źródła ciepła od warunków atmosferycznych, na które nie ma
+            wpływu.<br/><br/>
+            <span>Kolektor pionowy </span>wykonywany jest jako układ połączonych ze sobą, poprzez rozdzielacz kolektorowy,
+            sond pionowych, zamontowanych w przygotowanym otworze montażowym. Otwór taki wykonuje się przy pomocy
+            specjalistycznego sprzętu wiertniczego. Najczęściej spotykanym sposobem wykonywania otworu montażowego
+            pod sondy jest wiercenie przy użyciu płuczki bentonitowej. W uprzednio przygotowane, najczęściej
+            kilkudziesięciometrowe otwory zapuszcza się pętle wykonaną z rur polietylenowych, zakończone głowicą
+            u-kształtną. Przestrzeń pomiędzy wymiennikiem rurowym a gruntem uzupełnia się substancją o odpowiednich
+            właściwościach. Jest to jedno z najbezpieczniejszych dolnych źródeł ciepła, ponieważ gwarantuje stałą
+            temperaturę dolnego źródła ciepła na poziomie kilku °C. Dzieje się tak, ponieważ przy pewnym przybliżeniu
+            można przyjąć, że poniżej 10m pod poziomem terenu, temperatura gruntu jest stała.<br>
+            Teren na którym wykonana jest instalacja można dowolnie zagospodarować. Wykonywanie prac przy dolnym
+            źródle ciepła w takiej postaci, powinno być poprzedzone wykonaniem projektu geologicznego przez
             uprawnionego geologa oraz zgłoszeniem do urzędów państwowych przewidzianych ustawą.
-
         </p>
 
-        <a href="../images/solanka_woda_schemat.png" data-title="Schemat instalacji pompy solanka/woda" class="title title-right ribbon" style="margin-top: 1%">
-                <img src="../images/solanka_woda_schemat.png" alt="Siedziba EKOINSTAL" style="height: 400px; width: auto" />
-        </a>
-        
-        <div class="description-add-right">
-            <ul>
-                <li><a style="text-decoration: underline" >Sprawdź również:</a></li>
-                <br>
-                <li><a href="http://www.glendimplex.pl/">DIMPLEX</a></li>
-                <li><a href="http://www.biawar.com.pl/pl/">NIBE / BIAWAR</a></li>
-                <li><a href="http://pl.wikipedia.org/wiki/Pompa_ciep%C5%82a">wikipedia</a></li>
-            </ul>
+    </div>
+
+    <div class="description2right" style="margin-top: 100px">
+        <img src="../images/solanka_woda_schemat.png">
+    </div>
+
+</div>
+
+
+        <p class="sb-toggle-left" id="fixed-top" style="color: crimson"> Menu</p>
+
+        <a href="#" title="top" id="scroll-to-top"><img src="../images/home.png" alt="strzałka do góry" /></a>
+
+        <div class="social">
+
+            <a href="https://www.facebook.com/pages/Budujemy-Dom/423667501001852?fref=ts">
+                <img src="../images/facebook_box.png" alt="facebook" style="width: 40px; position: absolute; margin-left:40px; margin-top: 20px; cursor: pointer">
+            </a>
+
+            <a href="https://www.youtube.com/channel/UC2RvVXWlynSG6p-2hquuK0A">
+                <img src="../images/youtube.png" alt="youtube" style="width: 70px; position: absolute; margin-top: 80px; margin-left: 25px" >
+            </a>
+
+            <p><span> M E D I A </span></p>
+
         </div>
-        
-    </div>
 
-<!--        <div class="flowplayer movie" style="width: 600px; height: auto">
-                   <video>
-                      <source type="video/flv" src="../video/min.flv">
-                   </video>
-        </div>-->
-
-<hr style="width: 70%">
-    
-    
-</div> <!-- sb-site-middle  end  //-->
-
-
-<div id="sb-site-bottom">  <a id="realizacje"></a><!-- sb-site-bottom  //-->
-    
-    <h1 class="header-main-default">Nasze realizacje</h1>
-    
-    <div class="realizations">
-        <a href="../galerie/karbowek.html">
-            <span>Osada Karbówko</span>
-            <img src="../images/galerie/karbowek/kar13.jpg" alt="lubicz">
-        </a>
-        
-        
-        <a href="../galerie/olender.html">
-            <span>Centrum Sportu i Rekreacji "Olender"</span>
-            <img src="../images/galerie/olender/ole_main.jpg" alt="lubicz">
-        </a>
-        
-        <a href="../galerie/podolany.html">
-            <span>Osiedle Podolany</span>
-            <img src="../images/galerie/podolany/pod_main.jpg" alt="lubicz">
-        </a>
-        
-        <a href="../galerie/sala.html" style="margin-bottom: 50px" >
-            <span>Sala gimnastyczna przy Zespole Szkół nr 2 w Grębocinie</span>
-            <img src="../images/galerie/sala/sala2.jpg" alt="lubicz">
-        </a>
-
-    </div>
-          
-    <a href="#" title="top" id="scroll-to-top"><img src="../images/up.png" alt="do góry" /></a>
-
-   
-</div>  <!-- sb-site-bottom   end  //-->
-
-    <p class="sb-toggle-left" id="fixed-top" style="color: crimson"> Menu</p>
-
-    <div class="social">
-        
-        <a href="https://www.facebook.com/pages/Budujemy-Dom/423667501001852?fref=ts">
-            <img src="../images/facebook_box.png" alt="facebook" style="width: 40px; position: absolute; margin-left:40px; margin-top: 20px; cursor: pointer">
-        </a>
-        
-        <a href="https://www.youtube.com/channel/UC2RvVXWlynSG6p-2hquuK0A">
-            <img src="../images/youtube.png" alt="youtube" style="width: 70px; position: absolute; margin-top: 80px; margin-left: 25px" >
-        </a>
-        
-        <p><span> M E D I A </span></p>
-        
-    </div> 
-    
-    <div class="mail">
-        <a href="mailto:biuro@grupaekoinstal.pl">
-            <p>Skontaktuj się</p>
-        </a>
+        <div class="mail">
+            <a href="mailto:biuro@grupaekoinstal.pl">
+                <p>Skontaktuj się</p>
+            </a>
             <img src="../images/mail.png" alt="mail" style="width:25px; margin-left: 115px; margin-top: 10px" >
-    </div>  
-
-    <div class="footer">
-        
-        <div class="version">
-            v 1.0
         </div>
-          
-          <a target="_blank" href="http://mfteam.com.pl" class="mf">&#169 Copyright by MFTeam</a>
-          
-    </div> 
+
+        <div class="footer">
+
+            <div class="version">
+                v 0.9.5
+            </div>
+
+            <a target="_blank" href="http://mfteam.com.pl" class="mf">&#169 Copyright by MFTeam</a>
+
+        </div>
+
+     <script>
+        $(function () {
+            $('.realizations a').hide();
+            $('.realizations a').removeClass("minus").addClass("plus");
+
+            $('.triger_photo p').click(function () {
+                if ($('.realizations a').hasClass("minus")) {
+                $('.realizations a').removeClass("minus").addClass("plus").nextAll().slideToggle(1000);
+
+                }
+                    else {
+                    $('.realizations a').removeClass("plus").addClass("minus").nextAll().slideToggle(1000);
+                    scroll_to('.realizations');
+                    }
+                });
+            $('.trigered_photo').click(function(){
+            $('.realizations a').removeClass("minus").addClass("plus").nextAll().slideToggle(1000);
+
+            })
+            });
+
+        //-->
+     </script>
 
 
         

@@ -251,6 +251,8 @@ body, html {
         position: relative;
         /*display: inline-block;*/
         width: 100%;
+        z-index: 1000;
+        background: #333333 url(../images/pattern.png) repeat top left;
     }
 
 
@@ -349,7 +351,9 @@ body, html {
     /*margin-left: 25%;*/
 /*    border: 1px solid black;*/
     text-align: center;
+    z-index: 1000;
     /*display: inline-block;*/
+    background: white url(../images/pattern.png) repeat top left;
 }
     .realizations a{
         display: inline-block;
@@ -711,21 +715,20 @@ body, html {
 }
 
 .description2left{
-    width: 38%;
+    width: 35%;
     margin-left: 15%;
     display: inline-block;
     margin-bottom: 4%;
-    float: left;
+    /*float: left;*/
     text-align: left;
     color: #333333;
 }
 
 .description2right{
     width: 30%;
-    margin-right: 15%;
+    margin: 0 15% 4% 0;
     float: right;
-    text-align: right;
-    margin-bottom: 4%;
+    text-align: left;
     display: inline-block;
 }
 
@@ -754,6 +757,10 @@ body, html {
     .description2left li, .description2right li{
         list-style: disc;
         /*color: whitesmoke;*/
+    }
+
+    .description2right ul{
+        text-align: left;
     }
 
     .description2left h1, .description2right h1{
@@ -1589,7 +1596,7 @@ body, html {
 }
 
 .sti-icon-rekuperacja{
-    background-image:url(../images/rekuperacja.png);
+    background-image:url(../images/rekuperacja2.png);
 }
 
 

@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Piana poliuretanowa</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="../css/main.css">
-        <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
-	<link rel="stylesheet" type="text/css" href="../css/demo.css" />
-        <script type="text/javascript" src="../js/jquery1.11.1.js"></script>
-        <link rel="stylesheet" type="text/css" href="../css/menu_slice/style.css" />
-        <link rel="stylesheet" type="text/css" href="../css/menu_slice/custom.css" />
-        <link rel="stylesheet" type="text/css" href="../css/main_menu/stimenu.css" />
-        <link rel="stylesheet" href="../css/sidebar/slidebars.css">
-        <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
-        <noscript>
-	<link rel="stylesheet" type="text/css" href="../css/styleNoJS.css" />
-	</noscript>
-        <script src="../js/jquery-1.6.1.js" type="text/javascript"></script>
-        <script type="text/javascript">
-            var st_jq = jQuery.noConflict(true);
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Piana poliuretanowa</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/main_menu/stimenu.css" />
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../css/demo.css" />
+    <script type="text/javascript" src="../js/gallery/mlbox_v14f.js"></script>
+    <script type="text/javascript" src="../js/jquery1.11.1.js"></script>
 
-        </script>
-        <script src="../js/jquery.easing.1.3.js" type="text/javascript"></script>
-        <script type="text/javascript" src="../js/gallery/mlbox.js"></script>
-    </head>
+    <link rel="stylesheet" href="../css/sidebar/slidebars.css">
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon" />
+    <noscript>
+        <link rel="stylesheet" type="text/css" href="../css/styleNoJS.css" />
+    </noscript>
+    <script src="../js/jquery-1.6.1.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        var st_jq = jQuery.noConflict(true);
+    </script>
+    <script src="../js/jquery.easing.1.3.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../js/gallery/mlbox.js"></script>
+
+</head>
     
     <body>
     
@@ -161,16 +162,32 @@
         powszechnie stosowanych wyrobów izolacyjnych, nie musi więc być tak gruba, by osiągnąć ten sam
         poziom izolowania dachu.
     </p>
-    
-    <div class="content-menu">
-        <a href="javascript:void()" onclick="scroll_to('#otwarta')">otwarta komórka</a>
-        <a href="javascript:void()" onclick="scroll_to('#porownanie')">porównanie</a>
-        <a href="javascript:void()" onclick="scroll_to('#zamknieta')">zamknięta komórka</a>
-        <a href="javascript:void()" onclick="scroll_to('#realizacje')"><span>realizacje</span></a>
-    </div>
 
 
     <!-- Triger's - gallery and apointment -->
+
+    <script><!--
+
+            $(function(){
+                $('.trigered div').hide();
+                $('.trigered div').removeClass("minus").addClass("plus");
+
+                $('.triger p').click(function(){
+                    if ($('.trigered div').hasClass("minus")) {
+                        $('.trigered div').removeClass("minus").addClass("plus").nextAll().slideToggle(1000);
+
+                    }
+                    else {
+                        $('.trigered div').removeClass("plus").addClass("minus").nextAll().slideToggle(1000);
+                        scroll_to('.trigered');
+                    }
+                });
+                $('.trigered').click(function(){
+                    $('.trigered div').removeClass("minus").addClass("plus").nextAll().slideToggle(1000);
+
+                })
+            });
+    </script>
 
     <script>
         $(function(){
@@ -194,6 +211,8 @@
         });
     </script>
 
+
+
     <div class="trigers">
         <div class="triger"><p class="minus">Dane techniczne</p></div>
         <div class="triger_photo"><p class="minus">Galeria</p></div>
@@ -205,6 +224,90 @@
         <br/>
 
     </div>  <!-- sb-site end //-->
+
+
+    <div class="trigered">
+
+        <div class="line_left"></div>
+
+        <div class="line_left2"></div>
+
+        <div class="description2left white">
+
+            <h1>Izopianol 03/10 N</h1>
+
+            <p>
+                Izopianol 03/10 N jest dwuskładnikowym systemem do wytwarzania półsztywnej pianki
+                poliuretanowej. Nie zawiera środków spieniających zubożających warstwę ozonową, zgodnie
+                z przepisami UE – rozporządzenie (WE) nr 2037/2000. <br/><br/>
+                Produkt posiada atest higieniczny PZH: HK/B/0726/01/2014.
+            </p>
+
+            <h2>Zastosowanie</h2>
+
+            <p>
+                Do produkcji poliuretanowej termiczno -akustycznej pół -sztywnej pianki natryskowej (stropy, ściany).<br/><br/>
+                <span>Składnik A: </span>(Izopianol 03/10 N) jest mieszaniną polioli ze środkami pomocniczymi<br/>
+                <span>Składnik B: </span>(Purocyn B) jest polimerycznym dwuizocyjanianem dwufenylometanu.<br/><br/>
+                Powierzchnia do natrysku powinna być czysta i sucha, o temperaturze min.10°C, temperatura i
+                wilgotność powietrza podczas natrysku min. 15°C i max. 60%. Grubość warstwy natryskowej powinna
+                mieścić się w przedziale 60-140 mm.
+            </p>
+
+            <h2>Opis spieniania w warunkach laboratoryjnych</h2>
+
+            <p>
+                Czasy reakcji i gęstość pozorna w warunkach laboratoryjnych (temperatura otoczenia 20 oC) przy
+                spienianiu ręcznym. Czasy reakcji mierzone są od rozpoczęcia mieszania. Czas startu – do momentu
+                rozpoczęcia wzrostu mieszaniny. Czas żelowania – do momentu wyciągania zżelowanych włókien z
+                pianki. Gęstość pozorną rdzenia mierzy się po wycięciu prostopadłościennej kostki z pianki (wg PNEN
+                1602:1999).<br/><br/>
+                <span>Uwaga:</span> proces otrzymywania pianki przebiega z wydzieleniem ciepła, w związku z czym jest on
+                uzależniony od warunków zewnętrznych tzn. im niższa temp. surowców, podłoża czy otoczenia tym
+                niższy jest stopień ekspansji (spieniania). Pełnych własności pianka nabiera po 24 godzinach.
+            </p>
+
+        </div>
+
+        <div class="description2right" style="margin-top: 100px">
+            <img style="width: 470px" src="../images/techniczne/izopianol03_10n.png">
+            <img style="width: 470px" src="../images/techniczne/izopianol03_10n_wlasciwosci.png">
+
+        </div>
+
+        <div class="description2left white">
+
+            <h1>Izopianol 03/10 N/S</h1>
+
+            <p>
+                Izopianol 03/10 N/S jest dwuskładnikowym systemem do wytwarzania półsztywnej pianki
+                poliuretanowej. Nie zawiera środków spieniających zubożających warstwę ozonową, zgodnie
+                z przepisami UE o obrocie i stosowaniu substancji kontrolowanych – rozporządzenie (WE) nr
+                2037/2000.<br/><br/>
+                Produkt posiada atest higieniczny PZH: HK/B/0726/01/2014.
+            </p>
+
+            <h2>Zastosowanie</h2>
+
+            <p>
+                Izopianol 03/10 N/S stosuje się do produkcji poliuretanowej termiczno-akustycznej pół-sztywnej pianki
+                natryskowej (stropy, ściany).<br/><br/>
+                <span>Składnik A: </span>Izopianol 03/10 N/S jest mieszaniną polioli z odpowiednimi środkami pomocniczymi.
+                <span>Składnik B: </span>Purocyn B jest polimerycznym dwuizocyjanianem dwufenylometanu.<br/> <br/>
+                Powierzchnia do natrysku powinna być czysta i sucha, o temperaturze min.10°C, temperatura i wilgotność
+                powietrza podczas natrysku min. 15°C i max. 60%. Grubość warstwy natryskowej powinna mieścić się w
+                przedziale 60-140 mm.
+            </p>
+        </div>
+
+        <div class="description2right" style="margin-top: 100px">
+            <img style="width: 470px" src="../images/techniczne/izopianol03_10n_s.png">
+        </div>
+
+
+
+
+    </div>
 
 <!-- GALERIA -->
 
