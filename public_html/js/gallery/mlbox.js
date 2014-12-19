@@ -18,7 +18,7 @@ function initml(){
    position='absolute';
    backgroundColor='white';
    display='none';
-   zIndex='998';}
+   zIndex='2010';}
  mlbox_mld.body.appendChild(mlbox_mlpg);
  mlbox_mlpg.onclick=mldie;
 }
@@ -41,7 +41,7 @@ function mlbox(){
    backgroundColor='black';
    opacity='0.7';
    filter='alpha(opacity=70)';
-   zIndex='997';};
+   zIndex='2000';};
  bd.insertBefore(mlbox_mlbg,mlbox_mlpg);
 
  with(mlbox_mlpg.style){
@@ -93,7 +93,7 @@ function mlshow()
 	backgroundColor='white';
 	padding='20px';
 	visibility='hidden';
-	zIndex='999';
+	zIndex='2020';
   }
   if(ms6) mlbox_mlct.style.position='absolute';
   

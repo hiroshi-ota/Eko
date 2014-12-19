@@ -302,18 +302,18 @@ body, html {
         color: #333333;
     }
 
-    .triger, .triger_photo, .triger2, .triger_spotkanie {
+    .triger, .triger_photo, .triger_dodatkowe, .triger_spotkanie {
         font-size: 14px;
         cursor: pointer;
         margin-right: 10%;
         font-weight: bolder;
     }
 
-    .triger:hover, .triger_photo:hover, .triger2 a:hover, .triger_spotkanie:hover{
+    .triger:hover, .triger_photo:hover, .triger_dodatkowe a:hover, .triger_spotkanie:hover{
         color: crimson;
     }
 
-    .triger2 {
+    .triger_dodatkowe {
         font-size: 20px;
         cursor: pointer;
         margin-right: 10%;
@@ -739,6 +739,7 @@ body, html {
     .dark{
         color: #333333;
     }
+    
 
     .description2left span, .description2right span{
         font-weight: bolder;
