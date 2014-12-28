@@ -35,6 +35,21 @@ body, html {
         position:absolute;
         top: 20%;
     }
+    
+    
+    .mainMenu{
+        width: 70%;
+        text-align: center;
+    }
+    
+        .mainMenu li{
+            display: inline-block;
+            
+        }
+        
+        .mainMenu a{
+            text-decoration: none;
+        }
 
 .logo_head{
     width: 35%;
