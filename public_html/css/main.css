@@ -324,6 +324,27 @@ body, html {
         height: 1000px;
         background: #333333 url(../images/pattern.png) repeat top left;
     }
+    
+    .partners{
+        position: absolute;
+        width: auto;
+        left: 10%;
+        bottom: 2%;
+        text-align: left;
+        /*border-left: 2px solid crimson;*/
+    }
+
+        .partners img{
+            width: 100px;
+            background: #333333;
+            padding: 5px;
+        }
+        
+        .partners p{
+            color: crimson;
+            font-weight: bolder;
+            margin: 0 0 5px 0;
+        }
 
 
     /*oblicz fotowoltaika*/
@@ -1130,6 +1151,8 @@ body, html {
                     height: 50px;
                     background-color: transparent;
                     z-index: 4;
+                    font-weight: bolder;
+                    text-decoration: underline;
             }
 
             #fixed-top span.sb-toggle-left {
@@ -1407,6 +1430,7 @@ body, html {
     }
 
     .description_center img{
+        margin-left: 5%;
 
     }
 
@@ -1455,6 +1479,8 @@ body, html {
 
     .topMenu{
         width: 27%;
+        margin-right: 0;
+        padding-right: 5%;
     }
 
     .topMenu li{
